@@ -94,7 +94,7 @@ class Document(models.Model):
         ('rejected','rejected'),
     
     ]
-    application = models.OneToOneField(Application, on_delete=models.CASCADE, realated_name='documents')
+    application = models.OneToOneField(Application, on_delete=models.CASCADE, related_name='documents')
     aadhar_card = models.FileField(upload_to='customer/document',default=0,blank=True)
     pan_card = models.FileField(upload_to='customer/document',default=0,blank=True)
     business_address_proff_or_copy_of_rent_agreement = models.FileField(upload_to='customer/document',default=0,blank=True)
