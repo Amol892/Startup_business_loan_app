@@ -35,7 +35,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+AUTH_USER_MODEL = 'admin_app.User'
 # Application definition
 
 INSTALLED_APPS = [
@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'document_verification',
     'loan_sanctioning',
     'disburstment',
+    
     
 ]
 
