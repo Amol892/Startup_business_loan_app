@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'disburstment',
     
 ]
+AUTH_USER_MODEL='admin_app.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
