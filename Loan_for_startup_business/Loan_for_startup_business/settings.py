@@ -85,6 +85,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Loan_for_startup_business.wsgi.application'
 
+AUTH_USER_MODEL = 'admin_app.User'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
