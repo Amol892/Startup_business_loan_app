@@ -1,0 +1,11 @@
+.my_div {
+    text-align: center;
+    background-image: url("https://img.freepik.com/free-photo/young-happy-couple-making-agreement-with-their-financial-advisor-home-men-are-shaking-hands_637285-3839.jpg?w=1060&t=st=1691604172~exp=1691604772~hmac=190cadb6ed2ec19713ee55c5ba44e611cbfc59fce5cba6aa47ccbb6f6d748b31");
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    
+  
+  }

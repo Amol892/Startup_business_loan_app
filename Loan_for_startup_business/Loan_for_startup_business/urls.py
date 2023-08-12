@@ -1,22 +1,25 @@
-"""
-URL configuration for Loan_for_startup_business project.
 
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from admin_app.views import UserView, FamilyView, BankView
+from customer.views import EnquiryView
+from application_generation.views import ApplicationAPI, GuarantorAPI, DocumentAPI
+from rest_framework_simplejwt.views import token_refresh, token_obtain_pair
+
+router = DefaultRouter()
+router.register("userview",UserView, basename="userview")
+router.register("familyview", FamilyView, basename="familyview")
+router.register("bankview", BankView, "bankView")
+router.register("enquiryview", EnquiryView, "enquiryview")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("access/", token_obtain_pair),
+    path("token/", token_refresh),
+    path("", include(router.urls)),
+    path("application/", ApplicationAPI.as_view(), name="application"),
+    path("guarantor/", GuarantorAPI.as_view(), name="guarantor"),
+    path("document/", DocumentAPI.as_view(), name="document"),
+
 ]

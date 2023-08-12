@@ -5,15 +5,15 @@ from admin_app.models import User
 class Application(models.Model):
 
     EMPLOYMENT_CHOICE = [
-            ("Salaried", "Salaried"),("Self-Employed","Self-Employed")
+            ('',''),("Salaried", "Salaried"),("Self-Employed","Self-Employed")
     ]
 
     BUSINESS_TYPE = [
-            ("Service","Service"), ("Manufacturing", "Manufacturing"), ("Treders","Trederd"), ("Other","Other")
+            ('',''),("Service","Service"), ("Manufacturing", "Manufacturing"), ("Treders","Trederd"), ("Other","Other")
     ]
 
     APPLICATION_STATUS = [
-            ("Pending","Pending"), ("Apporve","Apporve"), ("Rejected","Rejected"), ("Disbursed","Disbursed")
+            ('',''),("Pending","Pending"), ("Apporve","Apporve"), ("Rejected","Rejected"), ("Disbursed","Disbursed")
     ]
 
 
@@ -30,7 +30,7 @@ class Application(models.Model):
     years_in_current_business = models.IntegerField(default=0, blank=True)
     collateral = models.CharField(max_length=250, default=0, blank=True)
     status = models.CharField(max_length=250, default='', choices=APPLICATION_STATUS)
-    application_timestamp = models.DateTimeField(blank=True)
+    application_timestamp = models.DateTimeField(blank=True, auto_created=True)
     remark = models.CharField(max_length=250, default=0, blank=True)
 
     def __str__(self):
@@ -40,15 +40,16 @@ class Application(models.Model):
 
 class Guarantor(models.Model):
     GENDER_CHOICES = (
-        ('M', 'Male'),
-        ('F', 'Female'),
-        ('T','Transgender')
+         ('',''),
+        ('Male', 'Male'),
+        ('Female', 'Female'),
+        ('Transgender','Transgender')
     )
 
-    STATE_CHOICES = (("Andhra Pradesh","Andhra Pradesh"),("Arunachal Pradesh ","Arunachal Pradesh "),
+    STATE_CHOICES = (("Andhra Pradesh","Andhra Pradesh"),("Arunachal Pradesh","Arunachal Pradesh"),
                      ("Assam","Assam"),("Bihar","Bihar"),("Chhattisgarh","Chhattisgarh"),("Goa","Goa"),
                      ("Gujarat","Gujarat"),("Haryana","Haryana"),("Himachal Pradesh","Himachal Pradesh"),
-                     ("Jammu and Kashmir ","Jammu and Kashmir "),("Jharkhand","Jharkhand"),
+                     ("Jammu and Kashmir","Jammu and Kashmir"),("Jharkhand","Jharkhand"),
                      ("Karnataka","Karnataka"),("Kerala","Kerala"),("Madhya Pradesh","Madhya Pradesh"),
                      ("Maharashtra","Maharashtra"),("Manipur","Manipur"),("Meghalaya","Meghalaya"),
                      ("Mizoram","Mizoram"),("Nagaland","Nagaland"),("Odisha","Odisha"),("Punjab","Punjab"),
@@ -73,12 +74,12 @@ class Guarantor(models.Model):
     country=models.CharField(max_length=100,default=0,blank=True)
     pin_code=models.IntegerField(default=0,blank=True)
     mobile=models.CharField(max_length=10,default=0,blank=True)
-    photo=models.ImageField(upload_to='media/customer/guarantor/',default=0,blank=True)
+    photo=models.ImageField(upload_to='',default=0,blank=True)
     profession=models.CharField(max_length=250,default=0,blank=True)
-    income_certificate=models.FileField(upload_to='media/customer/guarantor/',default=0,blank=True)
+    income_certificate=models.FileField(upload_to='',default=0,blank=True)
     bank_name=models.CharField(max_length=250,default=0,blank=True)
     current_account_no=models.CharField(max_length=20,default=0,blank=True)
-    passbook_copy=models.FileField(upload_to='media/customer/guarantor/',default=0,blank=True)
+    passbook_copy=models.FileField(upload_to='',default=0,blank=True)
     ifsc_code=models.CharField(max_length=20,default=0,blank=True)
 
 
@@ -109,7 +110,7 @@ class Document(models.Model):
     stamp_duty = models.FileField(upload_to='customer/document',default=0,blank=True)
     status = models.CharField(max_length=250,choices=DOCUMENT_STATUS_CHOICE,default=0,blank=True)
     response_timestamp = models.DateTimeField(auto_now=True,blank=True)
-    remark = models.CharField(max_length=250,choices=DOCUMENT_STATUS_CHOICE,default=0,blank=True)
+    remark = models.CharField(max_length=250,default=0,blank=True)
 
     def __str__(self):
         return f'{self.id}'
