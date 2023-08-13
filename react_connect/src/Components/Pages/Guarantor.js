@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate, NavLink } from 'react-router-dom';
 
@@ -30,12 +30,26 @@ function Guarantor() {
           nav("/login")
       }
   },[])*/
+
+  const [guarenter, setGuarenter] = useState({});
   
   async function saveData(data){
-    
-    await axios.post("http://127.0.0.1:8000/guarantor/",data)
+    data.photo = data.photo[0]
+    data.passbook_copy = data.passbook_copy[0]
+    data.income_certificate = data.income_certificate[0]
+    const response = await axios.post("http://127.0.0.1:8000/guarantor/",data,{
+        headers:{"Content-Type":"multipart/form-data"}
+    })
+    console.log(response.data)
+    setGuarenter(response.data)
+    sessionStorage.setItem("guarenter_id",response.data.id)
     nav("/documents")
   }
+
+  useEffect(()=>{
+    const response = sessionStorage.getItem('application_id')
+    setValue("application", response) 
+  })
 
   return (
     <>
@@ -44,7 +58,7 @@ function Guarantor() {
     <form onSubmit={handleSubmit(saveData)}>
     <h1 style={{color:"red", textAlign:"center"}}>Guarantor Application</h1>
     <label htmlFor='application'>Application ID</label>
-    <input id="application" type='number' className='form-control' {...register("application")} />
+    <input id="application" type='text' readOnly={true} className='form-control' {...register("application")} />
     <br/><br/>
     <label htmlFor='relation_with_customer'>Relation with Member</label>
     <input id="relation_with_customer" type='text' className='form-control' {...register("relation_with_customer")} />
@@ -95,13 +109,13 @@ function Guarantor() {
     <input id='mobile' type='text' className='form-control' {...register("mobile")}/>
     <br/><br/>
     <label htmlFor='photo'>Photo</label>
-    <input id='photo' type='image' accept="image/png, image/jpeg" className='form-control' {...register("photo")} />
+    <input id='photo' type='file' accept="image/png, image/jpeg" className='form-control' {...register("photo")} />
     <br/><br/>
     <label htmlFor='profession'>Profession</label>
     <input id='profession' type='text' className='form-control' {...register("profession")} />
     <br/><br/>
     <label htmlFor='income_certificate'>Income Certficate</label>
-    <input id='income_certificate' type='file' className='form-control' {...register("income_certificate")} />
+    <input id='income_certificate' type='file' accept='file/pdf' className='form-control' {...register("income_certificate")} />
     <br/><br/>
     <label htmlFor='bank_name'>Bank Name</label>
     <input id='bank_name' type='text' className='form-control' {...register("bank_name")} />
@@ -110,7 +124,7 @@ function Guarantor() {
     <input id='current_account_no' type='text' className='form-control' {...register("current_account_no")} />
     <br/><br/>
     <label htmlFor='passbook_copy'>Passbook Copy</label>
-    <input id='passbook_copy' type='file' className='form-control' {...register("passbook_copy")} />
+    <input id='passbook_copy' type='file' accept="file/pdf" className='form-control' {...register("passbook_copy")} />
     <br/><br/>
     <label htmlFor='ifsc_code'>IFSC Code</label>
     <input id='ifsc_code' type='text' className='form-control' {...register("ifsc_code")} />

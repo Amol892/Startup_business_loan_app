@@ -8,6 +8,9 @@ import Documents from './Components/Pages/Documents';
 import Home from './Components/Pages/Home';
 import Logout from './Components/Pages/Logout';
 import UserSignup from './Components/Pages/UserSignup';
+import ApplicationStatusDetails from './Components/Pages/ApplicationStatusDetails';
+import ApplicationRergardingMail from './Components/Pages/ApplicationRergardingMail';
+import ApplicaationDocumentDetails from './Components/Pages/ApplicaationDocumentDetails';
 
 function App() {
   return (
@@ -21,8 +24,11 @@ function App() {
       <Route path='/documents' element={<Documents/>} />
       <Route path='/home' element={<Home/>} />
       <Route path='/logout' element={<Logout/>} />
-      <Route path='/user_signup' elemen={<UserSignup/>} />
-    </Routes>
+      <Route path='/user_signup' element={<UserSignup/>} />
+      <Route path='/application_status' element={<ApplicationStatusDetails/>} />
+      <Route path='/application_email'element={<ApplicationRergardingMail/>} />
+      <Route path='/application_document_details' element={<ApplicaationDocumentDetails/>} />
+     </Routes>
     </BrowserRouter>
     </>
   );

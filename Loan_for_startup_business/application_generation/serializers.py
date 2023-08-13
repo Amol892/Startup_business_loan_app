@@ -7,7 +7,6 @@ class AppplicationModelSerializer(serializers.ModelSerializer):
         fields = "__all__"
     
 class GurantorModelSerializer(serializers.ModelSerializer):
-    Gaurantors = AppplicationModelSerializer(read_only=True,  many=True)
     class Meta:
         model = Guarantor
         fields = "__all__"

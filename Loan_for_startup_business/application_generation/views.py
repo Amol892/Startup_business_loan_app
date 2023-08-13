@@ -10,8 +10,8 @@ from rest_framework.permissions import IsAuthenticated
 # Create your views here.
 
 class ApplicationAPI(APIView):
-    authentication_classes = [JWTAuthentication]
-    permission_classes = [IsAuthenticated]
+    #authentication_classes = [JWTAuthentication]
+    #permission_classes = [IsAuthenticated]
 
     def get(Self, request):
         obj = Application.objects.all()
@@ -39,7 +39,7 @@ class GuarantorAPI(APIView):
         if serializer.is_valid():
             serializer.save()
             return Response(data=serializer.data, status=status.HTTP_201_CREATED)
-        return Response(data=serializer.error)
+        return Response(data=serializer.errors)
     
 class DocumentAPI(APIView):
     def get(self, request):
@@ -52,4 +52,23 @@ class DocumentAPI(APIView):
         if serializer.is_valid():
             serializer.save()
             return Response(data=serializer.data, status=status.HTTP_201_CREATED)
-        return Response(data=serializer.error)
+        return Response(data=serializer.errors)
+    
+from django.core.mail import send_mail
+from django.http import HttpResponse 
+
+
+class ApplicationRegrdingMail(APIView):
+    def get(self, request):
+        pass
+    def post(self, request):
+        print("hii")
+        office_mail = "loanforstartupsinc@gmail.com"
+        customer_name = request.data["name"]
+        customer_email = request.data["email"]
+        message = request.data["message"]
+        print(customer_name, customer_email, message)
+        subject = f"Hi {customer_name} This is LoannApplication Regarding Mail"
+        send_mail(f"{customer_name} This is LoannApplication Regarding Mail", message, office_mail, [f"{customer_email}"], fail_silently=False)
+        print("email send ok")
+        return Response(data={"message":"send email"})

@@ -1,19 +1,24 @@
 import axios from 'axios';
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom';
 
 function UserSignup() {
     const {register, handleSubmit} = useForm();
     const nav = useNavigate();
+    const [user, setUser] = useState({})
 
     async function saveData(data){
         data.photo = data.photo[0]
-        data.sign = data.sign[0]
-        await axios.post("http://127.0.0.1:8000/userview/",data,{
+        data.signature = data.signature[0]
+        const res = await axios.post("http://127.0.0.1:8000/userview/",data,{
             headers:{"Content-Type": "multipart/form-data"}
           })
         nav("/application")
+        setUser(res.data)
+        //console.log(user.email)
+        sessionStorage.setItem("id",res.data.id)
+      //console.log(user.data)
     }
 
 
@@ -22,9 +27,9 @@ function UserSignup() {
     <br/><br/>
     <div className='container' style={{backgroundColor:"lightgray",  width:"1200px"}}>
     <form onSubmit={handleSubmit(saveData)}>
-    <h1 style={{color:"red", textAlign:"center"}}>Application</h1>
+    <h1 style={{color:"red", textAlign:"center"}}>SignUp</h1>
     <label htmlFor='dob'>DOB</label>
-    <input id="dob" type='number' className='form-control' {...register("dob")} />
+    <input id="dob" type='date' className='form-control' {...register("dob")} />
     <br/><br/>
     <label htmlFor='gender'>Gender</label>&nbsp;&nbsp;
     <select id="gender" {...register("gender")}>
@@ -34,7 +39,7 @@ function UserSignup() {
         <option value="transgender">Transgender</option>
     </select>
     <br/><br/><br/>
-    <label htmlFor='email'>PAN Number</label>
+    <label htmlFor='email'>Email</label>
     <input id="email" type='email' className='form-control' {...register("email")}/>
     <br/><br/>
     <label htmlFor='permanent_address'>Permanent Address</label>&nbsp;&nbsp;
@@ -47,10 +52,10 @@ function UserSignup() {
     <input id='mocile' type='text' className='form-control' {...register("mobile")}/>
     <br/><br/>
     <label htmlFor='photo'>Photo</label>
-    <input id='photo' type='file' className='form-control' {...register("photo")}/>
+    <input id='photo' type='file' accept="image/png, image/jpeg" className='form-control' {...register("photo")}/>
     <br/><br/>
-    <label htmlFor='sign'>Sign</label>
-    <input id='sign' type='text' className='form-control' {...register("sign")}/>
+    <label htmlFor='signature'>Sign</label>
+    <input id='signature' type='file' accept="image/png, image/jpeg" className='form-control' {...register("signature")}/>
     <br/><br/>
     <label htmlFor='role'>Role</label>&nbsp;&nbsp;
     <select id="role" {...register("role")}>
@@ -62,7 +67,9 @@ function UserSignup() {
         <option value="ah">Account Head</option>
     </select>
     <br/><br/><br/>
-    
+    <label htmlFor='username'>Username</label>
+    <input id='username' type='text' className='form-control' {...register("username")}/>
+    <br/><br/>
     <center>
     <input type='reset' value="Clear" className='btn btn-warning col-5'/>&nbsp;&nbsp;&nbsp;
     <input type='submit' value="Save and Next" className='btn btn-success col-5'/>

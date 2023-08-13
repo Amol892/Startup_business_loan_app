@@ -74,12 +74,12 @@ class Guarantor(models.Model):
     country=models.CharField(max_length=100,default=0,blank=True)
     pin_code=models.IntegerField(default=0,blank=True)
     mobile=models.CharField(max_length=10,default=0,blank=True)
-    photo=models.ImageField(upload_to='',default=0,blank=True)
+    photo=models.ImageField(upload_to='photo/',default=0,blank=True)
     profession=models.CharField(max_length=250,default=0,blank=True)
-    income_certificate=models.FileField(upload_to='',default=0,blank=True)
+    income_certificate=models.FileField(upload_to='income_certificate/',default=0,blank=True)
     bank_name=models.CharField(max_length=250,default=0,blank=True)
     current_account_no=models.CharField(max_length=20,default=0,blank=True)
-    passbook_copy=models.FileField(upload_to='',default=0,blank=True)
+    passbook_copy=models.FileField(upload_to='passbook_copy',default=0,blank=True)
     ifsc_code=models.CharField(max_length=20,default=0,blank=True)
 
 
@@ -90,9 +90,10 @@ class Guarantor(models.Model):
 class Document(models.Model):
     DOCUMENT_STATUS_CHOICE = [
         ('','',),
-        ('pending','pending'),
-        ('done','done'),
-        ('rejected','rejected'),
+        ('Pending','Pending'),
+        ('Apporve','Apporve'),
+        ('Rejected','Rejected'),
+        ('Disbursed','disbursed')
     
     ]
     application = models.OneToOneField(Application, on_delete=models.CASCADE, related_name='documents')

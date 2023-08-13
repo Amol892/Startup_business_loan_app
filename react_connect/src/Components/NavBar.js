@@ -22,6 +22,10 @@ function NavBar() {
         <NavLink className="nav-link active" to="#"><b>Enquiry</b></NavLink>
         <NavLink className="nav-link active" to="/application"><b>Loan Application</b></NavLink>
         <NavLink className="nav-link active" to="/user_signup"><b>User Signup</b></NavLink>
+        <NavLink className="nav-link active" to="/application_status"><b>Status</b></NavLink>
+        <NavLink className="nav-link active" to="/application_email"><b>application regarding mail</b></NavLink>
+        <NavLink className="nav-link active" to="/application_document_details"><b>Application Document Deatils</b></NavLink>
+        
       </div>
     </div>
   </div>

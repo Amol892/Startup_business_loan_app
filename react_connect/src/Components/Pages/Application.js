@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {useForm} from "react-hook-form";
 import { NavLink, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import UserSignup from "./UserSignup";
 
 function Application() {
 
@@ -42,11 +43,18 @@ function Application() {
             nav("/login")
         }
     },[])*/
-
+    const [application, setApplication] = useState({})    
     async function saveData(data){
-        await axios.post("http://127.0.0.1:8000/application/",data)
+        const result = await axios.post("http://127.0.0.1:8000/application/",data)
+        setApplication(result.data)
+        sessionStorage.setItem("application_id",result.data.id)
         nav("/guarantor")
     }
+    useEffect(()=>{
+        const response = sessionStorage.getItem('id')
+        setValue("user", response)
+        //console.log(response)
+    },[])
 
 
   return (
@@ -56,8 +64,8 @@ function Application() {
     <div className='container' style={{backgroundColor:"lightgray",  width:"1200px"}}>
     <form onSubmit={handleSubmit(saveData)}>
     <h1 style={{color:"red", textAlign:"center"}}>Application</h1>
-    <label htmlFor='cust_id'>Customer ID</label>
-    <input id="cust_id" type='number' className='form-control' {...register("user")} />
+    <label htmlFor='user'>Application Id</label>
+    <input id="user" type='text' className='form-control' readOnly={true} {...register("user")} />
     <br/><br/>
     <label htmlFor='aadhar_no'>Adhar Number</label>
     <input id="aadhar_no" type='text' className='form-control' {...register("aaddar_no")} />

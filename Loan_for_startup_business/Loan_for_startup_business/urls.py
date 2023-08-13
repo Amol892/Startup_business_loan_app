@@ -4,7 +4,7 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from admin_app.views import UserView, FamilyView, BankView
 from customer.views import EnquiryView
-from application_generation.views import ApplicationAPI, GuarantorAPI, DocumentAPI
+from application_generation.views import ApplicationAPI, GuarantorAPI, DocumentAPI, ApplicationRegrdingMail
 from rest_framework_simplejwt.views import token_refresh, token_obtain_pair
 
 router = DefaultRouter()
@@ -21,5 +21,6 @@ urlpatterns = [
     path("application/", ApplicationAPI.as_view(), name="application"),
     path("guarantor/", GuarantorAPI.as_view(), name="guarantor"),
     path("document/", DocumentAPI.as_view(), name="document"),
+    path("application_regarding_mail/", ApplicationRegrdingMail.as_view(), name="application_regarding_mail"),
 
 ]
