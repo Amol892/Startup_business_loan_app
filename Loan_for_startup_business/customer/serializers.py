@@ -9,8 +9,8 @@ class EnquiryModelSerializer(serializers.ModelSerializer):
         fields = ['first_name','last_name','email','mobile','message','status','enquiry_date']
         
     
-# OTP Verification serializer
-class OTPSerializer(serializers.Serializer):
-    OTP = serializers.CharField()
+
     
     
+class EnquirySerializer(serializers.Serializer):
+    email = serializers.EmailField()

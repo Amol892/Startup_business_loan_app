@@ -23,6 +23,7 @@ environ.Env.read_env(os.path.join(BASE_DIR,'.env'))
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+SESSION_COOKIE_AGE = 60 * 60 * 24
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -46,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
+    'rest_framework_simplejwt',
     'admin_app',
     'application_generation',
     'customer',
@@ -65,6 +68,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'Loan_for_startup_business.urls'
@@ -153,3 +157,19 @@ EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
+# corsheaders config
+CORS_ORIGIN_WHITLIST = [
+    'http://localhost:3000'
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Allow requests from your frontend app
+    # Add more origins as needed
+]
+
+#JWT Authentication config
+from datetime import timedelta
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(hours=12),
+    'REFRESH_TOKEN_LIFETIME': timedelta(weeks=1)
+}
