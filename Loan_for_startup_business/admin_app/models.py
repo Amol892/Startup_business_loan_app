@@ -31,11 +31,15 @@ class User(AbstractUser):
     is_active=models.BooleanField(default=False)
     
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ('first_name','last_name','mobile')
+    REQUIRED_FIELDS = ('first_name','last_name','mobile','username')
     
     class Meta:
         verbose_name = 'User'
         verbose_name_plural = 'Users'
+
+    def get_first_name(self):
+        return self.first_name
+
         
 
 class Family(models.Model):
