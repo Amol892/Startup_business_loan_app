@@ -11,6 +11,8 @@ import UserSignup from './Components/Pages/UserSignup';
 import ApplicationStatusDetails from './Components/Pages/ApplicationStatusDetails';
 import ApplicationRergardingMail from './Components/Pages/ApplicationRergardingMail';
 import ApplicaationDocumentDetails from './Components/Pages/ApplicaationDocumentDetails';
+import AllApporveApplication from './Components/LoanOfficer/AllApporveApplication';
+import ViewApplication from './Components/LoanOfficer/ViewApplication';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
       <Route path='/application_status' element={<ApplicationStatusDetails/>} />
       <Route path='/application_email'element={<ApplicationRergardingMail/>} />
       <Route path='/application_document_details' element={<ApplicaationDocumentDetails/>} />
+      <Route path='/apporve_application' element={<AllApporveApplication/>} />
+      <Route path='/view_application/:id/' element={<ViewApplication/>} />
      </Routes>
     </BrowserRouter>
     </>

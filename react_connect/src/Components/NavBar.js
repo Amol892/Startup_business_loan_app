@@ -25,6 +25,8 @@ function NavBar() {
         <NavLink className="nav-link active" to="/application_status"><b>Status</b></NavLink>
         <NavLink className="nav-link active" to="/application_email"><b>application regarding mail</b></NavLink>
         <NavLink className="nav-link active" to="/application_document_details"><b>Application Document Deatils</b></NavLink>
+        <NavLink className="nav-link active" to="/apporve_application"><b>All Apporve Application</b></NavLink>
+        
         
       </div>
     </div>

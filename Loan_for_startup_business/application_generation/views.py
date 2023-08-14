@@ -6,6 +6,8 @@ from .serializers import AppplicationModelSerializer, GurantorModelSerializer, D
 from rest_framework import status
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.permissions import IsAuthenticated
+from django.shortcuts import get_object_or_404
+
 
 # Create your views here.
 
@@ -24,6 +26,26 @@ class ApplicationAPI(APIView):
             serializer.save()
             return Response(data=serializer.data, status=status.HTTP_201_CREATED)
         return Response(data=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class ApplicationDetailsAPI(APIView):
+    def get(self,request,pk):
+        obj = get_object_or_404(Application,pk=pk)
+        serializer =AppplicationModelSerializer(obj)
+        return Response(data=serializer.data)
+    
+    def patch(self,request,pk):
+        obj = get_object_or_404(Application,pk=pk)
+        serializer = AppplicationModelSerializer(data=request.data, instance=obj, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(data=serializer.data )
+        return Response(data=serializer.errors)
+
+    
+    
+    
+
+    
         
 class GuarantorAPI(APIView):
     #authentication_classes = [JWTAuthentication]
@@ -53,6 +75,14 @@ class DocumentAPI(APIView):
             serializer.save()
             return Response(data=serializer.data, status=status.HTTP_201_CREATED)
         return Response(data=serializer.errors)
+
+class DocumentDetailsAPI(APIView):
+
+    def get(self,request,pk):
+        obj = get_object_or_404(Application,pk=pk)
+        serializer =AppplicationModelSerializer(instance=obj) 
+        return Response(data=serializer.data)
+    
     
 from django.core.mail import send_mail
 from django.http import HttpResponse 
