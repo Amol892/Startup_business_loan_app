@@ -24,7 +24,6 @@ class Loan(models.Model):
 
     def __str__(self):
         return f'{self.id}'
-    
 
 class Vendor(models.Model):
     application = models.ForeignKey(Application, on_delete=models.CASCADE, related_name='Vendors')

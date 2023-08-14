@@ -28,10 +28,10 @@ class User(AbstractUser):
     photo = models.ImageField(blank=True, upload_to='photo/')
     signature = models.ImageField(blank=True, upload_to='signature/')
     role = models.CharField(max_length=20, choices=ROLE_CHOICES)
-    is_active=models.BooleanField(default=False)
+    is_active=models.BooleanField(default=True)
     
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ('first_name','last_name','mobile')
+    REQUIRED_FIELDS = ('first_name','last_name','mobile','username','password')
     
     class Meta:
         verbose_name = 'User'
