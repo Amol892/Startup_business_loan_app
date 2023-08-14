@@ -34,7 +34,11 @@ class Application(models.Model):
     remark = models.CharField(max_length=250, default=0, blank=True)
 
     def __str__(self):
-        	return f"{self.id}"
+        return f"{self.id}"
+    
+    def get_first_name(self):
+         return User.objects.get_first_name
+   
 
 
 
