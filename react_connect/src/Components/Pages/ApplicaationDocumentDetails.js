@@ -1,28 +1,42 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import {pdfjs,Document} from 'react-pdf'
+import { Document, page, pdfjs } from "react-pdf";
 import { NavLink } from 'react-router-dom';
 
-function ApplicaationDocumentDetails() {
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.87/pdf.js`;
 
-    
-    
+
+
+
+function ApplicaationDocumentDetails() {
     const {register, handleSubmit} = useForm();
     const [doc, setDocument] = useState({})
 
     async function getDocument(data){
         //console.log(data.application)
+        data.aadhar_card = data.aadhar_card;
+            await axios.get(`http://127.0.0.1:8000/application_document_details/${data.application}`,{responseType:"blob", contentType:'application/pdf'}).then((obj)=>{
+            const url = window.URL.createObjectURL(
+                new Blob([obj.data.document]),
+                console.log(obj.data)
+              );
+              const link = document.createElement('a');
+              link.href = url;
+              link.setAttribute(
+                'download',
+                `FileName.pdf`,
+              );
+      
+              // Append to html link element page
+              document.body.appendChild(link);
+      
+              // Start download
+              link.click()
+              link.remove()
+              URL.revokeObjectURL();
+            })
         
-        const docdata = await axios.get(`http://127.0.0.1:8000/application_document_details/${data.application}`,{
-            headers:{"Content-Type":"multipart/form-data"}
-          })
-        //console.log(docdata.data.documents)
-        //console.log(docdata.data)
-        const chetan = docdata.data.documents
-        
-        setDocument(docdata.data.documents)
-        console.log(chetan)
     }
     
     useEffect(()=>{
@@ -61,12 +75,12 @@ function ApplicaationDocumentDetails() {
                 <th>Three Years ITR</th>
                 <th>Collatrral Document</th>
                 <th>Stamp Duty</th>
-                
             </tr>
         </thead>
         <tbody className='table table-success table-striped' style={{textAlign:"center"}}>
             <tr>
-                <td><NavLink to="{doc.aadhar_card}"><button>Adhar</button></NavLink></td>
+            <td ><iframe file={doc.aadhar_card}/>
+                </td>
             </tr>
             
 
