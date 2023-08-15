@@ -6,7 +6,7 @@ class Loan(models.Model):
     LOAN_STATUS_CHOICE = [
         ('',''),
         ('pending', 'pending'),
-        ('done', 'done'),
+        ('apporve', 'apporve'),
         ('rejected', 'rejected'),
     ]
 

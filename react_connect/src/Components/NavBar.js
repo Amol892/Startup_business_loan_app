@@ -26,6 +26,8 @@ function NavBar() {
         <NavLink className="nav-link active" to="/application_email"><b>application regarding mail</b></NavLink>
         <NavLink className="nav-link active" to="/application_document_details"><b>Application Document Deatils</b></NavLink>
         <NavLink className="nav-link active" to="/apporve_application"><b>All Apporve Application</b></NavLink>
+        <NavLink className="nav-link active" to="/gst_calculate"><b>Calculate GST</b></NavLink>
+        <NavLink className="nav-link active" to="/disburs_ammount"><b>Disbursed Amount</b></NavLink>
         
         
       </div>

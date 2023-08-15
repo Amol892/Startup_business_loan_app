@@ -41,9 +41,10 @@ function AllApporveApplication() {
                             <tr>
                                 <td>{obj.id}</td>
                                 <td>{obj.status}</td>
-                                <center><td>
-                                    <NavLink to={`/view_application/${obj.id}`}><button className='btn btn-success col-12'>View application</button></NavLink>
-                                </td></center>
+                                <td>
+                                    <NavLink to={`/view_application/${obj.id}`}><button className='btn btn-success col-4'>View Application</button></NavLink>&nbsp;&nbsp;
+                                    <NavLink to={`/application_document_details/${obj.id}`}><button className='btn btn-success col-4'>View Document</button></NavLink>
+                                </td>
                             </tr>
                         )
                     })

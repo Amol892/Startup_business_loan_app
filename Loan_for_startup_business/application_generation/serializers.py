@@ -10,7 +10,7 @@ class DocumentModelSerializer(serializers.ModelSerializer):
 class AppplicationModelSerializer(serializers.ModelSerializer):
     
     documents = DocumentModelSerializer()
-    user = UserModelSerializer()
+    #user = UserModelSerializer()
     class Meta:
         model = Application
         fields = "__all__"

@@ -43,10 +43,10 @@ function UserSignup() {
     <input id="email" type='email' className='form-control' {...register("email")}/>
     <br/><br/>
     <label htmlFor='permanent_address'>Permanent Address</label>&nbsp;&nbsp;
-    <input id="permanent_address" type='text' {...register("permanent_address")}/>
+    <input id="permanent_address" type='text' className='form-control' {...register("permanent_address")}/>
     <br/><br/>
     <label htmlFor='current_address'>Current Address</label>&nbsp;&nbsp;
-    <input id="current_address" type='text' {...register("current_address")}/>
+    <input id="current_address" type='text' className='form-control' {...register("current_address")}/>
     <br/><br/>
     <label htmlFor='mobile'>Mobile</label>
     <input id='mocile' type='text' className='form-control' {...register("mobile")}/>

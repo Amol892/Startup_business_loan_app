@@ -28,7 +28,7 @@ function ApplicationStatusDetails() {
         <br/>
         <div className='container' style={{width:"500px", height:"250px", backgroundColor:"lightgray"}}>
         <form onSubmit={handleSubmit(getStatus)}><br/>
-        <label htmlFor='ex'><h2 style={{color:"rebeccapurple"}} >Selete Type Application Status</h2></label>&nbsp;&nbsp;&nbsp;<br/><br/>
+        <center><label htmlFor='ex'><h2 style={{color:"rebeccapurple"}} ><b>Check Application Status</b></h2></label></center><br/><br/>
         <center><select id="ex"  {...register('status')}>
             <option value=""></option>
             <option value="Pending" >Pending</option>

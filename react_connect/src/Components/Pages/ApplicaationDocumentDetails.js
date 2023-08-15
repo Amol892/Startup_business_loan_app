@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import {pdfjs,Document} from 'react-pdf'
+import { NavLink } from 'react-router-dom';
 
 function ApplicaationDocumentDetails() {
 
@@ -12,7 +13,10 @@ function ApplicaationDocumentDetails() {
 
     async function getDocument(data){
         //console.log(data.application)
-        const docdata = await axios.get(`http://127.0.0.1:8000/application_document_details/${data.application}`)
+        
+        const docdata = await axios.get(`http://127.0.0.1:8000/application_document_details/${data.application}`,{
+            headers:{"Content-Type":"multipart/form-data"}
+          })
         //console.log(docdata.data.documents)
         //console.log(docdata.data)
         const chetan = docdata.data.documents
@@ -40,11 +44,12 @@ function ApplicaationDocumentDetails() {
     </div><br/><br/>
     <div>
     <center><h1 style={{color:"rebeccapurple"}}><b>Application Document</b></h1></center>
+    <br/><br/>
     <table className='table table-success table-striped' style={{textAlign:"center"}}>
         <thead>
             <tr>
-                <th>Remark</th>
-                <th>Aadhar Crd</th>
+                
+                <th>Aadhar Card</th>
                 <th>PAN Card</th>
                 <th>Business Address Proof</th>
                 <th>Electricity Bill</th>
@@ -60,6 +65,9 @@ function ApplicaationDocumentDetails() {
             </tr>
         </thead>
         <tbody className='table table-success table-striped' style={{textAlign:"center"}}>
+            <tr>
+                <td><NavLink to="{doc.aadhar_card}"><button>Adhar</button></NavLink></td>
+            </tr>
             
 
             

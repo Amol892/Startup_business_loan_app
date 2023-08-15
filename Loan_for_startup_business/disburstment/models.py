@@ -42,6 +42,7 @@ class Disbursement(models.Model):
     DISBURSEMENT_CHOICES= [
         ("",""),
         ("pending", "pending"),
+        ('rejected', "rejected"),
         ("disbursed", "disbursed"),
     ]
     loan= models.ForeignKey(Loan, on_delete=models.CASCADE, related_name="disbursements")

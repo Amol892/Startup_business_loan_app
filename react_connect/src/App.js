@@ -13,6 +13,8 @@ import ApplicationRergardingMail from './Components/Pages/ApplicationRergardingM
 import ApplicaationDocumentDetails from './Components/Pages/ApplicaationDocumentDetails';
 import AllApporveApplication from './Components/LoanOfficer/AllApporveApplication';
 import ViewApplication from './Components/LoanOfficer/ViewApplication';
+import CalculateGST from './Components/AccountHead/CalculateGST';
+import CheckDisburstmentAmount from './Components/AccountHead/CheckDisburstmentAmount';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
       <Route path='/application_document_details' element={<ApplicaationDocumentDetails/>} />
       <Route path='/apporve_application' element={<AllApporveApplication/>} />
       <Route path='/view_application/:id/' element={<ViewApplication/>} />
+      <Route path='/gst_calculate' element={<CalculateGST/>} />
+      <Route path='/disburs_ammount' element={<CheckDisburstmentAmount/>} />
      </Routes>
     </BrowserRouter>
     </>
