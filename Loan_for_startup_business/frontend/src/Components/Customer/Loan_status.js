@@ -25,6 +25,7 @@ function Loan_status() {
 
   return (
     <>
+        <hr style={{color:'white'}}/>
         <div className='container' style={{width:700,backgroundColor:'#b0e0e6',borderRadius:30,marginTop:50,marginLeft:600,padding:40}}>
             <center style={{color:'#800080'}}>
             <h1>Check Loan Application status</h1>

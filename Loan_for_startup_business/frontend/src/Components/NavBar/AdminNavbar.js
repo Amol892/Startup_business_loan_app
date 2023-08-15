@@ -4,7 +4,7 @@ import grow from './TechGrow.jpg'
 function AdminNavbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar bg Navbar_element" style={{borderRadius:20}}>
+      <nav className="navbar navbar-expand-lg navbar bg Navbar_element" style={{borderRadius:20,marginTop:30}}>
          
          <div className="container-fluid">
             <img src={grow} alt='not found' width={120} height={100}></img>
@@ -14,13 +14,13 @@ function AdminNavbar() {
              </button>
              <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
              <div className="navbar-nav">
-                 <NavLink style={{marginLeft:150}} className="nav-link active" aria-current="page" to="/"><b>Home</b></NavLink>
-                 <NavLink style={{marginLeft:80}} className="nav-link active" to="/about"><b>About</b></NavLink>
-                 <NavLink style={{marginLeft:80}} className="nav-link active" to="/adminDashboard"><b>Dashboard</b></NavLink>
-                 <NavLink style={{marginLeft:80}} className="nav-link active" to="#"><b>Manage Users</b></NavLink>
-                 <NavLink style={{marginLeft:200}} className="nav-link active" to="#"><b>AdminProfile</b></NavLink>
-                 <NavLink style={{marginLeft:80}} className="nav-link active" to="/logout"><b>Logout</b></NavLink>
-                 <NavLink style={{marginLeft:80}}className="nav-link active" to="/signup"><b>SignUp</b></NavLink>
+                 <NavLink style={{marginLeft:150,borderRadius:10,padding:10,color:'white'}} className="nav-link active" aria-current="page" to="/"><b>Home</b></NavLink>
+                 <NavLink style={{marginLeft:80,borderRadius:10,padding:10,color:'white'}} className="nav-link active" to="/about"><b>About</b></NavLink>
+                 <NavLink style={{marginLeft:80,borderRadius:10,padding:10,color:'white'}} className="nav-link active" to="/adminDashboard"><b>Dashboard</b></NavLink>
+                 <NavLink style={{marginLeft:80,borderRadius:10,padding:10,color:'white'}} className="nav-link active" to="#"><b>Manage Users</b></NavLink>
+                 <NavLink style={{marginLeft:200,borderRadius:10,padding:10,color:'white'}} className="nav-link active" to="#"><b>AdminProfile</b></NavLink>
+                 <NavLink style={{marginLeft:80,borderRadius:10,padding:10,color:'white'}} className="nav-link active" to="/logout"><b>Logout</b></NavLink>
+                 <NavLink style={{marginLeft:80,borderRadius:10,padding:10,color:'white'}}className="nav-link active" to="/signup"><b>SignUp</b></NavLink>
  
              </div>
              </div>

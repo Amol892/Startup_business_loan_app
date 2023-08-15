@@ -36,7 +36,9 @@ class User(AbstractUser):
     class Meta:
         verbose_name = 'User'
         verbose_name_plural = 'Users'
-        
+    
+    def get_full_name(self):
+        return self.first_name+" "+self.last_name
     
         
 
@@ -59,6 +61,7 @@ class Family(models.Model):
     spouse_profeesion = models.CharField(max_length=30, blank=True, default='')
     spouce_contact = PhoneNumberField(region='IN', blank=True , null=True)
 
+    
 class Bank(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='banks')
     bank_name = models.CharField(max_length=30, default='', blank=True, null=True)

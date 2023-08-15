@@ -27,12 +27,12 @@ function Signup() {
 
   return (
     <>
+            <hr style={{color:'white'}}/>
             <div className='container' style={{backgroundColor:'palegoldenrod',borderRadius:20,padding:40}}>
                 <center style={{color:'midnightblue'}}>
                 <h1>Create your Account</h1><hr/>
-                  {message && 
-                      <h3>{message}</h3>
-                  }
+                  {message && <h3>{message}</h3>}
+                  
                 </center>
                 <form onSubmit={handleSubmit(saveData)}>
 
@@ -46,7 +46,7 @@ function Signup() {
 
                     <label htmlFor='un'>Username</label>
                     <input type='text' id='un' className='form-control' {...register('username',{required : 'Username is required'})}/><br/>
-                    <p style={{'color':'red'}}>{error.username && error.username.message}</p><br/>
+                    <p style={{color:'red'}}>{error.username}</p><br/>
 
                     <label htmlFor='ps'>Password</label>
                     <input type='password' id='psd' className='form-control' {...register('password',{required : 'password is required'})}/><br/>
@@ -55,8 +55,8 @@ function Signup() {
                     <label htmlFor='em'>Email Id</label>
                     <input type='email' id='em' className='form-control' {...register('email',{required : 'Email id is required',
                                                                         pattern:{value:/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,message:'Enter valid email'}})}/><br/>
-                    <p style={{'color':'red'}}>{error.role && error.email.message}</p><br/>
-
+                    <p style={{color:'red'}}>{error.email}</p><br/>
+                    
                     <label htmlFor='pn'>Phone Number</label><br/><br/>
                     <input type='text' id='pn'  className='form-control' {...register('mobile',{required : 'mobile number is required'})}/><br/>
 
@@ -94,10 +94,10 @@ function Signup() {
                     </select>
                     <p style={{'color':'red'}}>{error.role && error.role.message}</p><br/>
 
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                    
                     <input type='submit' value='Register' style={{padding:10,fontSize:20}} className='btn btn-success col-6'/><br/><br/>
-                    <NavLink style={{padding:10,marginLeft:500}} className="btn btn-dark" to="#">Next page</NavLink>
-                    </div>
+                    
+                   
                 </form>
             </div>
             

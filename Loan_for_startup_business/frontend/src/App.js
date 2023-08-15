@@ -3,7 +3,6 @@ import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import { useState } from 'react';
-import NavBar from './Components/NavBar/NavBar';
 import Enquiry from './Components/Customer/Enquiry';
 import Home from './Components/Home';
 import Loan_status from './Components/Customer/Loan_status';
@@ -24,6 +23,12 @@ import LSONavbar from './Components/NavBar/LSONavbar';
 import AHNavbar from './Components/NavBar/AHNavbar';
 import CustomerNavbar from './Components/NavBar/CustomerNavbar';
 import AHDashboard from './Components/AccountHead/AHDashboard';
+import Family from './Components/Customer/Family';
+import Bank from './Components/Customer/Bank';
+import CreateUser from './Components/LoanRepresentative/CreateUser';
+import LoanApplication from './Components/Customer/LoanApplication';
+import EMICal from './Components/Homepage/EMICal';
+
 
 function App() {
 
@@ -58,6 +63,7 @@ function App() {
 
   return (
     <>
+     
       <BrowserRouter>
         {navbarComponent}
 
@@ -70,20 +76,35 @@ function App() {
           <Route path='/login' element={<Login setIsLoggedIn={setIsLoggedIn} setUserRole={setUserRole}/>}/>
           <Route path='/logout' element={<Logout setIsLoggedIn={setIsLoggedIn} setUserRole={setUserRole}/>}/>
 
+          /* Home page */
+          <Route path='emical' element={<EMICal/>}/>
 
+          /* Dashboards */
           <Route path='/adminDashboard' element={<AdminDashboard/>}/>
           <Route path='/lrDashboard' element={<LRDashboard/>}/>
           <Route path='/ohDashboard' element={<OHDashboard/>}/>
           <Route path='/lsoDashboard' element={<LSODashboard/>}/>
           <Route path='/ahDashboard' element={<AHDashboard/>}/>
           <Route path='/customerDashboard' element={<CustomerDashboard/>}/>
+
+          /* Loan Representative */
+          <Route path='/createuser' element={<CreateUser/>}/>
+          <Route path='/loanapplication'  element={<LoanApplication/>}/>
+          <Route path='/family' element={<Family/>}/>
+          <Route path='/bank' element={<Bank/>}/>
+
+          
+          
+
+
+          
           
 
           
         </Routes>
       
       </BrowserRouter>
-    
+      
     </>
   );
 }

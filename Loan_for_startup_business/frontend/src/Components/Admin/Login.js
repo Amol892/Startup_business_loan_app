@@ -3,8 +3,7 @@ import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useState } from 'react'
-
-
+import G1 from '../Backgroundimage/G1.jpg'
 
 
 function Login({setIsLoggedIn,setUserRole}) {
@@ -37,12 +36,18 @@ function Login({setIsLoggedIn,setUserRole}) {
    
   return (
    <>
-            
-            <div className='container' style={{backgroundColor:'thistle',borderRadius:20,padding:40,width:500,marginTop:50,marginLeft:1300}}>
+        <hr style={{color:'white'}}/>
+        <div style={{ display: 'flex'}}>
+            <div className ="col-6" style={{ marginTop:30}} >
+                <img src={G1} alt='not found' width={1300} height={800} style={{padding:30}}></img>
+
+            </div>
+            <div className='container' style={{backgroundColor:'thistle',borderRadius:20,padding:40,width:500,height:600,marginTop:120,marginLeft:350}}>
                 <center style={{color:'midnightblue'}}>
                 <h1>Welcome to TechGrow</h1>
                 <h4>Grow your Business with TechGrow</h4><hr style={{color:'black'}}/>
                 <h1 style={{color:'black'}}>Login</h1>
+                {error && <h3>{error}</h3>}
                 </center><hr/>
                 
                             
@@ -61,7 +66,7 @@ function Login({setIsLoggedIn,setUserRole}) {
 
                 </form>
             </div>
-   
+            </div>
    
    </>
   )

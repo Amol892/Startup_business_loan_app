@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {useForm} from 'react-hook-form'
 import axios from 'axios'
 import { useNavigate,NavLink } from 'react-router-dom';
-
+import G1 from '../Backgroundimage/businessstartup.jpg'
 function Enquiry() {
 
     const {register,formState:{errors},handleSubmit, watch}=useForm({mode:'all'})
@@ -50,7 +50,14 @@ function Enquiry() {
 
   return (
     <>
-        <div className='container' style={{width:700,backgroundColor:'#6a5acd',borderRadius:30,marginTop:30,marginLeft:950,padding:40}}>
+    <hr style={{color:'white'}}/>
+    <div style={{ display: 'flex'}}>
+        <div className ="col-6" style={{ marginTop:30}} >
+        <img src={G1} alt='not found' width={1300} height={700} style={{padding:30}}></img>
+
+        </div>
+
+        <div className='container' style={{width:700,backgroundColor:'#6a5acd',borderRadius:30,marginTop:30,marginLeft:200,padding:40}}>
             <center style={{color:'#ffff00'}}>
             <h1>Welcome to TechGrow</h1>
             <h4>Grow your Business with TechGrow</h4>
@@ -58,7 +65,7 @@ function Enquiry() {
             <center style={{color:'aqua'}}><h3>{message}</h3></center><br/>
             <center style={{color:'red'}}><h3>{error}</h3></center><br/>
             
-            <form onSubmit={handleSubmit(saveData)}>
+            <form onSubmit={handleSubmit(saveData)}> 
 
                 <label htmlFor='fn'><b>First Name</b></label>
                 <input type='text' id='fn' className='form-control' placeholder='Enter First Name' {...register('first_name',{required : 'first_name is required'})}/><br/>
@@ -87,9 +94,10 @@ function Enquiry() {
                 <input type='text' id='lp' className='form-control' placeholder='Loan Purpose' {...register('message',{required : 'Loan purpose is required'})}/><br/>
                 <p style={{'color':'red'}}>{errors.message && errors.message.message}</p>
 
-                <input type='submit' value='Submit application' className='btn btn-success col-12'/><br/><br/>
+                <input type='submit' value='Submit application' style={{fontSize:30,fontWeight:500}} className='btn btn-success col-12'/><br/>
                 
             </form>
+        </div>
         </div>
     </>
   )

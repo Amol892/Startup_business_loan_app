@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./Components/Backgroundimage/Rupeesymbol.jpg');
+  background-size: cover;
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
 }
 
 code {

@@ -140,6 +140,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS=['static']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -158,9 +159,7 @@ MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
 # corsheaders config
-CORS_ORIGIN_WHITLIST = [
-    'http://localhost:3000'
-]
+
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Allow requests from your frontend app
@@ -172,4 +171,63 @@ from datetime import timedelta
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(hours=12),
     'REFRESH_TOKEN_LIFETIME': timedelta(weeks=1)
+}
+
+#Logger config
+import os
+
+LOGGING = {
+    "version":1,
+    "disable_exiting_loggers":False,
+    
+    "formatters":{
+        'myformatter':{
+            "format":"{levelname} {asctime} {module} {message}",
+            "style" : "{",
+        }
+        },
+    
+    "handlers" :{
+        "console":{
+            "class":"logging.StreamHandler",
+            "level":"INFO",
+            "formatter":"myformatter",
+            },
+        
+        "file" :{
+            "class":"logging.FileHandler",
+            "filename":"debug.log",
+            "level":"DEBUG",
+            "formatter":"myformatter"
+            },
+        
+        "file1" :{
+            "class":"logging.FileHandler",
+            "filename":"success.log",
+            "level":"INFO",
+            "formatter":"myformatter"
+            },
+        
+        "file2" :{
+            "class":"logging.FileHandler",
+            "filename":"ERROR.log",
+            "level":"ERROR",
+            "formatter":"myformatter"
+            },
+        "file3" :{
+            "class":"logging.FileHandler",
+            "filename":"WARNING.log",
+            "level":"WARNING",
+            "formatter":"myformatter"
+            },
+    },
+    
+    "loggers":{
+        "django":{
+            "handlers":['console','file','file1','file2','file3'],
+            "level":'INFO',
+            "propogate":False
+        },
+    }
+    
 }

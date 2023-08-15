@@ -1,0 +1,40 @@
+.emi-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: darkgoldenrod;
+    font-size: 30px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    
+
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculate-button {
+    background-color: #F40076;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 30px;
+    cursor: pointer;
+    font-size: 30px;
+}

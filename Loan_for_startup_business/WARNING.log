@@ -1,0 +1,6 @@
+WARNING 2023-08-15 18:03:40,196 log Not Found: /media/photo/default_Fjb5Yfb.jpg
+WARNING 2023-08-15 18:03:40,196 basehttp "GET /media/photo/default_Fjb5Yfb.jpg HTTP/1.1" 404 2408
+WARNING 2023-08-15 20:01:52,147 log Not Found: /
+WARNING 2023-08-15 20:01:52,148 basehttp "GET / HTTP/1.1" 404 2423
+WARNING 2023-08-15 20:01:52,230 log Not Found: /favicon.ico
+WARNING 2023-08-15 20:01:52,232 basehttp "GET /favicon.ico HTTP/1.1" 404 2474
