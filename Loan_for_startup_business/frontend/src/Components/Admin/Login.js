@@ -6,7 +6,7 @@ import { useState } from 'react'
 import G1 from '../Backgroundimage/G1.jpg'
 
 
-function Login({setIsLoggedIn,setUserRole}) {
+function Login({setIsLoggedIn,setUserRole,setUserEmail}) {
 
     const {register,handleSubmit}=useForm()
     const navigate = useNavigate()
@@ -18,10 +18,12 @@ function Login({setIsLoggedIn,setUserRole}) {
                 
                 sessionStorage.setItem('access',response.data.access)  
                 sessionStorage.setItem('role',response.data.redirectURL)   
+                sessionStorage.setItem('email',response.data.email)
                 setError(response.data.message)
                 const redirectURL = response.data.redirectURL
                 setIsLoggedIn(sessionStorage.getItem('access'))
                 setUserRole(sessionStorage.getItem('role'))
+                setUserEmail(sessionStorage.getItem('email'))
                 navigate('/'+ redirectURL) ;
                    
             }).catch(error=>{

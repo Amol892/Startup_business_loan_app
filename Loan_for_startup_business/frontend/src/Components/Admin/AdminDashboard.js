@@ -6,7 +6,7 @@ import CustomerCard from './CustomerCard'
 function AdminDashboard() {
 
   const[users,setUsers]=useState([])
-  const  [status1,setStatus]=useState('all')
+  
   const data = {}
   async function fetchData(data){
       data = {'status' : data}
@@ -23,8 +23,8 @@ function AdminDashboard() {
     <>
       <hr style={{color:'white'}}/>
         <div>
-        <nav class="navbar navbar-light bg-light">
-          <NavLink to="#" style={{fontSize:40, marginLeft:20}}><b>Admin dashboard</b></NavLink>
+        <nav className="navbar navbar-light bg-light">
+          <b style={{fontSize:40, marginLeft:20}}>Admin dashboard</b>
         </nav>
         </div>
         <div style={{ display: 'flex'}}>

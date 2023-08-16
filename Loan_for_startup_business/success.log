@@ -563,3 +563,1975 @@ INFO 2023-08-15 21:43:35,680 basehttp "POST /admin_app/allapplications/ HTTP/1.1
 INFO 2023-08-15 21:44:08,629 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
 INFO 2023-08-15 21:44:08,951 basehttp "GET /media/photo/default_tcCi8K0.jpg HTTP/1.1" 304 0
 INFO 2023-08-15 21:44:08,951 basehttp "GET /media/photo/default_LqL4jmX.jpg HTTP/1.1" 304 0
+INFO 2023-08-15 22:27:43,214 autoreload Watching for file changes with StatReloader
+INFO 2023-08-15 22:29:10,291 basehttp "OPTIONS /admin_app/loginpage/ HTTP/1.1" 200 0
+INFO 2023-08-15 22:29:10,633 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-15 22:29:15,654 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-15 22:29:15,674 basehttp "GET /media/photo/default_LqL4jmX.jpg HTTP/1.1" 304 0
+INFO 2023-08-15 22:29:15,690 basehttp "GET /media/photo/default_tcCi8K0.jpg HTTP/1.1" 304 0
+INFO 2023-08-15 22:30:26,434 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-15 22:30:26,864 basehttp "GET /media/photo/default_Q1uSwrl.jpg HTTP/1.1" 304 0
+INFO 2023-08-15 22:30:26,864 basehttp "GET /media/photo/default_sUIBPoF.jpg HTTP/1.1" 304 0
+INFO 2023-08-15 22:30:26,866 basehttp "GET /media/photo/default_hOWOWZu.jpg HTTP/1.1" 304 0
+INFO 2023-08-15 22:30:26,866 basehttp "GET /media/photo/default_HLuFhCI.jpg HTTP/1.1" 304 0
+INFO 2023-08-15 22:30:26,878 basehttp "GET /media/photo/default_zy5Pdoo.jpg HTTP/1.1" 304 0
+INFO 2023-08-15 22:30:26,878 basehttp "GET /media/photo/default_JJ8B5jC.jpg HTTP/1.1" 304 0
+INFO 2023-08-15 22:30:27,700 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-15 22:37:07,501 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-15 22:38:05,016 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-15 22:38:08,974 autoreload Watching for file changes with StatReloader
+INFO 2023-08-15 22:38:15,215 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-15 22:38:16,421 autoreload Watching for file changes with StatReloader
+INFO 2023-08-15 22:38:20,912 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-15 22:38:21,717 autoreload Watching for file changes with StatReloader
+INFO 2023-08-15 22:55:00,642 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-15 22:55:06,600 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-15 22:55:52,937 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-15 22:55:58,103 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1850
+INFO 2023-08-15 22:56:01,268 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-15 22:56:03,800 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-15 22:58:26,004 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 09:17:49,902 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 09:20:52,267 basehttp "OPTIONS /admin_app/loginpage/ HTTP/1.1" 200 0
+INFO 2023-08-16 09:20:52,711 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 09:20:58,213 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 09:20:58,612 basehttp "GET /media/photo/default_zy5Pdoo.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 09:20:58,621 basehttp "GET /media/photo/default_Fjb5Yfb.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 09:20:58,637 basehttp "GET /media/photo/default_HLuFhCI.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 09:20:58,660 basehttp "GET /media/photo/default_hOWOWZu.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 09:20:58,660 basehttp "GET /media/photo/default_Q1uSwrl.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 09:20:58,662 basehttp "GET /media/photo/default_sUIBPoF.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 09:20:58,824 basehttp "GET /media/photo/default_JJ8B5jC.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 09:20:58,830 basehttp "GET /media/photo/default_LqL4jmX.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 09:20:58,875 basehttp "GET /media/photo/default_tcCi8K0.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 09:21:12,536 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 09:21:20,400 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1850
+INFO 2023-08-16 09:21:27,154 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 09:21:30,607 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 09:21:39,942 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 09:21:45,960 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 09:22:38,716 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 514
+INFO 2023-08-16 09:22:50,324 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 09:22:50,332 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 09:22:52,468 basehttp "GET /admin_app/b_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 09:22:52,478 basehttp "GET /admin_app/b_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 09:22:57,763 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 09:22:57,781 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 09:23:07,508 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 09:23:07,526 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 09:23:08,503 basehttp "GET /admin_app/b_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 09:23:08,515 basehttp "GET /admin_app/b_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 09:23:33,541 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 520
+INFO 2023-08-16 09:24:12,974 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 514
+INFO 2023-08-16 09:26:21,990 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 09:26:25,905 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 09:26:26,997 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 09:26:28,025 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1850
+INFO 2023-08-16 09:26:28,984 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 09:26:30,022 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 09:30:32,469 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 514
+INFO 2023-08-16 09:32:32,076 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 09:36:43,376 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 514
+INFO 2023-08-16 09:36:46,897 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 09:36:48,187 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 09:36:49,322 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1850
+INFO 2023-08-16 09:36:50,213 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 09:36:51,358 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 10:12:59,472 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 10:13:03,430 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 10:19:13,940 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 10:21:43,298 basehttp "OPTIONS /admin_app/emicalci/ HTTP/1.1" 200 0
+INFO 2023-08-16 10:21:43,302 basehttp "POST /admin_app/emicalci/ HTTP/1.1" 200 93
+INFO 2023-08-16 10:22:48,383 basehttp "OPTIONS /customer/enquiry_status/ HTTP/1.1" 200 0
+INFO 2023-08-16 10:22:48,499 basehttp "POST /customer/enquiry_status/ HTTP/1.1" 200 202
+WARNING 2023-08-16 10:22:53,100 log Bad Request: /customer/enquiry_status/
+WARNING 2023-08-16 10:22:53,104 basehttp "POST /customer/enquiry_status/ HTTP/1.1" 400 30
+INFO 2023-08-16 10:23:26,531 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 520
+INFO 2023-08-16 10:23:56,960 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 10:24:23,237 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 10:24:28,027 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 10:24:29,769 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 10:24:30,942 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 10:24:32,543 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 10:24:33,728 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 10:24:54,474 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 10:25:01,474 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1850
+INFO 2023-08-16 10:25:03,578 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 10:25:05,678 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 10:25:14,992 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 10:26:47,561 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 514
+INFO 2023-08-16 10:27:19,302 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 10:27:19,323 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 10:27:39,054 basehttp "GET /admin_app/b_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 10:27:39,061 basehttp "GET /admin_app/b_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 10:28:07,519 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 515
+INFO 2023-08-16 10:28:27,420 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 514
+INFO 2023-08-16 10:28:33,312 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 10:41:48,223 basehttp "POST /admin_app/emicalci/ HTTP/1.1" 200 96
+INFO 2023-08-16 10:42:28,069 basehttp "POST /customer/enquiry_status/ HTTP/1.1" 200 224
+WARNING 2023-08-16 10:42:32,900 log Bad Request: /customer/enquiry_status/
+WARNING 2023-08-16 10:42:32,901 basehttp "POST /customer/enquiry_status/ HTTP/1.1" 400 30
+INFO 2023-08-16 10:42:50,710 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 520
+INFO 2023-08-16 10:43:23,094 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 10:44:02,710 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 10:44:03,053 basehttp "GET /media/photo/default_Q1uSwrl.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 10:44:03,054 basehttp "GET /media/photo/default_sUIBPoF.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 10:44:03,054 basehttp "GET /media/photo/default_hOWOWZu.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 10:44:03,054 basehttp "GET /media/photo/default_zy5Pdoo.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 10:44:03,055 basehttp "GET /media/photo/default_HLuFhCI.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 10:44:03,055 basehttp "GET /media/photo/default_JJ8B5jC.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 10:44:03,106 basehttp "GET /media/photo/default_tcCi8K0.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 10:44:03,107 basehttp "GET /media/photo/default_LqL4jmX.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 10:44:24,397 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 10:44:46,000 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1850
+INFO 2023-08-16 10:44:47,847 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 10:44:49,136 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 10:45:14,896 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 514
+INFO 2023-08-16 10:45:28,967 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 10:46:18,767 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 514
+INFO 2023-08-16 10:46:43,867 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 10:46:43,896 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 10:46:58,551 basehttp "GET /admin_app/b_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 10:46:58,569 basehttp "GET /admin_app/b_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 11:19:11,728 basehttp "POST /customer/enquiry_status/ HTTP/1.1" 200 202
+INFO 2023-08-16 11:19:57,991 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 514
+INFO 2023-08-16 11:20:08,898 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 11:20:13,957 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 11:20:32,536 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 11:21:16,009 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 11:21:21,823 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1850
+INFO 2023-08-16 11:21:24,656 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 11:21:42,195 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 11:21:43,074 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 11:21:44,151 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 11:32:18,722 basehttp "POST /admin_app/emicalci/ HTTP/1.1" 200 96
+INFO 2023-08-16 11:34:15,716 basehttp "OPTIONS /admin_app/loginpage/ HTTP/1.1" 200 0
+INFO 2023-08-16 11:34:15,935 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 514
+INFO 2023-08-16 11:34:53,097 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 11:34:53,103 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 11:34:59,083 basehttp "GET /admin_app/b_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 11:34:59,090 basehttp "GET /admin_app/b_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 11:35:28,994 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 520
+INFO 2023-08-16 11:36:19,434 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 11:36:31,049 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 11:36:41,828 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 11:37:03,828 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1850
+INFO 2023-08-16 11:37:05,057 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 11:37:06,068 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 11:42:45,612 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\application_generation\serializers.py changed, reloading.
+INFO 2023-08-16 11:42:50,949 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 11:55:19,792 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 11:55:24,243 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 11:59:35,535 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 11:59:36,563 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 11:59:38,638 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 11:59:39,409 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 11:59:40,786 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 11:59:41,767 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 11:59:51,558 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 11:59:52,384 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 11:59:56,414 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 11:59:57,166 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 12:00:00,058 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 12:00:00,893 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 12:00:03,742 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 12:00:04,447 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 12:00:14,448 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 12:00:19,503 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 12:01:15,799 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 12:01:17,773 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 12:01:21,735 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 12:01:24,326 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 12:01:28,942 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 12:01:31,770 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 12:01:33,448 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 12:01:36,640 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 12:01:41,828 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 12:01:44,625 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 12:10:36,601 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 12:14:44,234 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 12:14:44,254 basehttp "GET /media/photo/default_tcCi8K0.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 12:14:44,256 basehttp "GET /media/photo/default_LqL4jmX.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 12:17:45,098 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 12:18:29,717 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+WARNING 2023-08-16 12:21:12,143 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:12,144 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:20,572 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:20,573 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:23,877 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:23,878 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:27,571 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:27,572 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:32,873 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:32,874 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:39,573 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:39,574 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:42,878 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:42,879 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:51,563 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:51,563 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:57,871 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:57,872 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+INFO 2023-08-16 12:22:22,514 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 12:22:27,459 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 12:22:29,214 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\application_generation\serializers.py changed, reloading.
+INFO 2023-08-16 12:22:29,997 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 12:22:31,605 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\application_generation\serializers.py changed, reloading.
+INFO 2023-08-16 12:22:32,592 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 12:22:57,833 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\models.py changed, reloading.
+INFO 2023-08-16 12:22:58,622 autoreload Watching for file changes with StatReloader
+WARNING 2023-08-16 12:58:00,584 log Not Found: /
+WARNING 2023-08-16 12:58:00,586 basehttp "GET / HTTP/1.1" 404 2423
+WARNING 2023-08-16 12:58:00,715 log Not Found: /favicon.ico
+WARNING 2023-08-16 12:58:00,715 basehttp "GET /favicon.ico HTTP/1.1" 404 2474
+INFO 2023-08-16 12:58:05,877 basehttp "GET /admin/ HTTP/1.1" 200 14934
+INFO 2023-08-16 12:58:06,028 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:06,028 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:06,029 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:06,029 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:06,030 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:06,030 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:06,164 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:06,211 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:06,211 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:09,018 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 11745
+INFO 2023-08-16 12:58:09,137 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:09,137 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:09,137 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:09,137 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:09,137 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:09,140 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:09,140 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:09,144 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:09,153 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:09,478 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 12:58:09,501 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:09,508 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:15,087 basehttp "GET /admin/loan_sanctioning/loan/ HTTP/1.1" 200 11712
+INFO 2023-08-16 12:58:15,115 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 12:58:20,843 basehttp "GET /admin/loan_sanctioning/loan/add/ HTTP/1.1" 200 19859
+INFO 2023-08-16 12:58:20,862 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:20,862 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:20,869 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 12:58:21,049 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:21,052 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:21,061 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:21,091 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:21,094 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:21,148 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2023-08-16 12:58:29,760 basehttp "GET /admin/application_generation/application/ HTTP/1.1" 200 16138
+INFO 2023-08-16 12:58:29,782 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:01:07,812 basehttp "GET /admin/loan_sanctioning/loan/ HTTP/1.1" 200 11712
+INFO 2023-08-16 13:01:07,837 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:01:10,037 basehttp "GET /admin/loan_sanctioning/loan/add/ HTTP/1.1" 200 19859
+INFO 2023-08-16 13:01:10,069 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:03:26,556 basehttp "POST /admin/loan_sanctioning/loan/add/ HTTP/1.1" 302 0
+INFO 2023-08-16 13:03:26,578 basehttp "GET /admin/loan_sanctioning/loan/ HTTP/1.1" 200 13650
+INFO 2023-08-16 13:03:26,606 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:03:26,622 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2023-08-16 13:03:30,514 basehttp "GET /admin/loan_sanctioning/loan/add/ HTTP/1.1" 200 19859
+INFO 2023-08-16 13:03:30,546 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:04:55,576 basehttp "POST /admin/loan_sanctioning/loan/add/ HTTP/1.1" 302 0
+INFO 2023-08-16 13:04:55,600 basehttp "GET /admin/loan_sanctioning/loan/ HTTP/1.1" 200 13986
+INFO 2023-08-16 13:04:55,628 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:04:59,047 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 11745
+INFO 2023-08-16 13:04:59,077 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:05:01,396 basehttp "GET /admin/disburstment/installment/add/ HTTP/1.1" 200 18464
+INFO 2023-08-16 13:05:01,421 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:07:56,219 basehttp "POST /admin/disburstment/installment/add/ HTTP/1.1" 302 0
+INFO 2023-08-16 13:07:56,243 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 13678
+INFO 2023-08-16 13:07:56,272 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:08:01,089 basehttp "GET /admin/disburstment/installment/add/ HTTP/1.1" 200 18464
+INFO 2023-08-16 13:08:01,113 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:08:40,836 basehttp "POST /admin/disburstment/installment/add/ HTTP/1.1" 302 0
+INFO 2023-08-16 13:08:41,157 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 13997
+INFO 2023-08-16 13:08:41,182 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:08:45,066 basehttp "GET /admin/disburstment/installment/add/ HTTP/1.1" 200 18464
+INFO 2023-08-16 13:08:45,090 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:09:26,671 basehttp "POST /admin/disburstment/installment/add/ HTTP/1.1" 302 0
+INFO 2023-08-16 13:09:26,740 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 14320
+INFO 2023-08-16 13:09:26,766 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:09:30,729 basehttp "GET /admin/disburstment/installment/add/ HTTP/1.1" 200 18464
+INFO 2023-08-16 13:09:30,753 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:10:26,713 basehttp "POST /admin/disburstment/installment/add/ HTTP/1.1" 302 0
+INFO 2023-08-16 13:10:26,740 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 14638
+INFO 2023-08-16 13:10:26,765 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:10:29,065 basehttp "GET /admin/disburstment/installment/add/ HTTP/1.1" 200 18464
+INFO 2023-08-16 13:10:29,090 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:11:14,551 basehttp "POST /admin/disburstment/installment/add/ HTTP/1.1" 200 18608
+INFO 2023-08-16 13:11:14,575 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:11:23,222 basehttp "POST /admin/disburstment/installment/add/ HTTP/1.1" 200 18607
+INFO 2023-08-16 13:11:23,242 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:11:45,418 basehttp "POST /admin/disburstment/installment/add/ HTTP/1.1" 302 0
+INFO 2023-08-16 13:11:45,445 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 14956
+INFO 2023-08-16 13:11:45,467 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:11:48,316 basehttp "GET /admin/disburstment/installment/add/ HTTP/1.1" 200 18464
+INFO 2023-08-16 13:11:48,341 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:12:43,039 basehttp "POST /admin/disburstment/installment/add/ HTTP/1.1" 302 0
+INFO 2023-08-16 13:12:43,070 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 15276
+INFO 2023-08-16 13:12:43,097 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 13:16:23,047 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\Loan_for_startup_business\urls.py changed, reloading.
+INFO 2023-08-16 13:16:33,188 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 13:16:37,747 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\Loan_for_startup_business\urls.py changed, reloading.
+INFO 2023-08-16 13:16:39,353 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 13:16:42,876 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\Loan_for_startup_business\urls.py changed, reloading.
+INFO 2023-08-16 13:16:43,653 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 13:16:44,968 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\Loan_for_startup_business\urls.py changed, reloading.
+INFO 2023-08-16 13:16:45,939 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 13:16:54,577 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\Loan_for_startup_business\urls.py changed, reloading.
+INFO 2023-08-16 13:16:55,366 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 13:16:59,005 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\Loan_for_startup_business\urls.py changed, reloading.
+INFO 2023-08-16 13:16:59,727 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 13:18:45,071 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 13:20:29,897 log Internal Server Error: /disburstment/installment/1/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py", line 15, in get
+    Installment_obj = get_object_or_404(Installment,loan=loan_id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+disburstment.models.Installment.MultipleObjectsReturned: get() returned more than one Installment -- it returned 3!
+ERROR 2023-08-16 13:20:29,902 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 500 111662
+INFO 2023-08-16 13:30:09,997 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 13:31:03,929 basehttp "OPTIONS /customer/enquiry_status/ HTTP/1.1" 200 0
+INFO 2023-08-16 13:31:03,957 basehttp "POST /customer/enquiry_status/ HTTP/1.1" 200 202
+WARNING 2023-08-16 13:31:10,939 log Bad Request: /customer/enquiry_status/
+WARNING 2023-08-16 13:31:10,940 basehttp "POST /customer/enquiry_status/ HTTP/1.1" 400 30
+INFO 2023-08-16 13:31:42,529 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 520
+INFO 2023-08-16 13:32:13,014 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 13:32:28,108 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 13:32:28,512 basehttp "GET /media/photo/default_zy5Pdoo.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 13:32:28,518 basehttp "GET /media/photo/default_hOWOWZu.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 13:32:28,518 basehttp "GET /media/photo/default_Q1uSwrl.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 13:32:28,518 basehttp "GET /media/photo/default_HLuFhCI.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 13:32:28,518 basehttp "GET /media/photo/default_sUIBPoF.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 13:32:28,523 basehttp "GET /media/photo/default_JJ8B5jC.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 13:32:36,628 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 13:33:09,660 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 13:33:10,513 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 13:33:12,021 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 13:33:44,345 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 514
+INFO 2023-08-16 13:33:55,105 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 13:33:55,122 basehttp "GET /admin_app/f_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 13:34:00,710 basehttp "GET /admin_app/b_user_ids/ HTTP/1.1" 200 28
+INFO 2023-08-16 13:34:00,719 basehttp "GET /admin_app/b_user_ids/ HTTP/1.1" 200 28
+ERROR 2023-08-16 13:36:34,776 log Internal Server Error: /disburstment/installment/1/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py", line 15, in get
+    Installment_obj = get_object_or_404(Installment,loan=loan_id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+disburstment.models.Installment.MultipleObjectsReturned: get() returned more than one Installment -- it returned 3!
+ERROR 2023-08-16 13:36:34,781 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 500 111662
+INFO 2023-08-16 13:37:13,988 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\serializers.py changed, reloading.
+INFO 2023-08-16 13:37:14,878 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 13:37:21,562 log Internal Server Error: /disburstment/installment/1/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py", line 15, in get
+    Installment_obj = get_object_or_404(Installment,loan=loan_id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+disburstment.models.Installment.MultipleObjectsReturned: get() returned more than one Installment -- it returned 3!
+ERROR 2023-08-16 13:37:21,566 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 500 111662
+INFO 2023-08-16 13:46:01,768 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 13:46:02,741 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 13:46:07,187 log Internal Server Error: /disburstment/installment/1/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py", line 15, in get
+    Installment_obj = get_object_or_404(Installment,loan=loan_id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+disburstment.models.Installment.MultipleObjectsReturned: get() returned more than one Installment -- it returned 3!
+ERROR 2023-08-16 13:46:07,192 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 500 111652
+INFO 2023-08-16 13:46:31,287 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 13:46:32,352 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:46:04,084 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:48:06,620 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:48:20,253 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:48:22,418 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:48:26,806 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:48:28,245 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:48:29,323 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:48:32,816 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:48:42,301 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:48:44,694 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:48:47,754 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:48:53,685 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:48:57,416 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:48:59,534 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:49:00,608 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:49:19,315 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:49:20,179 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:49:23,228 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:49:24,010 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:49:25,667 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:49:26,603 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:50:54,384 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:50:55,217 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:50:58,077 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:50:58,909 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:57:07,819 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\application_generation\serializers.py changed, reloading.
+INFO 2023-08-16 14:57:08,573 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:57:13,108 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:57:13,992 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:57:17,676 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:57:18,511 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:57:28,624 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:57:29,556 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:57:33,386 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:57:34,393 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:57:41,367 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:57:42,119 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:57:47,316 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:57:48,104 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:57:56,097 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:57:56,901 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:58:10,204 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 2
+INFO 2023-08-16 14:58:29,701 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:58:30,602 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:58:32,447 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:58:35,258 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:58:37,900 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 14:58:38,879 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 14:58:45,397 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 2
+INFO 2023-08-16 14:59:19,118 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 15067
+INFO 2023-08-16 14:59:19,288 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 14:59:29,059 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 15067
+INFO 2023-08-16 14:59:29,077 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 14:59:45,262 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 2
+INFO 2023-08-16 14:59:59,326 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:00:00,494 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:00:02,373 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:00:03,215 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:00:09,476 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 927
+INFO 2023-08-16 15:03:51,463 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:03:52,783 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:04:25,913 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:04:26,747 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:04:28,171 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:04:28,918 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:04:49,030 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:04:49,901 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:04:52,465 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:04:53,384 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:04:55,861 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:04:56,946 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:05:03,525 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:05:04,359 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:05:06,756 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:05:07,813 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:05:10,255 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:05:11,022 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:05:17,595 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:05:18,315 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:05:30,612 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:05:31,376 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:05:57,128 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:05:57,866 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:06:02,454 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:06:03,299 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:06:06,125 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:06:06,851 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:06:46,793 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:06:47,556 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 15:07:09,912 log Internal Server Error: /disburstment/installment/7/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py", line 18, in get
+    Installment_obj = get_object_or_404(Installment,loan=loan_id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+disburstment.models.Installment.MultipleObjectsReturned: get() returned more than one Installment -- it returned 3!
+ERROR 2023-08-16 15:07:09,934 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 500 111792
+INFO 2023-08-16 15:19:17,403 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:19:18,557 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:19:22,215 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:19:23,279 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:19:25,751 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:19:26,986 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:19:29,465 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:19:30,709 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:19:34,529 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:19:35,551 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:19:50,090 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:19:50,884 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:19:59,838 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 1535
+INFO 2023-08-16 15:20:33,917 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:20:35,238 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:20:39,179 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:20:40,189 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:21:35,900 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:21:37,250 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:22:34,850 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 1535
+INFO 2023-08-16 15:36:24,251 basehttp "GET /admin/disburstment/disbursement/ HTTP/1.1" 200 11752
+INFO 2023-08-16 15:36:24,306 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 15:36:26,686 basehttp "GET /admin/loan_sanctioning/loan/ HTTP/1.1" 200 13787
+INFO 2023-08-16 15:36:26,722 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 15:46:45,469 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\loan_sanctioning\admin.py changed, reloading.
+INFO 2023-08-16 15:46:46,442 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:46:47,775 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\loan_sanctioning\admin.py changed, reloading.
+INFO 2023-08-16 15:46:48,717 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:46:50,403 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\loan_sanctioning\admin.py changed, reloading.
+INFO 2023-08-16 15:46:51,197 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:46:52,959 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\loan_sanctioning\admin.py changed, reloading.
+INFO 2023-08-16 15:46:53,877 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 15:47:01,314 basehttp "GET /admin/loan_sanctioning/loan/ HTTP/1.1" 200 14097
+INFO 2023-08-16 15:47:01,375 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 15:48:10,080 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py changed, reloading.
+INFO 2023-08-16 15:48:11,285 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 16:57:10,978 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\Loan_for_startup_business\settings.py changed, reloading.
+INFO 2023-08-16 16:57:16,699 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 16:58:27,275 basehttp "OPTIONS /admin_app/loginpage/ HTTP/1.1" 200 0
+INFO 2023-08-16 16:58:27,661 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 16:58:32,028 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 16:58:32,482 basehttp "GET /media/photo/default_hOWOWZu.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 16:58:32,483 basehttp "GET /media/photo/default_sUIBPoF.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 16:58:32,485 basehttp "GET /media/photo/default_Q1uSwrl.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 16:58:32,485 basehttp "GET /media/photo/default_HLuFhCI.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 16:58:32,485 basehttp "GET /media/photo/default_Fjb5Yfb.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 16:58:32,485 basehttp "GET /media/photo/default_zy5Pdoo.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 16:58:32,595 basehttp "GET /media/photo/default_JJ8B5jC.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 16:58:32,595 basehttp "GET /media/photo/default_LqL4jmX.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 16:58:32,595 basehttp "GET /media/photo/default_tcCi8K0.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 16:58:34,269 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 16:58:35,483 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1850
+INFO 2023-08-16 16:58:36,064 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 16:58:37,343 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 16:59:37,949 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 16:59:38,954 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1850
+INFO 2023-08-16 16:59:40,327 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 16:59:41,353 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 16:59:51,800 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 16:59:53,177 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 16:59:54,655 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1850
+INFO 2023-08-16 16:59:56,344 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 16:59:57,299 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 17:09:49,342 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 17:09:50,101 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 17:09:51,710 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 17:09:52,972 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+WARNING 2023-08-16 17:09:54,423 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 17:09:54,452 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3884
+WARNING 2023-08-16 17:09:54,460 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 17:09:54,461 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3884
+WARNING 2023-08-16 17:32:57,780 log Not Found: /main.8e118bb212d73436e7cb.hot-update.json
+WARNING 2023-08-16 17:32:57,782 basehttp "GET /main.8e118bb212d73436e7cb.hot-update.json HTTP/1.1" 404 2677
+INFO 2023-08-16 17:34:59,719 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 17:35:03,091 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+WARNING 2023-08-16 17:35:36,351 log Not Found: /disburstment/installment/undefined/
+WARNING 2023-08-16 17:35:36,352 basehttp "GET /disburstment/installment/undefined/ HTTP/1.1" 404 2733
+WARNING 2023-08-16 17:35:36,364 log Not Found: /disburstment/installment/undefined/
+WARNING 2023-08-16 17:35:36,365 basehttp "GET /disburstment/installment/undefined/ HTTP/1.1" 404 2733
+WARNING 2023-08-16 17:36:49,910 log Not Found: /disburstment/installment/undefined/
+WARNING 2023-08-16 17:36:49,916 basehttp "GET /disburstment/installment/undefined/ HTTP/1.1" 404 2733
+WARNING 2023-08-16 17:36:50,566 log Not Found: /disburstment/installment/undefined/
+WARNING 2023-08-16 17:36:50,566 basehttp "GET /disburstment/installment/undefined/ HTTP/1.1" 404 2733
+INFO 2023-08-16 17:37:42,451 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8303
+INFO 2023-08-16 17:37:44,089 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+WARNING 2023-08-16 17:37:45,621 log Not Found: /disburstment/installment/undefined/
+WARNING 2023-08-16 17:37:45,622 basehttp "GET /disburstment/installment/undefined/ HTTP/1.1" 404 2733
+WARNING 2023-08-16 17:37:45,637 log Not Found: /disburstment/installment/undefined/
+WARNING 2023-08-16 17:37:45,638 basehttp "GET /disburstment/installment/undefined/ HTTP/1.1" 404 2733
+INFO 2023-08-16 17:39:46,880 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 1535
+INFO 2023-08-16 17:39:57,353 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 17:39:59,131 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 1535
+INFO 2023-08-16 17:39:59,151 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 1535
+INFO 2023-08-16 17:45:27,155 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 17:45:29,010 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 1535
+INFO 2023-08-16 17:45:29,032 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 1535
+INFO 2023-08-16 17:47:14,150 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 17:52:35,705 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 17:52:46,165 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 1535
+INFO 2023-08-16 17:52:46,177 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 1535
+WARNING 2023-08-16 17:53:18,894 log Not Found: /disburstment/installment//
+WARNING 2023-08-16 17:53:18,895 basehttp "GET /disburstment/installment// HTTP/1.1" 404 2706
+WARNING 2023-08-16 17:53:58,874 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 17:53:58,874 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+INFO 2023-08-16 17:55:02,517 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+WARNING 2023-08-16 17:55:04,001 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 17:55:04,002 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 17:55:04,013 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 17:55:04,015 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+INFO 2023-08-16 17:56:31,185 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1833
+INFO 2023-08-16 17:56:45,834 basehttp "GET /admin/disburstment/disbursement/ HTTP/1.1" 200 11752
+INFO 2023-08-16 17:56:46,104 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:56:51,487 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 15067
+INFO 2023-08-16 17:56:51,505 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:57:03,419 basehttp "GET /admin/loan_sanctioning/loan/ HTTP/1.1" 200 14097
+INFO 2023-08-16 17:57:03,441 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:57:08,423 basehttp "GET /admin/loan_sanctioning/loan/add/ HTTP/1.1" 200 19859
+INFO 2023-08-16 17:57:08,446 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:57:32,546 basehttp "GET /admin/application_generation/application/ HTTP/1.1" 200 16138
+INFO 2023-08-16 17:57:32,569 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:57:53,235 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 15067
+INFO 2023-08-16 17:57:53,261 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:58:02,558 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 15067
+INFO 2023-08-16 17:58:02,583 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:58:11,704 basehttp "GET /admin/application_generation/application/ HTTP/1.1" 200 16138
+INFO 2023-08-16 17:58:11,731 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:58:16,978 basehttp "GET /admin/application_generation/application/7/change/ HTTP/1.1" 200 24412
+INFO 2023-08-16 17:58:17,003 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:58:17,109 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2023-08-16 17:58:24,279 basehttp "POST /admin/application_generation/application/7/change/ HTTP/1.1" 302 0
+INFO 2023-08-16 17:58:24,305 basehttp "GET /admin/application_generation/application/ HTTP/1.1" 200 16361
+INFO 2023-08-16 17:58:24,330 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:58:36,846 basehttp "GET /admin/application_generation/application/7/change/ HTTP/1.1" 200 24412
+INFO 2023-08-16 17:58:36,875 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:58:53,266 basehttp "GET /admin/application_generation/application/ HTTP/1.1" 200 16140
+INFO 2023-08-16 17:58:53,290 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:59:02,006 basehttp "GET /admin/application_generation/application/1/change/ HTTP/1.1" 200 24412
+INFO 2023-08-16 17:59:02,031 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:59:09,262 basehttp "POST /admin/application_generation/application/1/change/ HTTP/1.1" 302 0
+INFO 2023-08-16 17:59:09,285 basehttp "GET /admin/application_generation/application/ HTTP/1.1" 200 16363
+INFO 2023-08-16 17:59:09,308 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:59:13,855 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 15067
+INFO 2023-08-16 17:59:13,879 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:59:18,526 basehttp "GET /admin/disburstment/installment/add/ HTTP/1.1" 200 18464
+INFO 2023-08-16 17:59:18,549 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:59:21,986 basehttp "GET /admin/disburstment/installment/ HTTP/1.1" 200 15067
+INFO 2023-08-16 17:59:22,006 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 17:59:27,320 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8307
+INFO 2023-08-16 17:59:28,962 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 17:59:32,895 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 1539
+INFO 2023-08-16 17:59:32,936 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 1539
+INFO 2023-08-16 18:01:42,373 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\serializers.py changed, reloading.
+INFO 2023-08-16 18:01:50,050 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 18:01:50,546 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8307
+INFO 2023-08-16 18:01:51,866 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:01:53,843 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:01:53,884 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:13,917 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:13,960 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:14,586 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:14,615 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:16,601 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:16,633 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:18,591 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:18,627 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:20,578 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:20,605 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:22,581 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:22,642 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:25,584 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:25,612 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:44,591 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:04:44,618 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:07:02,919 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:07:02,957 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:07:07,470 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:07:10,583 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:07:10,608 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:08:15,910 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:08:17,590 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:08:19,592 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:11:39,675 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:12:43,502 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\serializers.py changed, reloading.
+INFO 2023-08-16 18:12:45,088 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 18:12:49,030 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\serializers.py changed, reloading.
+INFO 2023-08-16 18:12:50,176 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 18:14:39,685 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\serializers.py changed, reloading.
+INFO 2023-08-16 18:14:41,161 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 18:14:52,294 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:16:03,432 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\serializers.py changed, reloading.
+INFO 2023-08-16 18:16:04,689 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 18:16:09,714 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\serializers.py changed, reloading.
+INFO 2023-08-16 18:16:10,959 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 18:16:23,329 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:17:03,578 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 651
+INFO 2023-08-16 18:17:03,589 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 651
+INFO 2023-08-16 18:17:20,314 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\serializers.py changed, reloading.
+INFO 2023-08-16 18:17:21,084 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 18:17:32,893 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 1539
+INFO 2023-08-16 18:17:35,581 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 1539
+INFO 2023-08-16 18:17:49,762 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:17:51,576 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 1539
+INFO 2023-08-16 18:17:51,591 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 1539
+INFO 2023-08-16 18:18:24,197 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\serializers.py changed, reloading.
+INFO 2023-08-16 18:18:24,957 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 18:18:46,224 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:18:46,264 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:25:14,892 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:07,593 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:10,586 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:15,585 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:18,587 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:20,585 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:22,591 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:26,601 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:34,587 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:38,581 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:42,585 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:44,585 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:46,590 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:49,585 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:54,951 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:27:57,578 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:28:02,897 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:28:07,589 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:28:11,589 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:28:16,903 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:28:18,593 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:28:20,586 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:28:23,599 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:28:29,592 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:28:33,586 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:28:46,608 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:28:50,584 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:28:54,603 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:29:00,577 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:29:07,589 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:29:11,586 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:29:21,662 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:29:23,613 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:29:34,893 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:29:34,920 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:29:36,584 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:29:52,915 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:29:54,588 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:29:57,589 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:05,595 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:05,629 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:14,584 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:18,586 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:22,591 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:27,587 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:30,581 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:38,598 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:40,584 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:44,585 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:51,899 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:54,589 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:30:59,600 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:31:01,600 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:31:04,585 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:31:07,579 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:31:28,612 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:31:32,584 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:31:35,608 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:31:38,608 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:31:41,585 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:31:44,898 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:31:51,590 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:31:59,448 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:32:01,148 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:32:01,183 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:32:26,348 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:32:36,896 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:34:12,944 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 18:34:23,616 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8307
+INFO 2023-08-16 18:34:54,679 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:35:12,744 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:35:12,779 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:36:39,616 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:36:40,728 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:36:40,762 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:37:26,686 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:37:28,365 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:37:28,400 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:39:49,919 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:39:54,911 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:39:57,590 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:39:59,636 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:43:22,861 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:43:22,912 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:43:44,414 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:43:47,167 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:43:47,198 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:43:58,590 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:44:13,589 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:44:17,595 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:44:23,916 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:44:55,590 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:44:55,622 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:46:44,368 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:47:07,926 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:47:08,030 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:48:02,750 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:48:05,441 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:48:05,498 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:49:54,332 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:49:54,409 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:50:26,010 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:50:26,041 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:51:07,653 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:51:09,593 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:51:25,901 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:51:32,587 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:53:19,946 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:53:33,644 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:53:33,819 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:53:57,895 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:53:57,933 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:54:02,796 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:54:02,853 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:54:14,615 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:54:17,258 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:54:17,312 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:55:37,908 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:55:38,593 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:55:44,907 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:55:44,955 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:56:34,604 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:56:36,588 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:56:38,591 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:56:45,588 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:57:21,731 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\serializers.py changed, reloading.
+INFO 2023-08-16 18:57:23,158 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 18:57:35,708 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:57:45,060 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\serializers.py changed, reloading.
+INFO 2023-08-16 18:57:45,849 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 18:58:03,740 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2
+INFO 2023-08-16 18:58:05,221 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2
+INFO 2023-08-16 18:58:06,610 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 18:58:08,166 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 18:58:10,931 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 18:58:38,709 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:58:38,780 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:59:19,905 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:59:41,919 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 18:59:45,583 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:02:23,816 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 19:06:13,857 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 19:06:13,900 basehttp "GET /media/photo/default_LqL4jmX.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 19:06:13,900 basehttp "GET /media/photo/default_JJ8B5jC.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 19:06:13,900 basehttp "GET /media/photo/default_tcCi8K0.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 19:08:55,916 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:08:55,972 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:10:26,209 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:11:01,673 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:11:20,904 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:11:35,600 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:11:54,482 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:11:56,995 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:11:58,279 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:12:01,489 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:12:22,585 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:12:34,678 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:12:35,581 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:12:43,898 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:12:47,608 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:12:48,579 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:12:53,594 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:13:14,678 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:13:56,885 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:14:10,595 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:14:21,657 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:14:26,593 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:14:28,582 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:14:31,594 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:14:40,601 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:14:50,081 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:14:50,896 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:15:06,490 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:15:09,362 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:15:23,716 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:15:26,579 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:15:30,157 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:15:37,006 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:15:39,691 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:15:41,443 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:16:28,610 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:16:33,810 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:17:01,595 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:17:06,592 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:17:20,580 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:17:25,897 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:17:48,874 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:17:54,205 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:18:10,112 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:18:17,909 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:18:34,218 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:18:45,993 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 19:19:55,856 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2
+INFO 2023-08-16 19:19:57,562 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 19:19:57,583 basehttp "GET /media/photo/default_zy5Pdoo.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 19:19:57,583 basehttp "GET /media/photo/default_sUIBPoF.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 19:19:57,593 basehttp "GET /media/photo/default_hOWOWZu.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 19:19:58,932 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 19:19:58,950 basehttp "GET /media/photo/default_HLuFhCI.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 19:19:58,951 basehttp "GET /media/photo/default_Q1uSwrl.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 19:20:00,297 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 19:24:24,683 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 19:26:53,129 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 19:29:17,628 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 19:33:01,275 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 19:33:20,093 basehttp "OPTIONS /admin_app/loginpage/ HTTP/1.1" 200 0
+INFO 2023-08-16 19:33:20,341 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 517
+INFO 2023-08-16 19:33:21,960 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 20:42:04,794 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 20:50:04,660 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 20:57:30,389 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 21:00:49,572 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 21:05:56,828 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 21:14:01,806 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 21:16:43,014 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 21:17:25,299 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 21:19:06,213 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 21:27:05,924 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 21:27:05,970 basehttp "GET /media/photo/default_tcCi8K0.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 21:27:05,970 basehttp "GET /media/photo/default_LqL4jmX.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 21:27:05,971 basehttp "GET /media/photo/default_JJ8B5jC.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 21:27:09,019 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 21:28:34,338 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 21:28:36,135 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 21:30:30,570 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 21:30:32,508 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 21:31:14,268 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 21:31:15,989 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 21:56:10,545 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+WARNING 2023-08-16 21:56:12,711 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 21:56:12,735 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+INFO 2023-08-16 21:56:18,523 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 4313
+INFO 2023-08-16 21:56:25,082 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+WARNING 2023-08-16 22:04:05,172 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:04:05,173 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:04:52,995 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:04:52,996 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:07:02,671 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:07:02,672 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+INFO 2023-08-16 22:07:13,652 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2
+INFO 2023-08-16 22:07:14,745 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+WARNING 2023-08-16 22:07:16,854 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:07:16,855 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:07:54,116 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:07:54,117 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:08:45,949 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:08:45,950 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+INFO 2023-08-16 22:08:50,645 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+WARNING 2023-08-16 22:08:52,357 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:08:52,358 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+INFO 2023-08-16 22:09:56,032 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+WARNING 2023-08-16 22:09:58,498 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:09:58,499 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:10:00,295 log Not Found: /disburstment/installment/9/
+WARNING 2023-08-16 22:10:00,296 basehttp "GET /disburstment/installment/9/ HTTP/1.1" 404 23
+INFO 2023-08-16 22:10:01,860 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 200 4313
+INFO 2023-08-16 22:10:11,541 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:10:13,149 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 22:10:24,957 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:11:52,682 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 22:18:30,570 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:18:39,443 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 22:18:45,544 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:18:56,557 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 22:18:56,921 basehttp "GET /media/photo/default_sUIBPoF.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 22:18:56,989 basehttp "GET /media/photo/default_zy5Pdoo.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 22:18:56,990 basehttp "GET /media/photo/default_hOWOWZu.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 22:18:58,016 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 22:18:58,046 basehttp "GET /media/photo/default_HLuFhCI.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 22:18:58,046 basehttp "GET /media/photo/default_Q1uSwrl.jpg HTTP/1.1" 304 0
+INFO 2023-08-16 22:18:59,723 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 22:19:00,765 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2
+INFO 2023-08-16 22:19:01,933 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:19:02,982 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8307
+INFO 2023-08-16 22:19:05,180 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:19:06,260 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2
+INFO 2023-08-16 22:19:07,207 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 22:19:08,018 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 22:19:09,288 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:20:44,059 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:21:37,741 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:21:51,541 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 22:22:02,258 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:22:29,607 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 22:26:03,434 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8307
+INFO 2023-08-16 22:26:08,317 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:26:10,044 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2
+INFO 2023-08-16 22:26:11,797 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 2772
+INFO 2023-08-16 22:26:13,997 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 1851
+INFO 2023-08-16 22:27:20,791 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:27:22,949 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 200 4308
+INFO 2023-08-16 22:28:26,579 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 8307
+INFO 2023-08-16 22:28:34,820 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 200 3686
+INFO 2023-08-16 22:30:11,817 basehttp "OPTIONS /admin_app/loginpage/ HTTP/1.1" 200 0
+INFO 2023-08-16 22:30:12,289 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 520
+INFO 2023-08-16 22:46:58,546 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:47:06,827 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:47:17,979 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:47:19,127 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:47:21,056 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:47:21,920 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:47:24,840 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:47:26,397 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:47:28,153 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:47:28,877 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:47:30,603 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:47:31,475 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:47:35,084 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:47:35,882 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:47:37,572 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:47:38,689 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:47:40,451 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:47:41,375 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:47:43,123 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:47:43,865 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:47:48,685 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:47:49,852 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:48:25,949 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 520
+INFO 2023-08-16 22:49:32,473 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:49:36,475 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 22:49:53,857 log Internal Server Error: /admin_app/loginpage/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 35, in post
+    print(user_obj.id)
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2023-08-16 22:49:53,907 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 104430
+ERROR 2023-08-16 22:49:59,797 log Internal Server Error: /admin_app/loginpage/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 35, in post
+    print(user_obj.id)
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2023-08-16 22:49:59,800 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 104430
+INFO 2023-08-16 22:50:17,170 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:50:17,913 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:50:19,648 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:50:20,582 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:50:22,174 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:50:23,006 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 22:50:31,963 log Internal Server Error: /admin_app/loginpage/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 35, in post
+    print(user_obj['id'])
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 418, in __getitem__
+    raise TypeError(
+TypeError: QuerySet indices must be integers or slices, not str.
+ERROR 2023-08-16 22:50:31,968 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 108145
+INFO 2023-08-16 22:50:42,677 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:50:43,667 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:50:45,468 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:50:46,190 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:50:48,854 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:50:49,810 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:50:52,752 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:50:53,485 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 22:50:57,769 log Internal Server Error: /admin_app/loginpage/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 35, in post
+    print(user_obj.get('id'))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'i' into field. Choices are: Applications, banks, current_address, date_joined, defaulters, dob, email, family, first_name, gender, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, mobile, password, permanent_address, photo, role, signature, user_permissions, username
+ERROR 2023-08-16 22:50:57,774 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 149059
+INFO 2023-08-16 22:51:08,135 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:51:08,865 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:51:35,683 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:51:36,535 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:51:38,316 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:51:39,617 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:51:42,547 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:51:44,311 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:51:49,390 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 520
+INFO 2023-08-16 22:52:40,252 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:52:48,241 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:52:58,285 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:52:59,616 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:53:01,531 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:53:02,411 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 22:53:21,442 log Internal Server Error: /admin_app/loginpage/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 35, in post
+    print(user_obj.id)
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2023-08-16 22:53:21,445 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 104436
+INFO 2023-08-16 22:53:38,202 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:53:41,262 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:54:01,819 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 520
+INFO 2023-08-16 22:55:18,655 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:55:19,520 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:55:21,266 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:55:22,652 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:55:29,092 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:55:30,030 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:55:31,614 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:55:32,344 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 22:55:35,402 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 22:55:36,118 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:01:01,330 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py changed, reloading.
+INFO 2023-08-16 23:01:02,068 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:01:24,710 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:01:25,540 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:01:32,052 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:01:35,968 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:01:43,653 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:01:44,409 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:01:46,752 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:01:47,636 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:01:50,077 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:01:51,434 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:02:04,246 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:02:04,956 autoreload Watching for file changes with StatReloader
+WARNING 2023-08-16 23:07:15,761 log Not Found: /
+WARNING 2023-08-16 23:07:15,763 basehttp "GET / HTTP/1.1" 404 2536
+WARNING 2023-08-16 23:07:17,421 log Not Found: /
+WARNING 2023-08-16 23:07:17,422 basehttp "GET / HTTP/1.1" 404 2536
+WARNING 2023-08-16 23:07:28,416 log Not Found: /
+WARNING 2023-08-16 23:07:28,418 basehttp "POST / HTTP/1.1" 404 2537
+WARNING 2023-08-16 23:07:36,420 log Not Found: /
+WARNING 2023-08-16 23:07:36,421 basehttp "POST / HTTP/1.1" 404 2537
+INFO 2023-08-16 23:07:58,036 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\serializers.py changed, reloading.
+INFO 2023-08-16 23:07:58,779 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:08:00,688 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\serializers.py changed, reloading.
+INFO 2023-08-16 23:08:01,671 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:08:05,292 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\serializers.py changed, reloading.
+INFO 2023-08-16 23:08:06,298 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:09:40,269 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:09:41,061 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:09:47,658 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:09:48,415 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:00,372 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:01,157 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:04,606 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:05,461 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:07,836 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:08,701 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:12,115 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:12,971 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:21,687 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:22,773 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:24,073 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:25,032 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:28,484 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:29,653 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:30,996 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:32,621 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:41,985 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:42,967 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:46,395 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:48,054 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:52,544 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:54,156 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:55,593 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:56,777 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:10:58,199 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:10:59,298 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:11:04,000 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:11:05,311 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:11:09,773 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:11:11,375 autoreload Watching for file changes with StatReloader
+WARNING 2023-08-16 23:12:04,744 log Not Found: /
+WARNING 2023-08-16 23:12:04,746 basehttp "GET / HTTP/1.1" 404 2536
+WARNING 2023-08-16 23:12:13,413 log Not Found: /
+WARNING 2023-08-16 23:12:13,414 basehttp "GET / HTTP/1.1" 404 2536
+WARNING 2023-08-16 23:12:19,407 log Not Found: /
+WARNING 2023-08-16 23:12:19,408 basehttp "GET / HTTP/1.1" 404 2536
+WARNING 2023-08-16 23:12:25,424 log Not Found: /customer
+WARNING 2023-08-16 23:12:25,424 basehttp "GET /customer HTTP/1.1" 404 2578
+WARNING 2023-08-16 23:12:29,412 log Not Found: /customer/
+WARNING 2023-08-16 23:12:29,413 basehttp "GET /customer/ HTTP/1.1" 404 2846
+WARNING 2023-08-16 23:13:15,418 log Not Found: /customer/loan
+WARNING 2023-08-16 23:13:15,420 basehttp "GET /customer/loan HTTP/1.1" 404 2858
+WARNING 2023-08-16 23:13:17,409 log Not Found: /customer/loandata
+WARNING 2023-08-16 23:13:17,410 basehttp "GET /customer/loandata HTTP/1.1" 404 2870
+WARNING 2023-08-16 23:13:25,406 log Not Found: /customer/loandata/
+WARNING 2023-08-16 23:13:25,407 basehttp "GET /customer/loandata/ HTTP/1.1" 404 2873
+WARNING 2023-08-16 23:13:27,414 log Not Found: /customer/loandata/$
+WARNING 2023-08-16 23:13:27,415 basehttp "GET /customer/loandata/$ HTTP/1.1" 404 2876
+WARNING 2023-08-16 23:13:29,409 log Not Found: /customer/loandata/${}
+WARNING 2023-08-16 23:13:29,410 basehttp "GET /customer/loandata/$%7B%7D HTTP/1.1" 404 2886
+WARNING 2023-08-16 23:13:41,413 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:13:41,414 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:22,418 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:22,419 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:35,414 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:35,415 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:35,425 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:35,426 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:36,418 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:36,419 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:36,431 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:36,432 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:50,419 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:50,419 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:50,430 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:50,431 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:56,411 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:56,412 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:15:03,420 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:15:03,420 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:15:21,416 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:15:21,417 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:15:28,499 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:15:28,499 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:16:34,418 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:16:34,419 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:16:50,415 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:16:50,416 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:16:52,419 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:16:52,419 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+INFO 2023-08-16 23:17:20,113 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:17:20,944 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:17:23,904 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:17:24,673 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:17:30,516 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:17:31,462 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:17:33,127 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:17:34,009 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:17:36,437 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:17:37,134 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:17:39,527 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:17:40,623 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:17:42,279 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:17:43,025 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:17:47,723 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:17:48,776 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:18:12,680 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:18:13,532 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:18:15,991 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:18:17,213 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:18:22,847 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:18:23,645 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:18:26,018 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:18:27,845 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:18:37,995 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:18:38,909 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:18:41,728 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:18:42,964 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:18:46,353 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:18:47,391 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:18:52,208 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:18:53,162 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:18:57,091 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:18:58,161 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:18:59,733 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:19:01,161 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:19:06,041 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:19:07,095 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:19:10,894 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:19:12,473 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:19:16,270 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:19:17,294 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:19:18,909 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:19:19,983 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:19:22,783 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:19:23,709 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:19:27,528 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:19:28,450 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:19:31,119 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:19:32,270 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:19:33,941 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:19:35,081 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:19:36,694 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:19:37,548 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:19:50,667 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:19:51,839 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:19:53,467 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:19:54,525 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:19:58,013 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:19:58,895 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:00,275 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:01,761 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:03,100 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:03,940 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:05,236 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:06,273 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:07,825 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:08,760 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:13,163 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:14,081 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:15,371 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:16,138 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:19,530 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:20,449 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:22,797 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:23,764 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:26,444 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:27,460 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:28,887 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:29,997 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:33,460 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:34,265 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:36,624 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:38,248 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:20:54,114 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:20:55,023 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:21:06,748 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:21:07,566 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:21:10,984 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:21:12,057 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:21:27,144 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:21:28,125 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:21:29,799 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:21:31,518 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:22:27,529 basehttp "GET /customer/loandata/a@gmail.com/ HTTP/1.1" 200 9
+INFO 2023-08-16 23:23:31,581 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:23:32,331 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:23:34,086 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:23:35,027 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:23:37,797 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:23:38,567 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:23:46,486 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:23:47,199 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:23:48,767 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\urls.py changed, reloading.
+INFO 2023-08-16 23:23:49,499 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:23:58,477 basehttp "GET /customer/loandata/a@gmail.com/ HTTP/1.1" 200 9
+INFO 2023-08-16 23:24:14,641 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:24:15,438 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:24:17,156 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:24:18,054 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:24:19,618 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:24:20,436 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 23:24:24,524 log Internal Server Error: /customer/loandata/a@gmail.com/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py", line 79, in get
+    user_obj = User.objects.select_related(email=email)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+TypeError: QuerySet.select_related() got an unexpected keyword argument 'email'
+ERROR 2023-08-16 23:24:24,527 basehttp "GET /customer/loandata/a@gmail.com/ HTTP/1.1" 500 106720
+INFO 2023-08-16 23:24:42,339 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:24:43,890 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:24:46,798 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:24:47,781 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:24:49,445 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:24:51,408 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:25:02,139 basehttp "GET /customer/loandata/a@gmail.com/ HTTP/1.1" 200 9
+INFO 2023-08-16 23:25:19,396 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:25:20,359 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:25:22,873 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:25:23,773 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:25:29,391 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:25:30,595 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:25:34,449 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:25:35,883 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:25:39,667 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:25:40,679 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:26:11,620 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:26:12,349 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:26:16,175 basehttp "GET /customer/loandata/a@gmail.com/ HTTP/1.1" 200 9
+INFO 2023-08-16 23:27:55,022 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:27:55,912 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:28:01,519 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:28:02,253 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:28:14,541 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:28:15,250 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:28:19,499 basehttp "GET /customer/loandata/a@gmail.com/ HTTP/1.1" 200 421
+INFO 2023-08-16 23:29:08,701 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:29:09,850 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:29:12,556 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:29:13,254 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:29:20,202 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:29:21,138 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:29:34,216 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:29:35,208 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:29:37,727 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:29:38,420 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:29:51,773 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:29:52,580 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:29:58,187 basehttp "GET /customer/loandata/a@gmail.com/ HTTP/1.1" 200 421
+INFO 2023-08-16 23:30:07,186 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:30:07,902 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:30:24,184 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:30:25,006 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:30:28,909 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:30:30,133 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:30:35,071 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:30:36,110 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:30:39,721 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:30:40,637 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:30:45,259 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:30:45,976 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:30:49,425 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:30:50,257 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:30:57,070 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:30:57,840 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:31:09,604 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:31:10,522 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:31:12,167 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:31:12,971 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:31:16,885 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:31:17,772 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:31:19,336 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:31:20,371 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:31:22,045 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:31:22,760 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:31:28,500 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:31:29,315 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:31:34,148 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:31:35,072 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:31:36,839 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:31:37,924 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:31:42,764 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:31:43,943 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:31:46,385 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:31:47,174 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:32:07,656 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:32:08,785 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:32:10,712 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:32:11,576 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:32:13,201 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:32:13,942 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 23:32:24,515 log Internal Server Error: /customer/loandata/a@gmail.com/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py", line 85, in get
+    Loan_obj = Loan.objects.select_related('application').get(application=id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+loan_sanctioning.models.Loan.DoesNotExist: Loan matching query does not exist.
+ERROR 2023-08-16 23:32:24,518 basehttp "GET /customer/loandata/a@gmail.com/ HTTP/1.1" 500 108717
+INFO 2023-08-16 23:33:02,237 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:33:05,051 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:33:07,463 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:33:08,173 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:33:13,725 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:33:14,548 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:33:15,881 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:33:16,595 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:33:27,453 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:33:28,206 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:33:30,662 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:33:31,704 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:33:33,108 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:33:34,026 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:33:41,005 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:33:41,794 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 23:33:45,124 log Internal Server Error: /customer/loandata/a@gmail.com/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py", line 85, in get
+    Loan_obj = Loan.objects.select_related('application').get(application=id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+loan_sanctioning.models.Loan.DoesNotExist: Loan matching query does not exist.
+ERROR 2023-08-16 23:33:45,128 basehttp "GET /customer/loandata/a@gmail.com/ HTTP/1.1" 500 108717
+INFO 2023-08-16 23:34:06,623 basehttp "GET /admin/loan_sanctioning/loan/ HTTP/1.1" 200 14097
+INFO 2023-08-16 23:34:06,824 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+WARNING 2023-08-16 23:34:07,523 log Not Found: /favicon.ico
+WARNING 2023-08-16 23:34:07,523 basehttp "GET /favicon.ico HTTP/1.1" 404 2587
+INFO 2023-08-16 23:34:20,277 basehttp "GET /admin/application_generation/application/ HTTP/1.1" 200 16142
+INFO 2023-08-16 23:34:20,301 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 23:34:29,515 basehttp "GET /admin/admin_app/user/ HTTP/1.1" 200 23929
+INFO 2023-08-16 23:34:29,538 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 23:34:29,675 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+ERROR 2023-08-16 23:34:49,630 log Internal Server Error: /customer/loandata/u@gmail.com/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py", line 85, in get
+    Loan_obj = Loan.objects.select_related('application').get(application=id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+loan_sanctioning.models.Loan.DoesNotExist: Loan matching query does not exist.
+ERROR 2023-08-16 23:34:49,669 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 500 108717
+INFO 2023-08-16 23:35:10,935 basehttp "GET /admin/application_generation/application/ HTTP/1.1" 200 16142
+INFO 2023-08-16 23:35:10,963 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 23:35:19,686 basehttp "GET /admin/loan_sanctioning/loan/ HTTP/1.1" 200 14097
+INFO 2023-08-16 23:35:19,713 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 23:35:26,518 basehttp "GET /admin/loan_sanctioning/loan/2/change/ HTTP/1.1" 200 20353
+INFO 2023-08-16 23:35:26,611 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 23:35:31,744 basehttp "GET /admin/application_generation/application/ HTTP/1.1" 200 16142
+INFO 2023-08-16 23:35:31,766 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 23:35:35,715 basehttp "GET /admin/application_generation/application/7/change/ HTTP/1.1" 200 24412
+INFO 2023-08-16 23:35:35,746 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 23:35:52,540 basehttp "GET /admin/admin_app/user/ HTTP/1.1" 200 23929
+INFO 2023-08-16 23:35:52,564 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 23:36:37,069 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:36:37,816 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:36:42,315 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:36:43,037 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:36:48,967 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:36:49,676 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:36:52,047 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:36:53,053 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:36:54,719 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:36:55,464 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:37:09,886 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:37:11,136 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:37:17,736 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:37:18,557 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:37:19,927 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:37:20,885 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:38:03,311 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:38:04,118 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:38:05,546 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:38:06,379 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:38:09,230 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:38:09,957 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 23:38:26,368 log Internal Server Error: /customer/loandata/u@gmail.com/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py", line 86, in get
+    Loan_obj = Application.objects.select_related('user').get(application=id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'application' into field. Choices are: Gaurantors, Loans, Vendors, aaddar_no, application_timestamp, business_address, business_license_no, business_title, business_type, collateral, documents, expected_average_annual_turnover, gst_registration_no, id, pan_no, remark, status, type_of_employment, user, user_id, years_in_current_business
+ERROR 2023-08-16 23:38:26,375 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 500 150361
+INFO 2023-08-16 23:38:51,796 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:38:52,680 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:38:55,463 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:38:56,298 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:39:35,640 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:39:36,433 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:39:39,175 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:39:40,029 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:39:41,874 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:39:42,849 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:39:44,551 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:39:45,511 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:39:47,602 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 424
+INFO 2023-08-16 23:40:11,648 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:40:12,713 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:40:17,727 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 424
+INFO 2023-08-16 23:40:40,815 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:40:41,861 autoreload Watching for file changes with StatReloader
+ERROR 2023-08-16 23:40:53,509 log Internal Server Error: /customer/loandata/u@gmail.com/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2053, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'u@gmail.com'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py", line 86, in get
+    Loan_obj = Application.objects.select_related('user').get(user=email)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'u@gmail.com'.
+ERROR 2023-08-16 23:40:53,516 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 500 162805
+INFO 2023-08-16 23:41:04,677 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:41:05,519 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:41:07,892 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:41:08,955 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:41:15,824 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:41:17,185 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:41:24,087 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:41:24,948 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:41:26,830 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:41:27,718 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:41:31,455 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:41:32,550 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:41:37,450 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:41:38,400 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:41:44,187 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:41:45,008 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:41:50,782 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:41:51,509 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:42:49,796 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:42:50,713 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:42:58,952 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:42:59,719 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:04,702 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:43:05,482 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:08,302 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:43:09,149 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:18,212 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:43:18,933 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:23,789 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:43:24,662 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:26,393 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:43:27,490 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:31,184 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:43:32,316 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:34,917 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:43:35,884 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:37,559 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:43:38,407 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:41,042 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:43:41,825 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:47,840 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:43:48,555 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:52,343 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:43:53,131 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:54,766 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:43:55,494 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:43:59,499 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:44:00,586 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:44:04,101 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:44:04,837 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:44:09,591 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:44:10,283 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:44:11,846 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:44:12,606 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:44:22,679 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:44:23,625 autoreload Watching for file changes with StatReloader
+INFO 2023-08-16 23:44:32,994 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1223
+INFO 2023-08-16 23:44:51,756 autoreload D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py changed, reloading.
+INFO 2023-08-16 23:44:53,598 autoreload Watching for file changes with StatReloader
+WARNING 2023-08-16 23:45:12,719 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:45:12,720 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:45:52,554 log Unauthorized: /admin_app/loginpage/
+WARNING 2023-08-16 23:45:52,555 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 401 63
+INFO 2023-08-16 23:46:13,514 basehttp "GET /admin/admin_app/user/23/change/ HTTP/1.1" 200 34379
+INFO 2023-08-16 23:46:13,556 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 23:46:20,456 basehttp "POST /admin/admin_app/user/23/change/ HTTP/1.1" 302 0
+INFO 2023-08-16 23:46:20,651 basehttp "GET /admin/admin_app/user/ HTTP/1.1" 200 24134
+INFO 2023-08-16 23:46:20,691 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-16 23:46:28,343 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 542
+WARNING 2023-08-16 23:46:28,384 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:46:28,384 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:46:28,396 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:46:28,398 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:47:40,462 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:47:40,463 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:47:40,470 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:47:40,471 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:47:45,414 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:47:45,414 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:47:45,423 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:47:45,424 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:47:52,418 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:47:52,418 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:47:58,418 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:47:58,419 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+INFO 2023-08-16 23:48:25,277 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 542
+WARNING 2023-08-16 23:48:25,316 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:48:25,317 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:48:25,324 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:48:25,326 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:48:59,417 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:48:59,418 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:49:00,411 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:49:00,412 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+INFO 2023-08-16 23:49:28,746 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 542
+WARNING 2023-08-16 23:49:28,794 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:49:28,796 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:49:28,807 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:49:28,808 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:50:14,467 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:50:14,469 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:50:14,477 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:50:14,478 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+INFO 2023-08-16 23:51:17,184 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 542
+WARNING 2023-08-16 23:51:17,215 log Not Found: /customer/loandata/null/
+WARNING 2023-08-16 23:51:17,216 basehttp "GET /customer/loandata/null/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:51:17,227 log Not Found: /customer/loandata/null/
+WARNING 2023-08-16 23:51:17,228 basehttp "GET /customer/loandata/null/ HTTP/1.1" 404 23
+INFO 2023-08-16 23:53:10,004 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 200 542
+INFO 2023-08-16 23:53:10,085 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:53:10,100 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:53:45,438 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:53:52,429 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:54:06,437 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:54:06,461 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:54:10,419 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:54:10,436 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:54:14,426 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:54:14,443 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:54:22,429 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:54:29,425 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:54:31,421 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:54:55,427 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:54:57,435 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:54:58,427 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:56:18,763 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:56:18,790 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:59:00,102 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:59:00,151 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:59:16,422 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:59:30,418 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:59:35,420 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:59:36,430 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-16 23:59:49,430 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215
+INFO 2023-08-17 00:02:36,675 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 200 1215

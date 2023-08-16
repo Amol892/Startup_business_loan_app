@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import get_object_or_404, render,redirect
 from .serializers import EnquiryModelSerializer,EnquirySerializer
 from .models import Enquiry
 from rest_framework.views import APIView
@@ -7,6 +7,12 @@ from rest_framework import status
 from django.conf import settings
 import random
 from django.core.mail import send_mail
+from application_generation.serializers import ApplicationModelSerializer
+from admin_app.models import User
+from admin_app.serializers import RegisterModelSerializer
+from loan_sanctioning.models import Loan
+from application_generation.models import Application
+from loan_sanctioning.serializers import LoanModelSerializer
 # Create your views here.
 
 class EnquiryAPIView(APIView):
@@ -71,3 +77,11 @@ class EnquiryStatusAPIView(APIView):
         
         return Response(data=serializer_data.data,status=status.HTTP_200_OK)
             
+class CustomerLoanAPIView(APIView):
+    
+    def get(self,request,email=None):
+        userId = get_object_or_404(User,email=email)
+        applicationId = Application.objects.select_related('user').get(user=userId)
+        Loandata = Loan.objects.select_related('application').get(application=applicationId)
+        serializer = LoanModelSerializer(Loandata)
+        return Response(data = serializer.data)

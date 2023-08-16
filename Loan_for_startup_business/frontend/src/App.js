@@ -28,12 +28,14 @@ import Bank from './Components/Customer/Bank';
 import CreateUser from './Components/LoanRepresentative/CreateUser';
 import LoanApplication from './Components/Customer/LoanApplication';
 import EMICal from './Components/Homepage/EMICal';
+import Installments from './Components/Admin/Installments';
 
 
 function App() {
 
   const [isLoggedIn,setIsLoggedIn]=useState(sessionStorage.getItem('access'))
   const [userRole,setUserRole] = useState(sessionStorage.getItem('role'))
+  const [userEmail,setUserEmail] = useState(sessionStorage.getItem('email'))
   console.log(isLoggedIn)
 
   let navbarComponent;
@@ -73,8 +75,8 @@ function App() {
           <Route path='/enquiry' element={<Enquiry/>}/>
           <Route path='/loan_status' element={<Loan_status/>}/>
           <Route path='/signup' element={<Signup/>}/>
-          <Route path='/login' element={<Login setIsLoggedIn={setIsLoggedIn} setUserRole={setUserRole}/>}/>
-          <Route path='/logout' element={<Logout setIsLoggedIn={setIsLoggedIn} setUserRole={setUserRole}/>}/>
+          <Route path='/login' element={<Login setIsLoggedIn={setIsLoggedIn} setUserRole={setUserRole} setUserEmail={setUserEmail}/>}/>
+          <Route path='/logout' element={<Logout setIsLoggedIn={setIsLoggedIn} setUserRole={setUserRole} setUserEmail={setUserEmail}/>}/>
 
           /* Home page */
           <Route path='emical' element={<EMICal/>}/>
@@ -85,7 +87,7 @@ function App() {
           <Route path='/ohDashboard' element={<OHDashboard/>}/>
           <Route path='/lsoDashboard' element={<LSODashboard/>}/>
           <Route path='/ahDashboard' element={<AHDashboard/>}/>
-          <Route path='/customerDashboard' element={<CustomerDashboard/>}/>
+          <Route path='/customerDashboard' element={<CustomerDashboard userEmail={userEmail}/>}/>
 
           /* Loan Representative */
           <Route path='/createuser' element={<CreateUser/>}/>
@@ -93,7 +95,8 @@ function App() {
           <Route path='/family' element={<Family/>}/>
           <Route path='/bank' element={<Bank/>}/>
 
-          
+          /* Installments */
+          <Route path='/installments' element={<Installments/>}/>
           
 
 

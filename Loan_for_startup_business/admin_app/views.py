@@ -31,13 +31,13 @@ class LoginAPIView(TokenObtainPairView):
             if serializer.is_valid():
                 email = serializer.validated_data['email']
                 user = User.objects.get(email=email)
-                print(user)
+                
                 response = super().post(request)
                 if response.status_code == status.HTTP_200_OK:
                     
                     redirectURL = detectUser(user)
                     
-                    url_data = {'redirectURL':redirectURL}
+                    url_data = {'redirectURL':redirectURL,'email':email}
                     response.data.update(url_data)
                     return Response(data=response.data)
             return Response(data=serializer.errors,status=status.HTTP_400_BAD_REQUEST)
@@ -120,6 +120,7 @@ class AllApplicationAPIView(APIView):
         print(application_status)
         if application_status=='all':
             application=Application.objects.select_related('user')
+            
             serializer=ApplicationModelSerializer(application,many=True)
             return Response(data=serializer.data,status=status.HTTP_200_OK)
         else:
@@ -129,3 +130,4 @@ class AllApplicationAPIView(APIView):
             return Response(data=serializer.data,status=status.HTTP_200_OK)
 
         return Response(data=serializer.error,status=status.HTTP_400_BAD_REQUEST)
+    

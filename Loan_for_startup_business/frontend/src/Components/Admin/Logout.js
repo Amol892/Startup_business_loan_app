@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 
 
-function Logout({setIsLoggedIn,setUserRole}) {
+function Logout({setIsLoggedIn,setUserRole,setUserEmail}) {
 
     const navigate = useNavigate()
 
@@ -10,7 +10,7 @@ function Logout({setIsLoggedIn,setUserRole}) {
             sessionStorage.clear()
             setIsLoggedIn(sessionStorage.getItem('access'))
             setUserRole(sessionStorage.getItem('role'))
-            
+            setUserEmail(sessionStorage.getItem('email'))
             navigate('/login')
             }
 

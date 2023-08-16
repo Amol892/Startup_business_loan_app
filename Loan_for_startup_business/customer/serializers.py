@@ -8,9 +8,7 @@ class EnquiryModelSerializer(serializers.ModelSerializer):
         model = Enquiry
         fields = ['first_name','last_name','email','mobile','message','status','enquiry_date']
         
-    
 
-    
-    
 class EnquirySerializer(serializers.Serializer):
     email = serializers.EmailField()
+    

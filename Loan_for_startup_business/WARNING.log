@@ -4,3 +4,624 @@ WARNING 2023-08-15 20:01:52,147 log Not Found: /
 WARNING 2023-08-15 20:01:52,148 basehttp "GET / HTTP/1.1" 404 2423
 WARNING 2023-08-15 20:01:52,230 log Not Found: /favicon.ico
 WARNING 2023-08-15 20:01:52,232 basehttp "GET /favicon.ico HTTP/1.1" 404 2474
+WARNING 2023-08-16 10:22:53,100 log Bad Request: /customer/enquiry_status/
+WARNING 2023-08-16 10:22:53,104 basehttp "POST /customer/enquiry_status/ HTTP/1.1" 400 30
+WARNING 2023-08-16 10:42:32,900 log Bad Request: /customer/enquiry_status/
+WARNING 2023-08-16 10:42:32,901 basehttp "POST /customer/enquiry_status/ HTTP/1.1" 400 30
+WARNING 2023-08-16 12:21:12,143 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:12,144 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:20,572 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:20,573 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:23,877 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:23,878 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:27,571 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:27,572 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:32,873 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:32,874 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:39,573 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:39,574 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:42,878 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:42,879 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:51,563 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:51,563 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:21:57,871 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 12:21:57,872 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3771
+WARNING 2023-08-16 12:58:00,584 log Not Found: /
+WARNING 2023-08-16 12:58:00,586 basehttp "GET / HTTP/1.1" 404 2423
+WARNING 2023-08-16 12:58:00,715 log Not Found: /favicon.ico
+WARNING 2023-08-16 12:58:00,715 basehttp "GET /favicon.ico HTTP/1.1" 404 2474
+ERROR 2023-08-16 13:20:29,897 log Internal Server Error: /disburstment/installment/1/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py", line 15, in get
+    Installment_obj = get_object_or_404(Installment,loan=loan_id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+disburstment.models.Installment.MultipleObjectsReturned: get() returned more than one Installment -- it returned 3!
+ERROR 2023-08-16 13:20:29,902 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 500 111662
+WARNING 2023-08-16 13:31:10,939 log Bad Request: /customer/enquiry_status/
+WARNING 2023-08-16 13:31:10,940 basehttp "POST /customer/enquiry_status/ HTTP/1.1" 400 30
+ERROR 2023-08-16 13:36:34,776 log Internal Server Error: /disburstment/installment/1/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py", line 15, in get
+    Installment_obj = get_object_or_404(Installment,loan=loan_id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+disburstment.models.Installment.MultipleObjectsReturned: get() returned more than one Installment -- it returned 3!
+ERROR 2023-08-16 13:36:34,781 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 500 111662
+ERROR 2023-08-16 13:37:21,562 log Internal Server Error: /disburstment/installment/1/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py", line 15, in get
+    Installment_obj = get_object_or_404(Installment,loan=loan_id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+disburstment.models.Installment.MultipleObjectsReturned: get() returned more than one Installment -- it returned 3!
+ERROR 2023-08-16 13:37:21,566 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 500 111662
+ERROR 2023-08-16 13:46:07,187 log Internal Server Error: /disburstment/installment/1/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py", line 15, in get
+    Installment_obj = get_object_or_404(Installment,loan=loan_id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+disburstment.models.Installment.MultipleObjectsReturned: get() returned more than one Installment -- it returned 3!
+ERROR 2023-08-16 13:46:07,192 basehttp "GET /disburstment/installment/1/ HTTP/1.1" 500 111652
+ERROR 2023-08-16 15:07:09,912 log Internal Server Error: /disburstment/installment/7/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py", line 18, in get
+    Installment_obj = get_object_or_404(Installment,loan=loan_id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+disburstment.models.Installment.MultipleObjectsReturned: get() returned more than one Installment -- it returned 3!
+ERROR 2023-08-16 15:07:09,934 basehttp "GET /disburstment/installment/7/ HTTP/1.1" 500 111792
+WARNING 2023-08-16 17:09:54,423 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 17:09:54,452 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3884
+WARNING 2023-08-16 17:09:54,460 log Not Found: /admin_app/allapplications/undefined/
+WARNING 2023-08-16 17:09:54,461 basehttp "GET /admin_app/allapplications/undefined/ HTTP/1.1" 404 3884
+WARNING 2023-08-16 17:32:57,780 log Not Found: /main.8e118bb212d73436e7cb.hot-update.json
+WARNING 2023-08-16 17:32:57,782 basehttp "GET /main.8e118bb212d73436e7cb.hot-update.json HTTP/1.1" 404 2677
+WARNING 2023-08-16 17:35:36,351 log Not Found: /disburstment/installment/undefined/
+WARNING 2023-08-16 17:35:36,352 basehttp "GET /disburstment/installment/undefined/ HTTP/1.1" 404 2733
+WARNING 2023-08-16 17:35:36,364 log Not Found: /disburstment/installment/undefined/
+WARNING 2023-08-16 17:35:36,365 basehttp "GET /disburstment/installment/undefined/ HTTP/1.1" 404 2733
+WARNING 2023-08-16 17:36:49,910 log Not Found: /disburstment/installment/undefined/
+WARNING 2023-08-16 17:36:49,916 basehttp "GET /disburstment/installment/undefined/ HTTP/1.1" 404 2733
+WARNING 2023-08-16 17:36:50,566 log Not Found: /disburstment/installment/undefined/
+WARNING 2023-08-16 17:36:50,566 basehttp "GET /disburstment/installment/undefined/ HTTP/1.1" 404 2733
+WARNING 2023-08-16 17:37:45,621 log Not Found: /disburstment/installment/undefined/
+WARNING 2023-08-16 17:37:45,622 basehttp "GET /disburstment/installment/undefined/ HTTP/1.1" 404 2733
+WARNING 2023-08-16 17:37:45,637 log Not Found: /disburstment/installment/undefined/
+WARNING 2023-08-16 17:37:45,638 basehttp "GET /disburstment/installment/undefined/ HTTP/1.1" 404 2733
+WARNING 2023-08-16 17:53:18,894 log Not Found: /disburstment/installment//
+WARNING 2023-08-16 17:53:18,895 basehttp "GET /disburstment/installment// HTTP/1.1" 404 2706
+WARNING 2023-08-16 17:53:58,874 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 17:53:58,874 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 17:55:04,001 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 17:55:04,002 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 17:55:04,013 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 17:55:04,015 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 21:56:12,711 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 21:56:12,735 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:04:05,172 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:04:05,173 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:04:52,995 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:04:52,996 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:07:02,671 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:07:02,672 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:07:16,854 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:07:16,855 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:07:54,116 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:07:54,117 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:08:45,949 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:08:45,950 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:08:52,357 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:08:52,358 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:09:58,498 log Not Found: /disburstment/installment/8/
+WARNING 2023-08-16 22:09:58,499 basehttp "GET /disburstment/installment/8/ HTTP/1.1" 404 23
+WARNING 2023-08-16 22:10:00,295 log Not Found: /disburstment/installment/9/
+WARNING 2023-08-16 22:10:00,296 basehttp "GET /disburstment/installment/9/ HTTP/1.1" 404 23
+ERROR 2023-08-16 22:49:53,857 log Internal Server Error: /admin_app/loginpage/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 35, in post
+    print(user_obj.id)
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2023-08-16 22:49:53,907 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 104430
+ERROR 2023-08-16 22:49:59,797 log Internal Server Error: /admin_app/loginpage/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 35, in post
+    print(user_obj.id)
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2023-08-16 22:49:59,800 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 104430
+ERROR 2023-08-16 22:50:31,963 log Internal Server Error: /admin_app/loginpage/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 35, in post
+    print(user_obj['id'])
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 418, in __getitem__
+    raise TypeError(
+TypeError: QuerySet indices must be integers or slices, not str.
+ERROR 2023-08-16 22:50:31,968 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 108145
+ERROR 2023-08-16 22:50:57,769 log Internal Server Error: /admin_app/loginpage/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 35, in post
+    print(user_obj.get('id'))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'i' into field. Choices are: Applications, banks, current_address, date_joined, defaulters, dob, email, family, first_name, gender, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, mobile, password, permanent_address, photo, role, signature, user_permissions, username
+ERROR 2023-08-16 22:50:57,774 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 149059
+ERROR 2023-08-16 22:53:21,442 log Internal Server Error: /admin_app/loginpage/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 35, in post
+    print(user_obj.id)
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2023-08-16 22:53:21,445 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 104436
+WARNING 2023-08-16 23:07:15,761 log Not Found: /
+WARNING 2023-08-16 23:07:15,763 basehttp "GET / HTTP/1.1" 404 2536
+WARNING 2023-08-16 23:07:17,421 log Not Found: /
+WARNING 2023-08-16 23:07:17,422 basehttp "GET / HTTP/1.1" 404 2536
+WARNING 2023-08-16 23:07:28,416 log Not Found: /
+WARNING 2023-08-16 23:07:28,418 basehttp "POST / HTTP/1.1" 404 2537
+WARNING 2023-08-16 23:07:36,420 log Not Found: /
+WARNING 2023-08-16 23:07:36,421 basehttp "POST / HTTP/1.1" 404 2537
+WARNING 2023-08-16 23:12:04,744 log Not Found: /
+WARNING 2023-08-16 23:12:04,746 basehttp "GET / HTTP/1.1" 404 2536
+WARNING 2023-08-16 23:12:13,413 log Not Found: /
+WARNING 2023-08-16 23:12:13,414 basehttp "GET / HTTP/1.1" 404 2536
+WARNING 2023-08-16 23:12:19,407 log Not Found: /
+WARNING 2023-08-16 23:12:19,408 basehttp "GET / HTTP/1.1" 404 2536
+WARNING 2023-08-16 23:12:25,424 log Not Found: /customer
+WARNING 2023-08-16 23:12:25,424 basehttp "GET /customer HTTP/1.1" 404 2578
+WARNING 2023-08-16 23:12:29,412 log Not Found: /customer/
+WARNING 2023-08-16 23:12:29,413 basehttp "GET /customer/ HTTP/1.1" 404 2846
+WARNING 2023-08-16 23:13:15,418 log Not Found: /customer/loan
+WARNING 2023-08-16 23:13:15,420 basehttp "GET /customer/loan HTTP/1.1" 404 2858
+WARNING 2023-08-16 23:13:17,409 log Not Found: /customer/loandata
+WARNING 2023-08-16 23:13:17,410 basehttp "GET /customer/loandata HTTP/1.1" 404 2870
+WARNING 2023-08-16 23:13:25,406 log Not Found: /customer/loandata/
+WARNING 2023-08-16 23:13:25,407 basehttp "GET /customer/loandata/ HTTP/1.1" 404 2873
+WARNING 2023-08-16 23:13:27,414 log Not Found: /customer/loandata/$
+WARNING 2023-08-16 23:13:27,415 basehttp "GET /customer/loandata/$ HTTP/1.1" 404 2876
+WARNING 2023-08-16 23:13:29,409 log Not Found: /customer/loandata/${}
+WARNING 2023-08-16 23:13:29,410 basehttp "GET /customer/loandata/$%7B%7D HTTP/1.1" 404 2886
+WARNING 2023-08-16 23:13:41,413 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:13:41,414 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:22,418 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:22,419 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:35,414 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:35,415 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:35,425 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:35,426 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:36,418 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:36,419 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:36,431 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:36,432 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:50,419 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:50,419 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:50,430 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:50,431 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:14:56,411 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:14:56,412 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:15:03,420 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:15:03,420 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:15:21,416 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:15:21,417 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:15:28,499 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:15:28,499 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:16:34,418 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:16:34,419 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:16:50,415 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:16:50,416 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+WARNING 2023-08-16 23:16:52,419 log Not Found: /customer/loandata/undefined
+WARNING 2023-08-16 23:16:52,419 basehttp "GET /customer/loandata/undefined HTTP/1.1" 404 2900
+ERROR 2023-08-16 23:24:24,524 log Internal Server Error: /customer/loandata/a@gmail.com/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py", line 79, in get
+    user_obj = User.objects.select_related(email=email)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+TypeError: QuerySet.select_related() got an unexpected keyword argument 'email'
+ERROR 2023-08-16 23:24:24,527 basehttp "GET /customer/loandata/a@gmail.com/ HTTP/1.1" 500 106720
+ERROR 2023-08-16 23:32:24,515 log Internal Server Error: /customer/loandata/a@gmail.com/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py", line 85, in get
+    Loan_obj = Loan.objects.select_related('application').get(application=id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+loan_sanctioning.models.Loan.DoesNotExist: Loan matching query does not exist.
+ERROR 2023-08-16 23:32:24,518 basehttp "GET /customer/loandata/a@gmail.com/ HTTP/1.1" 500 108717
+ERROR 2023-08-16 23:33:45,124 log Internal Server Error: /customer/loandata/a@gmail.com/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py", line 85, in get
+    Loan_obj = Loan.objects.select_related('application').get(application=id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+loan_sanctioning.models.Loan.DoesNotExist: Loan matching query does not exist.
+ERROR 2023-08-16 23:33:45,128 basehttp "GET /customer/loandata/a@gmail.com/ HTTP/1.1" 500 108717
+WARNING 2023-08-16 23:34:07,523 log Not Found: /favicon.ico
+WARNING 2023-08-16 23:34:07,523 basehttp "GET /favicon.ico HTTP/1.1" 404 2587
+ERROR 2023-08-16 23:34:49,630 log Internal Server Error: /customer/loandata/u@gmail.com/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py", line 85, in get
+    Loan_obj = Loan.objects.select_related('application').get(application=id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+loan_sanctioning.models.Loan.DoesNotExist: Loan matching query does not exist.
+ERROR 2023-08-16 23:34:49,669 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 500 108717
+ERROR 2023-08-16 23:38:26,368 log Internal Server Error: /customer/loandata/u@gmail.com/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py", line 86, in get
+    Loan_obj = Application.objects.select_related('user').get(application=id)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'application' into field. Choices are: Gaurantors, Loans, Vendors, aaddar_no, application_timestamp, business_address, business_license_no, business_title, business_type, collateral, documents, expected_average_annual_turnover, gst_registration_no, id, pan_no, remark, status, type_of_employment, user, user_id, years_in_current_business
+ERROR 2023-08-16 23:38:26,375 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 500 150361
+ERROR 2023-08-16 23:40:53,509 log Internal Server Error: /customer/loandata/u@gmail.com/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2053, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'u@gmail.com'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\customer\views.py", line 86, in get
+    Loan_obj = Application.objects.select_related('user').get(user=email)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 2055, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'u@gmail.com'.
+ERROR 2023-08-16 23:40:53,516 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 500 162805
+WARNING 2023-08-16 23:45:12,719 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:45:12,720 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:45:52,554 log Unauthorized: /admin_app/loginpage/
+WARNING 2023-08-16 23:45:52,555 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 401 63
+WARNING 2023-08-16 23:46:28,384 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:46:28,384 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:46:28,396 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:46:28,398 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:47:40,462 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:47:40,463 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:47:40,470 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:47:40,471 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:47:45,414 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:47:45,414 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:47:45,423 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:47:45,424 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:47:52,418 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:47:52,418 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:47:58,418 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:47:58,419 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:48:25,316 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:48:25,317 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:48:25,324 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:48:25,326 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:48:59,417 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:48:59,418 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:49:00,411 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:49:00,412 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:49:28,794 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:49:28,796 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:49:28,807 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:49:28,808 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:50:14,467 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:50:14,469 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:50:14,477 log Not Found: /customer/loandata/undefined/
+WARNING 2023-08-16 23:50:14,478 basehttp "GET /customer/loandata/undefined/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:51:17,215 log Not Found: /customer/loandata/null/
+WARNING 2023-08-16 23:51:17,216 basehttp "GET /customer/loandata/null/ HTTP/1.1" 404 23
+WARNING 2023-08-16 23:51:17,227 log Not Found: /customer/loandata/null/
+WARNING 2023-08-16 23:51:17,228 basehttp "GET /customer/loandata/null/ HTTP/1.1" 404 23

@@ -1,23 +1,46 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, {useState} from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
+import axios from 'axios';
 
 function CustomerCard({users}) {
+        const navigate = useNavigate()
+        const [message, setMessage] = useState(' ');
+        const [error,setError]=useState([])
+        async function fetchData(data){
+            await axios.get(`http://localhost:8000/disburstment/installment/${data}/`).then(response=>{
+                const Inst_data = response.data
+                setMessage(response.data.message)
+                navigate('/installments',{state:{user : Inst_data}})
+            }).catch(error=>{
+                setError("Data is not available")
+                console.log(error.response.data)
+                
+            })
+            
+           
+        }
+
   return (
     <>
-        {
+        <div>
+            {message && <h3>{message}</h3>}
+            
+        </div>
+        {   
+            
             users.map(obj=>{
                 let status_color = ''
                 let check_installment = ''
                 console.log(obj)
-                if (obj.status=='Pending') {
+                if (obj.status==='Pending') {
                         status_color = 'btn btn-warning'
-                }else if ((obj.status=='Apporve')){
+                }else if ((obj.status==='Apporve')){
                         status_color = 'btn btn-info'
-                }else if ((obj.status=='Rejected')){
+                }else if ((obj.status==='Rejected')){
                         status_color = 'btn btn-danger'
-                }else if ((obj.status=='Disbursed')){
+                }else if ((obj.status==='Disbursed')){
                     status_color = 'btn btn-success'
-                    check_installment = <NavLink style={{marginLeft:10}} className="btn btn-outline-info"><b>Check Installments</b></NavLink>
+                    check_installment = <button style={{padding:10,fontSize:15,borderRadius:10,marginLeft:15,backgroundColor:'aqua'}} onClick={(e)=>fetchData(e.target.value)} value={obj.id} >Check Installments</button>
                 }
                 return(
                     
