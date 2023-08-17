@@ -6,7 +6,7 @@ from admin_app.models import User
 # Create your models here.
 
 class Defaulter(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='defaulters')
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='defaulter')
     default_amount = models.FloatField(default=0, blank=True)
     pending_since_date = models.DateField(default="2000-12-2",blank=True)
 

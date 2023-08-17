@@ -1,6 +1,6 @@
 from django.db import models
 from application_generation.models import Application
-
+from datetime import date, timedelta
 
 class Loan(models.Model):
     LOAN_STATUS_CHOICE = [
@@ -10,7 +10,7 @@ class Loan(models.Model):
         ('rejected', 'rejected'),
     ]
 
-    application = models.OneToOneField(Application, on_delete=models.CASCADE, related_name='Loans')
+    application = models.OneToOneField(Application, on_delete=models.CASCADE, related_name='loans')
     loan_principal_amount = models.FloatField(default=0, blank=True)
     loan_tenure = models.FloatField(default=0, blank=True)
     interest_rate = models.FloatField(default=0, blank=True)
@@ -24,6 +24,18 @@ class Loan(models.Model):
 
     def __str__(self):
         return f'{self.id}'
+    
+    def get_last_installment_due_date(self):
+        last_installment = self.installments.last()
+        if last_installment:
+            return last_installment.installment_expected_date
+        return None
+
+    def is_defaulter(self):
+        last_due_date = self.get_last_installment_due_date()
+        if last_due_date and (date.today() - last_due_date).days > 90:
+            return True
+        return False
 
 class Vendor(models.Model):
     application = models.ForeignKey(Application, on_delete=models.CASCADE, related_name='Vendors')
@@ -44,4 +56,3 @@ class Vendor(models.Model):
 
     def __str__(self):
         return f"{self.id}"
-
