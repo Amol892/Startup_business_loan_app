@@ -9,7 +9,7 @@ class DocumentModelSerializer(serializers.ModelSerializer):
 
 class AppplicationModelSerializer(serializers.ModelSerializer):
     
-    documents = DocumentModelSerializer()
+    documents = DocumentModelSerializer(read_only = True)
     #user = UserModelSerializer()
     class Meta:
         model = Application

@@ -13,12 +13,12 @@ class User(AbstractUser):
     
     ROLE_CHOICES = [
         ("",""),
-        ('cs', 'customer'),
-        ('lr', 'loan_representative'),
-        ('oh', 'operational_head'),
-        ('lo', 'loan_sanctioning_officer'),
-        ('ad', 'admin'),
-        ('ah', 'account_head')
+        ('customer', 'customer'),
+        ('loan_representative', 'loan_representative'),
+        ('operational_head', 'operational_head'),
+        ('loan_s_officer', 'loan_s_officer'),
+        ('admin', 'admin'),
+        ('account_head', 'account_head')
     ]
     
     dob = models.DateField(blank=True, default='2000-12-12')

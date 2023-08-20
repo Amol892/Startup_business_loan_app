@@ -1,0 +1,105 @@
+
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border:none;
+	border-radius:50px;
+    background:trasnperent;
+	border-bottom:2px solid green;
+    
+}  
+
+input[type=submit] {
+    background-color: #cc6d52;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border:none;
+	border-radius:50px;	
+    	
+  }
+
+.navlink{
+    background-color: #5f5cbc;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border:none;
+	border-radius:50px;	
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+    
+  }
+
+  .label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+    font-weight:bold;
+  }
+
+.div_page{
+    background-color :#e9eef0;
+    text-align: center;
+    width: 100%;
+    background-position: center;
+}
+
+.div1{
+    margin-left: "500px";
+}
+
+
+.child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+  
+.h1{
+    font-family: Pussycat, Algerian, Broadway, fantasy;
+}
+
+
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; 
+  margin-right: none;/* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 50%;
+  margin-left: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

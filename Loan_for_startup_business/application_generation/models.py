@@ -13,7 +13,7 @@ class Application(models.Model):
     ]
 
     APPLICATION_STATUS = [
-            ('',''),("Pending","Pending"), ("Apporve","Apporve"), ("Rejected","Rejected"), ("Disbursed","Disbursed")
+            ('',''),("Pending","Pending"),("Verify","Verify"),("Apporve","Apporve"), ("Rejected","Rejected"), ("Disbursed","Disbursed")
     ]
 
 
@@ -93,7 +93,7 @@ class Document(models.Model):
         ('Pending','Pending'),
         ('Apporve','Apporve'),
         ('Rejected','Rejected'),
-        ('Disbursed','disbursed')
+        ('Disbursed','Disbursed')
     
     ]
     application = models.OneToOneField(Application, on_delete=models.CASCADE, related_name='documents')

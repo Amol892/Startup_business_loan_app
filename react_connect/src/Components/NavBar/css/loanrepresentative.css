@@ -1,0 +1,16 @@
+.nav{
+				
+    background-color:rgb(177, 198, 124);
+    color:rgb(42, 207, 179);
+    text-align: center;
+    
+}
+
+.nav a{
+    text-decoration: none;
+    display:inline-block;
+    color:rgb(126, 17, 88);
+    font-size:20px;
+    margin-left: 30px;
+}
+

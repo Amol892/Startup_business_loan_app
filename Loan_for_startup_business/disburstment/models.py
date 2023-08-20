@@ -41,9 +41,9 @@ class Disbursement(models.Model):
     ]
     DISBURSEMENT_CHOICES= [
         ("",""),
-        ("pending", "pending"),
-        ('rejected', "rejected"),
-        ("disbursed", "disbursed"),
+        ("Pending", "Pending"),
+        ('Rejected', "Rejected"),
+        ("Disbursed", "Disbursed"),
     ]
     loan= models.ForeignKey(Loan, on_delete=models.CASCADE, related_name="disbursements")
     insurance_doc = models.FileField(upload_to='customer/disbusement', default=0, blank=True)

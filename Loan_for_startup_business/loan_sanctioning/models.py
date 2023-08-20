@@ -5,9 +5,9 @@ from application_generation.models import Application
 class Loan(models.Model):
     LOAN_STATUS_CHOICE = [
         ('',''),
-        ('pending', 'pending'),
-        ('apporve', 'apporve'),
-        ('rejected', 'rejected'),
+        ('Pending', 'pending'),
+        ('Apporve', 'Apporve'),
+        ('Rejected', 'Rejected'),
     ]
 
     application = models.OneToOneField(Application, on_delete=models.CASCADE, related_name='Loans')
