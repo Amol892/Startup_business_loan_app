@@ -1,8 +1,9 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Application from './components/pages/Application';
-import Document from './components/pages/Document';
-import OpHeadDashboard from './components/pages/OpHeadDashboard';
+import Application from './components/Application';
+import Documents from './components/Documents';
+import OpHeadDashboard from './components/OpHeadDashboard';
+import Approval from './components/Approval';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
     <OpHeadDashboard/>
     <Routes>
     <Route path='Application/' element={<Application/>}/>
-    <Route path='Documents/' elemnet={<Document/>}/>
+    <Route path='Documents/:userId/' element={<Documents/>}/>
+    <Route path='Approval/:userId/' element={<Approval/>}/>
 
     </Routes >
     </BrowserRouter>

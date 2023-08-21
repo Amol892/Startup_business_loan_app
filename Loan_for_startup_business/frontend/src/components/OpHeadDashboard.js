@@ -20,10 +20,6 @@ function OpHeadDashboard() {
     </div>
   </div>
 </nav>
-
-<div ClassName='container-fluid'>
-  Welcome to Document Verification
-</div>
 </>
   )
 }

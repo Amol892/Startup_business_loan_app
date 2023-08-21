@@ -5,16 +5,15 @@ class ApplicationModelSerializer(serializers.ModelSerializer):
 
     class Meta:
         model=Application
-        fields=('user','type_of_employment','business_title',
-                'business_type','business_address','expected_average_annual_turnover',
-                'years_in_current_business','collateral',
-                 'status','application_timestamp','remark')
-        
-
+        fields="__all__"
+        depth=1
 
 class DocumentModelSerializer(serializers.ModelSerializer):
     class Meta:
         model=Document
-        fields='__all__'
+        fields="__all__"
+        depth=1
+    
+        
         
    

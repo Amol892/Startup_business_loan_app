@@ -36,8 +36,6 @@ class Application(models.Model):
     def __str__(self):
         return f"{self.id}"
     
-    def get_first_name(self):
-         return User.objects.get_first_name
    
 
 

@@ -1,33 +1,36 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
 import axios from 'axios'
+import { NavLink, useNavigate } from 'react-router-dom';
 
 
 
 function Application() {
-  const [user,setuser]=useState([]);
-  async function fetchData(){
+  const [users,setuser]=useState([]);
+
+  
+   async function fetchData(){
 
     const result=await axios.get('http://localhost:8000/document_verification/applications/')
     setuser(result.data);
-  }
+  };
   useEffect(()=>{fetchData()},[]);
+
   return (
    <>
    
    <table class='table table-dark table-striped'>
     <thead>
       <tr>
-        <th>Serial Number</th>
-        <th>Applicants</th>
+        <th>Applications</th>
+        <th>Documents</th>
       </tr>
     </thead>
     <tbody>
-      {user.map(obj=>{
+      {users.map(obj=>{
         return(
           <tr>
-            <td>{obj.user}</td>
-
+            <td>{obj.user.first_name} {obj.user.last_name}</td>
+            <td> <NavLink to={`/Documents/${obj.id}/`}><button className='btn btn-success'>Documents</button></NavLink></td>
           </tr>
 
         )
