@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
+import ConfirmationPage from './ConfirmationPage';
+import DefaultersListPage from './DefaultersListPage';
 
 const LoanInstallment = () => {
-  const [applicationData, setApplicationData] = useState([]);
   //const { id } = useParams();  // Get the parameter from the URL
   //const response = await axios.get(`http://127.0.0.1:8000/api/appli_installment/${id}/`);
+  const [applicationData, setApplicationData] = useState([]);
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const navigate = useNavigate(); // Move this line outside of the function
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,13 +24,23 @@ const LoanInstallment = () => {
     fetchData();
   }, []);
 
-  const markAsDefaulter = async () => {
+  const markAsDefaulter = () => {
+    setShowConfirmation(true);
+  };
+
+  const confirmMarkAsDefaulter = async () => {
     try {
-        const response = await axios.post(`http://127.0.0.1:8000/api/mark_as_defaulter/${applicationData.id}/`);
-        console.log(response.data.message);
+      const response = await axios.post(`http://127.0.0.1:8000/api/mark_as_defaulter/${applicationData.id}/`); //${applicationData.id}/
+      console.log(response.data.message);
+
+      navigate('/defaulters'); 
     } catch (error) {
       console.error('Error marking as defaulter:', error);
     }
+  };
+
+  const cancelMarkAsDefaulter = () => {
+    setShowConfirmation(false);
   };
 
 
@@ -50,7 +64,7 @@ const LoanInstallment = () => {
           <p>Status: {applicationData.status}</p>
           <p>Application Timestamp: {applicationData.application_timestamp}</p>
           <p>Remark: {applicationData.remark}</p>
-          <p>User: {applicationData.user}</p>
+          <p>User: {applicationData.user.first_name} {applicationData.user.last_name}</p>
 
           <h3>Loan Details</h3>
           <p>Loan ID: {applicationData.loans.id}</p>
@@ -83,6 +97,13 @@ const LoanInstallment = () => {
             ))}
           </ul>
           <button onClick={markAsDefaulter}>Mark as Defaulter</button>
+          {showConfirmation && (
+            <ConfirmationPage
+              user={applicationData.user}
+              onConfirm={confirmMarkAsDefaulter}
+              onCancel={cancelMarkAsDefaulter}/>
+          )}
+          <button><Link to="/defaulters">Go to Defaulters</Link></button>
         </div>
       )}
     </div>

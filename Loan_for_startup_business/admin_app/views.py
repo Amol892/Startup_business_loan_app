@@ -1,14 +1,13 @@
-from django.shortcuts import render
-from .serializer import FamilySerializer, EMICalculatorSerializer, ApplicationSerializer,InstallmentSerializer, UserSerializer,LoanSerializer
+from datetime import timedelta, timezone
+from django.shortcuts import get_object_or_404
+from .serializer import FamilySerializer, EMICalculatorSerializer, ApplicationSerializer, DefaulterSerializer
 from .models import Family, User
 from loan_sanctioning.models import Loan
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-#from django.shortcuts import get_object_or_404
 from disburstment.models import Installment, Defaulter
 from application_generation.models import Application
-from datetime import timedelta
 from django.utils import timezone
 
 # Create your views here.
@@ -49,73 +48,88 @@ class EMICalculatorView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 class ApplicationInstallmentView(APIView):
-    # def get(self, request, *args, **kwargs):
-    #     applications = Loan.objects.filter(status='done')
-    #     #applic = Installment.objects.select_related("loan").filter(loan.application.id)
-    #     applicant = [loan.application for loan in applications]
-    #     serializer = ApplicationSerializer(applicant, many=True)
-    #     return Response(data=serializer.data, status=status.HTTP_200_OK)
-#    def get(self, request):
-#         users_with_applicants = User.objects.filter(Applications__isnull=False).distinct()
-        
-#         serializer = UserSerializer(users_with_applicants, many=True)
-#         return Response(serializer.data)
-    # def get(self, request, *args, **kwargs):
-    #     applications_with_done_loans = Application.objects.filter(Loans__status='done')
-    #     serialized_data = []
-        
-    #     for Applications in applications_with_done_loans:
-    #         application_data = {
-    #             'Applications': ApplicationSerializer(Applications).data,
-    #             'Loans': [],
-    #         }
-            
-    #         for Loans in Applications.Loans.all():
-    #             loan_data = {
-    #                 'Loans': LoanSerializer(Loans).data,
-    #                 'installments': [],
-    #             }
-                
-    #             for installment in Loans.installments.all():
-    #                 installment_data = InstallmentSerializer(installment).data
-    #                 loan_data['installments'].append(installment_data)
-                
-    #             application_data['Loans'].append(loan_data)
-            
-    #         serialized_data.append(application_data)
-        
-    #     return Response(data=serialized_data, status=status.HTTP_200_OK)
     def get(self, request, id, *args, **kwargs):
         application = Application.objects.get(id=id)
         serializer = ApplicationSerializer(application)
         return Response(data=serializer.data, status=status.HTTP_200_OK)
 
+# class MarkAsDefaulterView(APIView):
+#     def post(self, request, id, *args, **kwargs):
+#         application = Application.objects.get(id=id)
+#         loan = get_object_or_404(Loan, application=application)
+#         today = timezone.now().date()
+#         last_installment = Installment.objects.filter(
+#             loan=loan,
+#             status__in=['ok', 'late'], 
+#             installment_expected_date__lte=today,
+#             installment_expected_date__gte=today - timedelta(days=90) 
+#         ).order_by('-installment_expected_date').first() 
+        
+#         if last_installment:
+#             default_amount = last_installment.remaining_amount
+#             next_expected_date = Installment.objects.filter(
+#                 loan=loan,
+#                 installment_expected_date__gt=last_installment.installment_expected_date
+#             ).order_by('installment_expected_date').first()
+#             pending_since_date = next_expected_date.installment_expected_date if next_expected_date else today
+#         else:
+#             default_amount = loan.loan_principal_amount
+#             pending_since_date = today
+        
+#         defaulter, created = Defaulter.objects.get_or_create(user=application.user)
+#         defaulter.default_amount = default_amount
+#         defaulter.pending_since_date = pending_since_date
+#         defaulter.save()
+    
+#         return Response({'message': 'User added to defaulter list'}, status=status.HTTP_200_OK)
 class MarkAsDefaulterView(APIView):
     def post(self, request, id, *args, **kwargs):
-        try:
-            application = Application.objects.get(id=id)
-        except Application.DoesNotExist:
-            return Response(data={"message": "Application not found."}, status=status.HTTP_404_NOT_FOUND)
-        
-        if application.loans.status == 'pending':
-            three_months_ago = timezone.now() - timedelta(days=90)
-            overdue_installments = application.loans.installments.filter(
-                installment_expected_date__gte=three_months_ago,
-                status__in=['pending', 'defaulted']
-            )
-            
-            if overdue_installments.exists():
-                try:
-                    defaulter = Defaulter.objects.get(user=application.user)
-                except Defaulter.DoesNotExist:
-                    defaulter = Defaulter(user=application.user)
-                
-                defaulter.default_amount += application.loans.total_amount_and_processing_fees
-                defaulter.pending_since_date = application.loans.maturity_date
-                defaulter.save()
-                
-                return Response(data={"message": "Applicant marked as defaulter."}, status=status.HTTP_200_OK)
+        application = Application.objects.get(id=id)
+        loan = get_object_or_404(Loan, application=application)
+        today = timezone.now().date()
+        three_months_ago = today - timedelta(days=90)
+
+        # Get all installments within the last 3 months
+        installments = Installment.objects.filter(
+            loan=loan,
+            installment_expected_date__lte=today,
+            installment_expected_date__gte=three_months_ago
+        ).order_by('installment_expected_date')
+
+        consecutive_pending_count = 0
+        last_pending_date = None
+        last_remaining_amount = None
+
+        for installment in installments:
+            print(f"Installment Date: {installment.installment_expected_date}, Status: {installment.status}")
+            if installment.status == 'pending':
+                consecutive_pending_count += 1
+                if consecutive_pending_count == 1:
+                    last_pending_date = installment.installment_expected_date
+                    last_remaining_amount = installment.remaining_amount
+                if consecutive_pending_count == 3:
+                    break
             else:
-                return Response(data={"message": "Applicant not eligible for defaulter status."}, status=status.HTTP_400_BAD_REQUEST)
+                consecutive_pending_count = 0
+
+        print(f"consecutive_pending_count: {consecutive_pending_count}")
+        if consecutive_pending_count == 3:
+            # The applicant hasn't paid for consecutive 3 months with "pending" status
+            defaulter, created = Defaulter.objects.get_or_create(user=application.user)
+            defaulter.default_amount = last_remaining_amount
+            defaulter.pending_since_date = last_pending_date
+            defaulter.save()
+
+            return Response({'message': 'User added to defaulter list'}, status=status.HTTP_200_OK)
         else:
-            return Response(data={"message": "Application not eligible for defaulter status."}, status=status.HTTP_400_BAD_REQUEST)
+            # Applicant doesn't meet the criteria, do nothing
+            return Response({'message': 'User does not meet defaulter criteria'}, status=status.HTTP_200_OK)
+
+class DefaulterList(APIView):
+    def get(self, request, format=None):
+        defaulters = Defaulter.objects.all()
+        serializer = DefaulterSerializer(defaulters, many=True)
+        return Response(data=serializer.data, status=status.HTTP_200_OK)
+
+
+
