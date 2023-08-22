@@ -1,4 +1,5 @@
-from django.shortcuts import render
+
+from django.shortcuts import get_object_or_404, render
 from rest_framework.views import APIView
 from .serializers import *
 from rest_framework.response import Response
@@ -8,6 +9,10 @@ from .models import *
 from .utiles import detectUser
 from application_generation.models import Application
 from application_generation.serializers import ApplicationModelSerializer
+from datetime import timezone,timedelta
+from django.db.models import Sum,Count
+from disburstment.models import Defaulter
+from datetime import datetime,timedelta, timezone
 #User registeration view
 class RegisterAPIView(APIView):
        
@@ -23,7 +28,7 @@ class RegisterAPIView(APIView):
     
 
 
-
+# Login API
 class LoginAPIView(TokenObtainPairView):
     
     def post(self,request):
@@ -112,7 +117,7 @@ class EMICalculatorAPIView(APIView):
             return Response(data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
-    
+
 #Fetching All application data API
 class AllApplicationAPIView(APIView):
     def post(self,request):
@@ -123,11 +128,130 @@ class AllApplicationAPIView(APIView):
             
             serializer=ApplicationModelSerializer(application,many=True)
             return Response(data=serializer.data,status=status.HTTP_200_OK)
+        
+        
         else:
             application=Application.objects.select_related('user').filter(status=application_status)
-            print(application_status)
+            application_id_list = [i[0] for i in list(Application.objects.filter(status=application_status).values_list('id'))]
+            #loan_id_list = list(map(lambda x : Loan.objects.get(application=x).id, application_id_list))
+            #disbursement_date_list = 
+            #print(loan_id_list)
             serializer=ApplicationModelSerializer(application,many=True)
+            
             return Response(data=serializer.data,status=status.HTTP_200_OK)
 
         return Response(data=serializer.error,status=status.HTTP_400_BAD_REQUEST)
     
+
+
+class MQYReportAPIView(APIView):
+    
+    #Quaterly sanctioning loan amount
+    def get(self,request):
+        
+        Quaters = ['Q1','Q2','Q3','Q4']
+        
+        #Quaterly loan sanctioning amount
+        Q1_A = Loan.objects.filter(response_timestamp__range=('2023-04-01 00:00:00.000000','2023-06-30 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))
+        Q2_A = Loan.objects.filter(response_timestamp__range=('2023-07-01 00:00:00.000000','2023-09-30 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))
+        Q3_A = Loan.objects.filter(response_timestamp__range=('2023-10-01 00:00:00.000000','2023-12-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))
+        Q4_A = Loan.objects.filter(response_timestamp__range=('2024-01-01 00:00:00.000000','2024-03-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))
+        
+        Q_A_list = [Q1_A['loan_principal_amount__sum'],Q2_A['loan_principal_amount__sum'],Q3_A['loan_principal_amount__sum'],Q4_A['loan_principal_amount__sum']]
+        Q_A_data = [i if i!=None else 0 for i in Q_A_list ]
+        
+        
+        #Quaterly loan sanctioning amount
+        Q1_C = Application.objects.filter(application_timestamp__range=('2023-04-01 00:00:00.000000','2023-06-30 23:59:59.999999')).aggregate(Count('id'))
+        Q2_C = Application.objects.filter(application_timestamp__range=('2023-07-01 00:00:00.000000','2023-09-30 23:59:59.999999')).aggregate(Count('id'))
+        Q3_C = Application.objects.filter(application_timestamp__range=('2023-10-01 00:00:00.000000','2023-12-31 23:59:59.999999')).aggregate(Count('id'))
+        Q4_C = Application.objects.filter(application_timestamp__range=('2024-01-01 00:00:00.000000','2024-03-31 23:59:59.999999')).aggregate(Count('id'))
+        
+        Q_C_list = [Q1_C['id__count'],Q2_C['id__count'],Q3_C['id__count'],Q4_C['id__count']]
+        Q_C_data = [i if i!=None else 0 for i in Q_C_list ]
+        
+        return Response(data={'Q_A_data':Q_A_data,'Q_C_data':Q_C_data,'Quaters':Quaters})
+    
+    #Monthly and Yeary sanctioning loan amount
+    def post(self,request):
+        year = '2023'
+        month_no = [4,5,6,7,8,9,10,11,12,1,2,3]
+        Months = ['FY2023-24','April','May','June','July','August','Sept','Oct','Nov','Dec','Jan','Feb','March']
+        YLAmount = Loan.objects.filter(response_timestamp__year="2023").aggregate(Sum('loan_principal_amount'))
+        #Month loan sanctioning amount
+        Month_loan_amount = list(map(lambda x : Loan.objects.filter(response_timestamp__year="2023",response_timestamp__month=str(x)).aggregate(Sum('loan_principal_amount')),month_no))
+        MLAmount = [v for i in Month_loan_amount for v in i.values()]
+        YLAmount = [YLAmount['loan_principal_amount__sum']]
+        MLAmount = YLAmount + [ i if i!=None else 0 for i in MLAmount ]
+        #Yeary loan sancationing amount
+        
+        
+        #Monthly application count
+        YACount = Application.objects.filter(application_timestamp__year="2023").aggregate(Count('id'))
+        Month_Application_count = list(map(lambda x : Application.objects.filter(application_timestamp__year="2023",application_timestamp__month=str(x)).aggregate(Count('id')),month_no))
+        MACount = [v for i in Month_Application_count for v in i.values()]
+        YACount = [YACount['id__count']]
+        MACount = YACount + [ i if i!=None else 0 for i in MACount ]
+        
+        #Yearly application count
+        
+        return Response(data={'MLAmount':MLAmount,'MACount':MACount,'Months':Months})
+    
+
+#Adding to Defaulter list
+
+
+class DefaulterList(APIView):
+    def get(self, request, format=None):
+        defaulters = Defaulter.objects.all()
+        serializer = DefaulterModelSerializer(defaulters, many=True)
+        return Response(data=serializer.data, status=status.HTTP_200_OK)
+    
+class CheckDefaulterAPIView(APIView):
+    
+    def post(self,request,pk=None):
+        application = Application.objects.get(id=pk)
+        loanId = Loan.objects.get(application=pk)
+        disbursement_object = get_object_or_404(Disbursement,loan_id=loanId)
+        disbursement_date = disbursement_object.response_timestamp.date()
+        disbursement_amount = disbursement_object.net_disbursed_amount
+        current_date = datetime.today().date()
+        print(application.user)
+        print(Defaulter.objects.filter(user=application.user))
+        
+        if Defaulter.objects.filter(user=application.user).exists():
+            return Response(data={'message':'Already added into defaulter list'}) 
+            
+        else:
+            try:
+                last_date = Installment.objects.filter(loan_id=loanId).last().installment_expected_date
+                print(last_date)
+                remaining_amount = Installment.objects.filter(loan_id=loanId).last().remaining_amount
+                print(remaining_amount)
+                days_diff = (current_date - last_date).days
+                print('1nd',days_diff)
+                
+                    
+                if days_diff > 90:
+                    defaulter, created = Defaulter.objects.get_or_create(user=application.user)
+                    defaulter.default_amount = remaining_amount
+                    defaulter.pending_since_date = last_date
+                    defaulter.save()
+                    return Response(data={'message':'Added to defaulter list'})
+                else:
+                    return Response(data={'message':'no need to add into defaulter list'})
+                
+                
+            except:
+                last_date = disbursement_date
+                print(last_date)
+                days_diff = (current_date - last_date).days
+                print('2nd',days_diff)
+                if days_diff > 90:
+                    defaulter, created = Defaulter.objects.get_or_create(user=application.user)
+                    defaulter.default_amount = disbursement_amount
+                    defaulter.pending_since_date = last_date
+                    defaulter.save()
+                    return Response(data={'message':'Added to defaulter list'}) 
+            
+        return Response(data={'message':'no need to add into defaulter list'})

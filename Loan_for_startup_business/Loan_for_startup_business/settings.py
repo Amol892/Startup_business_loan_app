@@ -71,6 +71,8 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware'
 ]
 
+
+
 ROOT_URLCONF = 'Loan_for_startup_business.urls'
 
 TEMPLATES = [

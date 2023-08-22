@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { NavLink } from 'react-router-dom'
 import CustomerCard from '../Admin/CustomerCard'
+import DocumentCard from './DocumentCard'
 
 function OHDashboard() {
 
@@ -10,12 +11,14 @@ function OHDashboard() {
   const data = {}
   async function fetchData(data){
       data = {'status' : data}
-      console.log(data)
+      
       await axios.post('http://localhost:8000/admin_app/allapplications/',data,{
           headers:{'Content-Type':'multipart/form-data'}
       }).then(response=>{
           setUsers(response.data)
           console.log(response.data)
+      }).catch(error=>{
+
       })
       
   }
@@ -33,12 +36,19 @@ function OHDashboard() {
                 <li className ="nav-item">
                   <button style={{width:300,padding:10,fontSize:20,fontWeight:'bold'}} onClick={(e)=>fetchData(e.target.value)} value='Pending' className="btn btn-warning">Pending Applications</button>
                 </li><br/>
+                <li className ="nav-item">
+                <button style={{width:300,padding:10,fontSize:20,fontWeight:'bold'}} onClick={(e)=>fetchData(e.target.value)} value='Apporve' className="btn btn-info">Approved Applications</button>
+                </li><br/>
+                <li className ="nav-item">
+                <button style={{width:300,padding:10,fontSize:20,fontWeight:'bold'}} onClick={(e)=>fetchData(e.target.value)} value='Rejected' className="btn btn-danger">Rejected Applications</button>
+                </li><br/>
  
               </ul>
             </div>
         <div className='col-10' style={{border:2,padding:30}}>
           <div className='row'>
             <CustomerCard users={users}/>
+            
           </div>
         </div>
         </div>

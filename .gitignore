@@ -2,3 +2,8 @@ venv/
 .env
 __pycache__/
 db.sqlite3
+
+debug.log
+ERROR.log
+success.log
+WARNING.log

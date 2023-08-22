@@ -29,6 +29,17 @@ import CreateUser from './Components/LoanRepresentative/CreateUser';
 import LoanApplication from './Components/Customer/LoanApplication';
 import EMICal from './Components/Homepage/EMICal';
 import Installments from './Components/Admin/Installments';
+import Loandata from './Components/Customer/Loandata';
+import EMIHistroy from './Components/Customer/EMIHistroy';
+import CustProfile from './Components/Customer/CustProfile';
+import PayEmi from './Components/Customer/PayEmi';
+
+import QuaterlyReport from './Components/Admin/QuaterlyReport';
+import MACReport from './Components/Admin/MACReport';
+import Info from './Components/Admin/Info';
+import DocumentCard from './Components/OperationalHead/DocumentCard';
+
+import { Document, Page } from '../node_modules/react-pdf/dist/esm/pdf.worker.entry';
 
 
 function App() {
@@ -97,8 +108,19 @@ function App() {
 
           /* Installments */
           <Route path='/installments' element={<Installments/>}/>
-          
 
+          /* Customer Dashboard */
+          <Route path='/loandata' element={<Loandata/>}/>
+          <Route path='/emihistroy' element={<EMIHistroy/>}/>
+          <Route path='/custprofile' element={<CustProfile/>}/>
+          <Route path='/payemi' element={<PayEmi/>}/>
+          
+          <Route path='/info' element = {<Info/>}/>
+          <Route path='/macreport' element={<MACReport/>}/>
+          <Route path='/quaterlyreport' element={<QuaterlyReport/>}/>
+          
+          /* Operational head */
+          <Route path='/documents' element={<DocumentCard/>}/>
 
           
           

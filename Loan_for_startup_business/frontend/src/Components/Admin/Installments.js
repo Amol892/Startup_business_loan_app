@@ -1,17 +1,41 @@
+import { useState } from 'react';
 import { NavLink, useLocation, useParams } from 'react-router-dom';
-
+import axios from 'axios';
 function Installments() {
 
             const {state} = useLocation();
-            const { user } = state; // Read values passed on state           
+            const { user } = state; // Read values passed on state 
+            console.log(user)   
+            const [message,setMessage] = useState([])
+            const [error,setError] = useState([])
+            function AddDefaulter(data){
+                console.log(data)
+                axios.post(`http://localhost:8000/admin_app/checkdefaulter/${data}/`).then(response=>{
+                    setMessage(response.data.message)
+                    console.log(response.data.message)
+                }).catch(error=>{
+                    setError(error.response.data)
+                })
+            }
             
             
   return (
     <>  
+    
         <hr style={{color:'white'}}/>
+        <center>
+        <div style={{color:'black',backgroundColor:'yellow',padding:20,borderRadius:10}} className='container'>
+            {message && <h3>{message}</h3>}
+            {error && <h3>{error.message}</h3>}
+            
+        </div>
+        </center>
         <div className='row' style={{backgroundColor:'white',borderRadius:10,width:1800,marginLeft:120,borderRadius:20}}>
         <div>
-            <h1 style={{backgroundColor:'mediumorchid',padding:20}}> Installments details <button style={{padding:15,borderRadius:20,backgroundColor:'red',fontSize:30,fontWeight:500,marginLeft:1000}}>Add to Defaulter</button></h1><hr/>
+            <h1 style={{backgroundColor:'mediumorchid',padding:20}}> 
+            <NavLink style={{padding:10,fontSize:30,marginLeft:20,marginRight:400}} to="/adminDashboard" className='btn btn-secondary col-2'>Back to Dashboard</NavLink>
+            Installments details
+            <button style={{padding:15,borderRadius:20,backgroundColor:'red',fontSize:30,fontWeight:500,marginLeft:400}} value={user[0].loan.application.id} onClick={(e)=>{AddDefaulter(e.target.value)}}>Add to Defaulter</button></h1><hr/>
             
             <table className='table' style={{textAlign:'center'}}>
                 <thead >
@@ -65,7 +89,7 @@ function Installments() {
                                         <td>{obj.installment_expected_date}</td>
                                         <td>{obj.installment_paid_date}</td>
                                         <td>{obj.penalty_amount}</td>
-                                        <td><NavLink className={status_color}>{obj.status}</NavLink></td>
+                                        <td><button className={status_color}>{obj.status}</button></td>
                                     </tr>
                                 
                             )

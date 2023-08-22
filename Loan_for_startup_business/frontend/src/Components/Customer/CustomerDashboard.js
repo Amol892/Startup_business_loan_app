@@ -1,18 +1,77 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { NavLink, useParams } from 'react-router-dom'
+import { NavLink, useNavigate, useParams } from 'react-router-dom'
+import Loandata from './Loandata';
+import EMIHistroy from './EMIHistroy';
+import PayEmi from './PayEmi';
+import CustProfile from './CustProfile';
+
 
 function CustomerDashboard({userEmail}) {
-    const email = userEmail
 
-    const [users,setUser]=useState([])
-    console.log(email)
+    const [message, setMessage] = useState(' ');
+    const [error,setError]=useState([])
+    const email = userEmail
+    const navigate = useNavigate()
+    const [userData,setUserData]=useState([])
+    const [PageResp,setPageResp] = useState([])
+    console.log(userData)
+    let Page;
+    if(PageResp === 'loandata'){
+      Page = <Loandata userData={userData}/>
+      
+    }else if(PageResp === 'emihistory'){
+      Page = <EMIHistroy userData={userData}/>
+    }else if(PageResp === 'payemi'){
+      Page = <PayEmi userData={userData}/>
+    }else{
+      Page = <CustProfile/>
+    }
     
-    async function fetchData(){
+    
+    async function fetchData(data){
+        console.log(data)
+        
         await axios.get(`http://localhost:8000/customer/loandata/${email}/`).then(response =>{
-            setUser(response.data)
+            setUserData(response.data)
+            console.log(response.data)
+            setMessage(response.data.message)
+            setPageResp(data)
         }
-        )
+        ).catch(error=>{
+          setError(error.response.data)
+        })
+        
+      }
+
+      async function fetchDataEMI(data){
+        console.log(data)
+        
+        await axios.get(`http://localhost:8000/customer/installmentdata/${email}/`).then(response =>{
+            setUserData(response.data)
+            console.log(response.data)
+            setMessage(response.data.message)
+            setPageResp(data)
+        }
+        ).catch(error=>{
+          setError(error.response.data)
+        })
+        
+      }
+
+      async function fetchDataEMIPay(data){
+        console.log(data)
+        
+        await axios.get(`http://localhost:8000/customer/EMIPayment/${email}/`).then(response =>{
+            setUserData(response.data)
+            console.log(response.data)
+            setMessage(response.data.message)
+            setPageResp(data)
+        }
+        ).catch(error=>{
+          setError(error.response.data)
+        })
+        
       }
   return (
     <>
@@ -26,23 +85,23 @@ function CustomerDashboard({userEmail}) {
           <div className ="col-2" style={{ backgroundColor:'white',borderRadius:20,marginTop:10,padding:10,height:1000}} >
               <ul className ="nav navbar-nav">
                 <li>
-                <NavLink><button style={{width:300,padding:10,fontSize:20,fontWeight:'bold'}} onClick={()=>{fetchData()}} className="btn btn-info">Loan details</button></NavLink>
+                <button style={{width:300,padding:10,fontSize:20,fontWeight:'bold'}} onClick={(e)=>{fetchData(e.target.value)}} value='loandata' className="btn btn-info">Loan details</button>
                 </li><br/>
                 
                 <li>
-                <NavLink><button style={{width:300,padding:10,fontSize:20,fontWeight:'bold'}}   className="btn btn-secondary">EMI Histroy</button></NavLink>
+                <button style={{width:300,padding:10,fontSize:20,fontWeight:'bold'}} onClick={(e)=>{fetchDataEMI(e.target.value)}} value='emihistory'  className="btn btn-secondary">EMI Histroy</button>
                 </li><br/>
 
                 <li>
-                <NavLink><button style={{width:300,padding:10,fontSize:20,fontWeight:'bold'}}  className="btn btn-success">Pay EMI</button></NavLink>
+                <button style={{width:300,padding:10,fontSize:20,fontWeight:'bold'}} onClick={(e)=>{fetchDataEMIPay(e.target.value)}} value='payemi' className="btn btn-success">EMI Payment</button>
                 </li><br/>
-                
-                
+                                
               </ul>
             </div>
         <div className='col-10' style={{border:2,padding:30}}>
           <div className='row'>
-            
+            {Page}
+          
           </div>
         </div>
         </div>

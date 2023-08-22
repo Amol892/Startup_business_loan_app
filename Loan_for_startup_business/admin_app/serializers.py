@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import *
-
+from disburstment.models import *
 #User registeration
 class RegisterModelSerializer(serializers.ModelSerializer):
     
@@ -38,3 +38,10 @@ class EMICalculatorSerializer(serializers.Serializer):
     principal = serializers.FloatField()
     interest_rate = serializers.FloatField()
     tenure_years = serializers.IntegerField()
+    
+#Defaulter Model
+class DefaulterModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Defaulter
+        fields = '__all__'
+        depth = 1

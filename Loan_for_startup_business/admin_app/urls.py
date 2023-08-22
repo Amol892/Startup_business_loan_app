@@ -14,6 +14,14 @@ urlpatterns = [
     path('bank/',BankAPIView.as_view()),
     
     #Admin dashboard 
-    path('allapplications/',AllApplicationAPIView.as_view())
+    path('allapplications/',AllApplicationAPIView.as_view()),
+    
+    #Quaterly Loan data
+    path('mqareport/',MQYReportAPIView.as_view()),
+    
+    #Defaulter
+    
+    path('defaulters/', DefaulterList.as_view()),
+    path('checkdefaulter/<int:pk>/',CheckDefaulterAPIView.as_view())
     
 ]

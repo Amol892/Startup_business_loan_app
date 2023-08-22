@@ -12,6 +12,7 @@ function Loan_status() {
     
     
     async function saveData(data){
+      
         await axios.post('http://localhost:8000/customer/enquiry_status/',data).then(response=>{
             
                     setMessage(response.data[0].status)

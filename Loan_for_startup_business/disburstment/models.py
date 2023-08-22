@@ -14,23 +14,24 @@ class Defaulter(models.Model):
         return f"{self.id}"
     
 class Installment(models.Model):
-    INSTALLMENT_CHOICES =[
-        ("", ""),
+    INSTALLMENT_CHOICES =[ 
+        ("", ""), 
         ('ok', 'ok'),
         ('pending', 'pending'),
         ('late','Late')
     ]
-    loan= models.ForeignKey(Loan, on_delete=models.CASCADE, related_name="installments")
+    loan = models.ForeignKey(Loan, on_delete=models.CASCADE, related_name="installments")
     remaining_amount = models.FloatField(default=0.0, blank=True)
     installment_number  = models.IntegerField(default=0, blank=True)
     monthly_installment_number = models.FloatField(default=0.0, blank=True)
     installment_expected_date = models.DateField(default="2000-12-2",blank=True)
     installment_paid_date = models.DateField(default="2000-12-2",blank=True)
     penalty_amount = models.FloatField(default=0.0, blank=True)
+    order_payment_id = models.CharField(max_length=100)
     status = models.CharField("Status of the installment", max_length=50 , blank=True, choices=INSTALLMENT_CHOICES, default="pending")
 
     def __str__(self):
-        return f"{self.id}"
+        return f"{self.id}" 
     
 class Disbursement(models.Model):
     PAYMENT_CHOICES = [
