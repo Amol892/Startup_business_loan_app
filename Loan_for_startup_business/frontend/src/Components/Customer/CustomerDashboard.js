@@ -15,6 +15,7 @@ function CustomerDashboard({userEmail}) {
     const navigate = useNavigate()
     const [userData,setUserData]=useState([])
     const [PageResp,setPageResp] = useState([])
+    const access = sessionStorage.getItem('access')
     console.log(userData)
     let Page;
     if(PageResp === 'loandata'){
@@ -32,7 +33,10 @@ function CustomerDashboard({userEmail}) {
     async function fetchData(data){
         console.log(data)
         
-        await axios.get(`http://localhost:8000/customer/loandata/${email}/`).then(response =>{
+        await axios.get(`http://localhost:8000/customer/loandata/${email}/`,
+            {headers:{'Content-Type':'multipart/form-data',"Authorization":'Bearer' + " " + access}
+        }
+        ).then(response =>{
             setUserData(response.data)
             console.log(response.data)
             setMessage(response.data.message)
@@ -47,7 +51,9 @@ function CustomerDashboard({userEmail}) {
       async function fetchDataEMI(data){
         console.log(data)
         
-        await axios.get(`http://localhost:8000/customer/installmentdata/${email}/`).then(response =>{
+        await axios.get(`http://localhost:8000/customer/installmentdata/${email}/`,
+          {headers:{'Content-Type':'multipart/form-data',"Authorization":'Bearer' + " " + access}}
+        ).then(response =>{
             setUserData(response.data)
             console.log(response.data)
             setMessage(response.data.message)
@@ -62,7 +68,9 @@ function CustomerDashboard({userEmail}) {
       async function fetchDataEMIPay(data){
         console.log(data)
         
-        await axios.get(`http://localhost:8000/customer/EMIPayment/${email}/`).then(response =>{
+        await axios.get(`http://localhost:8000/customer/EMIPayment/${email}/`,
+        {headers:{'Content-Type':'multipart/form-data',"Authorization":'Bearer' + " " + access}}
+        ).then(response =>{
             setUserData(response.data)
             console.log(response.data)
             setMessage(response.data.message)

@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { NavLink, useNavigate } from 'react-router-dom'
 import CustomerCard from './CustomerCard'
-import Installments from './Installments'
 import QuaterlyReport from './QuaterlyReport'
-import MQYReports from './MACReport'
 import MACReport from './MACReport'
 import Info from './Info'
 
@@ -15,13 +13,16 @@ function AdminDashboard() {
   const[monthly,setMonthly]=useState([])
   const[quaterly,setQuaterly]=useState([])
   const data = {}
-
+  const access = sessionStorage.getItem('access')
+  console.log(monthly)
+  console.log(quaterly)
   let Page;
     if(PageResp === 'customer_list'){
       Page = <CustomerCard users={users}/>
     }else if (PageResp === 'monthly_data'){
       Page = <MACReport monthly={monthly}/>
     }else if (PageResp === 'quaterly_data'){
+      console.log(quaterly)
       Page = <QuaterlyReport quaterly={quaterly}/>
     }else{
       Page = <Info/>
@@ -31,7 +32,9 @@ function AdminDashboard() {
       data = {'status' : data}
       console.log(data)
       await axios.post('http://localhost:8000/admin_app/allapplications/',data,{
-          headers:{'Content-Type':'multipart/form-data'}
+          headers:{'Content-Type':'multipart/form-data',
+                    "Authorization":'Bearer' + " " + access
+                  }
       }).then(response=>{
           setPageResp('customer_list')
           setUsers(response.data)
@@ -40,39 +43,36 @@ function AdminDashboard() {
       
   }
 
-  async function fetchDataM(){
-    //data = {'status' : data}
-    //console.log(data)
-    await axios.post('http://localhost:8000/admin_app/mqareport/',{
-        headers:{'Content-Type':'multipart/form-data'}
-    }).then(response=>{
-      setPageResp('monthly_data')
-      setMonthly(response.data)
-      //navigate('macreport/', {state : {'mac_data' : response.data }})
-        console.log(response.data)
-    }).catch(error=>{
-      
-    })
-    
-  }
+  async function fetchDataM(data){
+    console.log(data)
+    await axios.post('http://localhost:8000/admin_app/mqareport/',data,
+        {headers:{'Content-Type':'multipart/form-data', "Authorization":'Bearer' + " " + access}}
+        ).then(response=>{
+            setPageResp('monthly_data')
+            setMonthly(response.data)
+            console.log(response.data)
+        }).catch(error=>{
+          
+        })
+        
+      }
 
   
 
   async function fetchDataQ(){
-    
-    console.log(data)
-    await axios.get('http://localhost:8000/admin_app/mqareport/',{
-        headers:{'Content-Type':'multipart/form-data'}
-    }).then(response=>{
-        setPageResp('quaterly_data')
-        setQuaterly(response.data)
-        //navigate('quaterlyreport/', {state : {'mac_data' : response.data }})
-        console.log(response.data)
-    })
+  
+    await axios.get('http://localhost:8000/admin_app/mqareport/',
+      {headers:{'Content-Type':'multipart/form-data',
+      "Authorization":'Bearer' + " " + access}}
+    ).then(response=>{
+            setPageResp('quaterly_data')
+            setQuaterly(response.data)
+            
+            console.log(response.data)
+        }).catch(error=>{
 
-    
-
-  }
+        })
+    }
   return (
     <>
       <hr style={{color:'white'}}/>
@@ -87,10 +87,10 @@ function AdminDashboard() {
           <div className ="col-2" style={{ backgroundColor:'white',borderRadius:20,marginTop:10,padding:10,height:1000}} >
               <ul className ="nav navbar-nav">
                 <li>
-                <button style={{width:300,padding:10,fontSize:20,fontWeight:'bold',borderRadius:10,backgroundColor:'peru'}} onClick={(e)=>fetchDataM()}  >Monthly Reports</button>
+                <button style={{width:300,padding:10,fontSize:20,fontWeight:'bold',borderRadius:10,backgroundColor:'peru'}} value = {2023} onClick={(e)=>fetchDataM(e.target.value)}  >Monthly Reports</button>
                 </li><br/>
                 <li>
-                <button style={{width:300,padding:10,fontSize:20,fontWeight:'bold',borderRadius:10,backgroundColor:'springgreen'}} onClick={(e)=>fetchDataQ()}  >Quaterly Reports</button>
+                <button style={{width:300,padding:10,fontSize:20,fontWeight:'bold',borderRadius:10,backgroundColor:'springgreen'}} onClick={()=>fetchDataQ()}  >Quaterly Reports</button>
                 </li><br/>
                 <li>
                 <button style={{width:300,padding:10,fontSize:20,fontWeight:'bold'}} onClick={(e)=>fetchData(e.target.value)} value='all' className="btn btn-secondary">All Applications</button>

@@ -6081,3 +6081,657 @@ admin_app.models.User.DoesNotExist: User matching query does not exist.
 ERROR 2023-08-22 21:45:47,125 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 113018
 WARNING 2023-08-22 21:45:57,747 log Unauthorized: /admin_app/loginpage/
 WARNING 2023-08-22 21:45:57,748 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 401 63
+WARNING 2023-08-23 09:20:11,492 log Not Found: /
+WARNING 2023-08-23 09:20:11,555 basehttp "GET / HTTP/1.1" 404 2652
+WARNING 2023-08-23 09:20:11,677 log Not Found: /favicon.ico
+WARNING 2023-08-23 09:20:11,678 basehttp "GET /favicon.ico HTTP/1.1" 404 2703
+ERROR 2023-08-23 10:00:23,868 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 183, in post
+    mla=list(map(lambda x : Loan.objects.filter(response_timestamp__range=('{x}-01 00:00:00.000000','{x}-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),M_N)
+TypeError: map() must have at least two arguments.
+ERROR 2023-08-23 10:00:23,881 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 105980
+ERROR 2023-08-23 10:00:26,606 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 183, in post
+    mla=list(map(lambda x : Loan.objects.filter(response_timestamp__range=('{x}-01 00:00:00.000000','{x}-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),M_N)
+TypeError: map() must have at least two arguments.
+ERROR 2023-08-23 10:00:26,609 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 105980
+ERROR 2023-08-23 10:00:28,744 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 183, in post
+    mla=list(map(lambda x : Loan.objects.filter(response_timestamp__range=('{x}-01 00:00:00.000000','{x}-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),M_N)
+TypeError: map() must have at least two arguments.
+ERROR 2023-08-23 10:00:28,747 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 105980
+ERROR 2023-08-23 10:01:46,740 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 183, in post
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=('{x}-01 00:00:00.000000','{x}-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),M_N))
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 183, in <lambda>
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=('{x}-01 00:00:00.000000','{x}-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),M_N))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1567, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“{x}-01 00:00:00.000000” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format.']
+ERROR 2023-08-23 10:01:46,759 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 172692
+ERROR 2023-08-23 10:02:54,523 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 184, in post
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=('{x}-01 00:00:00.000000','{x}-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),M_N))
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 184, in <lambda>
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=('{x}-01 00:00:00.000000','{x}-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),M_N))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1567, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“{x}-01 00:00:00.000000” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format.']
+ERROR 2023-08-23 10:02:54,528 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 172674
+ERROR 2023-08-23 10:13:40,041 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 181, in post
+    m1 = list(map((lambda x,y : x+y),months1))
+TypeError: MQYReportAPIView.post.<locals>.<lambda>() missing 1 required positional argument: 'y'
+ERROR 2023-08-23 10:13:40,043 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 105134
+ERROR 2023-08-23 10:18:16,572 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 181, in post
+    m1 = list(map((lambda x : x.keys()+x.values()),months1))
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 181, in <lambda>
+    m1 = list(map((lambda x : x.keys()+x.values()),months1))
+AttributeError: 'int' object has no attribute 'keys'
+ERROR 2023-08-23 10:18:16,575 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 109241
+ERROR 2023-08-23 10:27:09,435 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 182, in post
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=({M_Y[x]}-{x}-'01 00:00:00.000000',{M_Y[x]}-{x}-'31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),month_no))
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 182, in <lambda>
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=({M_Y[x]}-{x}-'01 00:00:00.000000',{M_Y[x]}-{x}-'31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),month_no))
+TypeError: unsupported operand type(s) for -: 'set' and 'str'
+ERROR 2023-08-23 10:27:09,441 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 109332
+ERROR 2023-08-23 10:34:48,811 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 182, in post
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=({M_Y[x]}+'-'+{x}+'-01 00:00:00.000000',{M_Y[x]}+'-'+{x}+'-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),month_no))
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 182, in <lambda>
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=({M_Y[x]}+'-'+{x}+'-01 00:00:00.000000',{M_Y[x]}+'-'+{x}+'-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),month_no))
+TypeError: unsupported operand type(s) for +: 'set' and 'str'
+ERROR 2023-08-23 10:34:48,815 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 109452
+ERROR 2023-08-23 10:36:58,094 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 182, in post
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=(str({M_Y[x]})+'-'+str({x})+'-01 00:00:00.000000',str({M_Y[x]})+'-'+str({x})+'-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),month_no))
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 182, in <lambda>
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=(str({M_Y[x]})+'-'+str({x})+'-01 00:00:00.000000',str({M_Y[x]})+'-'+str({x})+'-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),month_no))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1567, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“{2023}-{4}-01 00:00:00.000000” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format.']
+ERROR 2023-08-23 10:36:58,100 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 171599
+ERROR 2023-08-23 10:38:24,311 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\utils\dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+ValueError: Invalid isoformat string: '2023-4-31 23:59:59.999999'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1546, in to_python
+    parsed = parse_datetime(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\utils\dateparse.py", line 129, in parse_datetime
+    return datetime.datetime(**kw, tzinfo=tzinfo)
+ValueError: day is out of range for month
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 182, in post
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=(str(M_Y[x])+'-'+str(x)+'-01 00:00:00.000000',str(M_Y[x])+'-'+str(x)+'-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),month_no))
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 182, in <lambda>
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=(str(M_Y[x])+'-'+str(x)+'-01 00:00:00.000000',str(M_Y[x])+'-'+str(x)+'-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),month_no))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1550, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“2023-4-31 23:59:59.999999” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time.']
+ERROR 2023-08-23 10:38:24,319 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 184794
+ERROR 2023-08-23 10:39:38,538 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\utils\dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+ValueError: Invalid isoformat string: '2023-4-31 23:59:59.999999'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1546, in to_python
+    parsed = parse_datetime(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\utils\dateparse.py", line 129, in parse_datetime
+    return datetime.datetime(**kw, tzinfo=tzinfo)
+ValueError: day is out of range for month
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 182, in post
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=(str(M_Y[x])+'-'+str(x)+'-01 00:00:00.000000',str(M_Y[x])+'-'+str(x)+'-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),month_no))
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 182, in <lambda>
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=(str(M_Y[x])+'-'+str(x)+'-01 00:00:00.000000',str(M_Y[x])+'-'+str(x)+'-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),month_no))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1550, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“2023-4-31 23:59:59.999999” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time.']
+ERROR 2023-08-23 10:39:38,546 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 184794
+ERROR 2023-08-23 10:40:55,734 log Internal Server Error: /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\utils\dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+ValueError: Invalid isoformat string: '2024-2-30 23:59:59.999999'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1546, in to_python
+    parsed = parse_datetime(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\utils\dateparse.py", line 129, in parse_datetime
+    return datetime.datetime(**kw, tzinfo=tzinfo)
+ValueError: day is out of range for month
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 182, in post
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=(str(M_Y[x])+'-'+str(x)+'-01 00:00:00.000000',str(M_Y[x])+'-'+str(x)+'-30 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),month_no))
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 182, in <lambda>
+    mla=list(map((lambda x : Loan.objects.filter(response_timestamp__range=(str(M_Y[x])+'-'+str(x)+'-01 00:00:00.000000',str(M_Y[x])+'-'+str(x)+'-30 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))),month_no))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\sql\query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1550, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“2024-2-30 23:59:59.999999” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time.']
+ERROR 2023-08-23 10:40:55,742 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 500 184794
+WARNING 2023-08-23 11:01:19,945 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 11:01:19,946 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:03:13,979 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 11:03:13,980 basehttp "GET /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:08:01,719 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 11:08:01,719 basehttp "GET /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:09:34,805 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 11:09:34,805 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:09:36,971 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 11:09:36,971 basehttp "GET /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:09:56,481 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 11:09:56,482 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:10:01,888 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 11:10:01,889 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:10:03,717 log Unauthorized: /admin_app/allapplications/
+WARNING 2023-08-23 11:10:03,719 basehttp "POST /admin_app/allapplications/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:22:14,627 log Unauthorized: /customer/loandata/u@gmail.com/
+WARNING 2023-08-23 11:22:14,628 basehttp "GET /customer/loandata/u@gmail.com/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:22:16,260 log Unauthorized: /customer/installmentdata/u@gmail.com/
+WARNING 2023-08-23 11:22:16,261 basehttp "GET /customer/installmentdata/u@gmail.com/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:22:18,364 log Unauthorized: /customer/EMIPayment/u@gmail.com/
+WARNING 2023-08-23 11:22:18,365 basehttp "GET /customer/EMIPayment/u@gmail.com/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:53:41,369 log Unauthorized: /customer/pay/
+WARNING 2023-08-23 11:53:41,370 basehttp "POST /customer/pay/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:53:45,775 log Unauthorized: /customer/pay/
+WARNING 2023-08-23 11:53:45,777 basehttp "POST /customer/pay/ HTTP/1.1" 401 58
+WARNING 2023-08-23 11:57:21,809 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 11:57:21,810 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:00:44,310 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 12:00:44,311 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:06:04,524 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 12:06:04,526 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:07:17,761 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 12:07:17,762 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:08:55,462 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 12:08:55,463 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:09:17,849 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 12:09:17,850 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:13:42,434 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 12:13:42,435 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:14:40,957 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 12:14:40,958 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:15:55,668 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 12:15:55,669 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:16:27,660 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 12:16:27,660 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:17:12,533 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 12:17:12,534 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:20:17,345 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 12:20:17,346 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:22:31,564 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 12:22:31,565 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:22:37,953 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 12:22:37,954 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:37:08,890 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 12:37:08,891 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:38:10,515 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 12:38:10,516 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:40:20,136 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 12:40:20,137 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:46:07,066 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 12:46:07,067 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:47:48,105 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 12:47:48,105 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:50:20,142 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 12:50:20,143 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:51:47,058 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 12:51:47,060 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:52:47,228 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 12:52:47,537 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:52:57,844 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 12:52:57,845 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 12:58:23,527 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 12:58:23,528 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 13:08:04,515 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 13:08:04,516 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 13:10:56,936 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 13:10:56,937 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 13:11:04,959 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 13:11:04,960 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 13:19:47,769 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 13:19:47,770 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 13:21:52,813 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 13:21:52,814 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 13:28:34,966 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 13:28:34,967 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 13:29:58,415 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 13:29:58,415 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 13:32:19,238 log Forbidden: /admin_app/mqareport/
+WARNING 2023-08-23 13:32:19,239 basehttp "GET /admin_app/mqareport/ HTTP/1.1" 403 58
+WARNING 2023-08-23 13:32:25,611 log Forbidden: /admin_app/mqareport/
+WARNING 2023-08-23 13:32:25,611 basehttp "GET /admin_app/mqareport/ HTTP/1.1" 403 58
+WARNING 2023-08-23 13:32:28,909 log Forbidden: /admin_app/mqareport/
+WARNING 2023-08-23 13:32:28,910 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 403 58
+WARNING 2023-08-23 14:45:11,763 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 14:45:11,785 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 14:45:21,858 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 14:45:21,859 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 14:45:23,580 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 14:45:23,581 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 14:47:05,349 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 14:47:05,350 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 14:50:23,356 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 14:50:23,358 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 14:54:02,329 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 14:54:02,331 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 14:54:58,850 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 14:54:58,850 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 14:56:24,521 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 14:56:24,523 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 14:59:47,379 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 14:59:47,379 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 14:59:50,680 log Forbidden: /admin_app/mqareport/
+WARNING 2023-08-23 14:59:50,680 basehttp "GET /admin_app/mqareport/ HTTP/1.1" 403 63
+WARNING 2023-08-23 15:00:05,491 log Forbidden: /admin_app/mqareport/
+WARNING 2023-08-23 15:00:05,492 basehttp "GET /admin_app/mqareport/ HTTP/1.1" 403 63
+WARNING 2023-08-23 15:00:06,496 log Forbidden: /admin_app/mqareport/
+WARNING 2023-08-23 15:00:06,497 basehttp "GET /admin_app/mqareport/ HTTP/1.1" 403 63
+WARNING 2023-08-23 15:00:06,504 log Forbidden: /admin_app/mqareport/
+WARNING 2023-08-23 15:00:06,505 basehttp "GET /admin_app/mqareport/ HTTP/1.1" 403 63
+WARNING 2023-08-23 15:00:08,085 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 15:00:08,087 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 15:00:08,089 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 15:00:08,089 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 15:00:47,839 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 15:00:47,840 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 15:00:59,151 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 15:00:59,152 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 15:01:00,801 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 15:01:00,802 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 15:01:01,758 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 15:01:01,759 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 15:01:02,238 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 15:01:02,240 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 15:01:30,032 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 15:01:30,033 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 15:02:20,881 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 15:02:20,882 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58
+WARNING 2023-08-23 15:02:26,813 log Unauthorized: /admin_app/checkdefaulter/1/
+WARNING 2023-08-23 15:02:26,814 basehttp "POST /admin_app/checkdefaulter/1/ HTTP/1.1" 401 58
+WARNING 2023-08-23 15:02:31,893 log Unauthorized: /admin_app/mqareport/
+WARNING 2023-08-23 15:02:31,894 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 401 58

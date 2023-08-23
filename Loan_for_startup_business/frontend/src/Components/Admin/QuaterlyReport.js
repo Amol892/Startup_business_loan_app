@@ -1,7 +1,8 @@
 import React from 'react'
 import Plot from 'react-plotly.js'
-function QuaterlyReport({quaterly}) {
 
+function QuaterlyReport({quaterly}) {
+  
   const Quaterly_loan_amount = quaterly.Q_A_data
   const Quaterly_loan_count = quaterly.Q_C_data 
   const Quaters = quaterly.Quaters

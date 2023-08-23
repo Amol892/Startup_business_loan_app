@@ -13,6 +13,11 @@ from datetime import timezone,timedelta
 from django.db.models import Sum,Count
 from disburstment.models import Defaulter
 from datetime import datetime,timedelta, timezone
+from rest_framework_simplejwt.authentication import JWTAuthentication
+from rest_framework.permissions import IsAuthenticated,IsAdminUser,IsAuthenticatedOrReadOnly
+import pytz
+
+tz = pytz.timezone('Asia/Kolkata')
 #User registeration view
 class RegisterAPIView(APIView):
        
@@ -120,6 +125,8 @@ class EMICalculatorAPIView(APIView):
 
 #Fetching All application data API
 class AllApplicationAPIView(APIView):
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated,]
     def post(self,request):
         application_status = request.data['status']
         print(application_status)
@@ -146,40 +153,59 @@ class AllApplicationAPIView(APIView):
 
 class MQYReportAPIView(APIView):
     
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated,]
     #Quaterly sanctioning loan amount
     def get(self,request):
         
         Quaters = ['Q1','Q2','Q3','Q4']
         
         #Quaterly loan sanctioning amount
-        Q1_A = Loan.objects.filter(response_timestamp__range=('2023-04-01 00:00:00.000000','2023-06-30 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))
-        Q2_A = Loan.objects.filter(response_timestamp__range=('2023-07-01 00:00:00.000000','2023-09-30 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))
-        Q3_A = Loan.objects.filter(response_timestamp__range=('2023-10-01 00:00:00.000000','2023-12-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))
-        Q4_A = Loan.objects.filter(response_timestamp__range=('2024-01-01 00:00:00.000000','2024-03-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))
+        #Q1_A = Loan.objects.filter(response_timestamp__range=('2023-04-01 00:00:00.000000','2023-06-30 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))
+        #Q2_A = Loan.objects.filter(response_timestamp__range=('2023-07-01 00:00:00.000000','2023-09-30 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))
+        #Q3_A = Loan.objects.filter(response_timestamp__range=('2023-10-01 00:00:00.000000','2023-12-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))
+        #Q4_A = Loan.objects.filter(response_timestamp__range=('2024-01-01 00:00:00.000000','2024-03-31 23:59:59.999999')).aggregate(Sum('loan_principal_amount'))
         
+        
+        Q1_A = Loan.objects.filter(response_timestamp__range=(tz.localize(datetime(2023, 4, 1, 00, 00, 00, 0000)),tz.localize(datetime(2023, 6, 30, 23, 59, 59, 999999)))).aggregate(Sum('loan_principal_amount'))
+        Q2_A = Loan.objects.filter(response_timestamp__range=(tz.localize(datetime(2023, 7, 1, 00, 00, 00, 0000)),tz.localize(datetime(2023, 9, 30, 23, 59, 59, 999999)))).aggregate(Sum('loan_principal_amount'))
+        Q3_A = Loan.objects.filter(response_timestamp__range=(tz.localize(datetime(2023, 10, 1, 00, 00, 00, 0000)),tz.localize(datetime(2023, 12, 30, 23, 59, 59, 999999)))).aggregate(Sum('loan_principal_amount'))
+        Q4_A = Loan.objects.filter(response_timestamp__range=(tz.localize(datetime(2024, 1, 1, 00, 00, 00, 0000)),tz.localize(datetime(2024, 3, 30, 23, 59, 59, 999999)))).aggregate(Sum('loan_principal_amount'))
         Q_A_list = [Q1_A['loan_principal_amount__sum'],Q2_A['loan_principal_amount__sum'],Q3_A['loan_principal_amount__sum'],Q4_A['loan_principal_amount__sum']]
         Q_A_data = [i if i!=None else 0 for i in Q_A_list ]
-        
+        print(Q_A_data)
         
         #Quaterly loan sanctioning amount
-        Q1_C = Application.objects.filter(application_timestamp__range=('2023-04-01 00:00:00.000000','2023-06-30 23:59:59.999999')).aggregate(Count('id'))
-        Q2_C = Application.objects.filter(application_timestamp__range=('2023-07-01 00:00:00.000000','2023-09-30 23:59:59.999999')).aggregate(Count('id'))
-        Q3_C = Application.objects.filter(application_timestamp__range=('2023-10-01 00:00:00.000000','2023-12-31 23:59:59.999999')).aggregate(Count('id'))
-        Q4_C = Application.objects.filter(application_timestamp__range=('2024-01-01 00:00:00.000000','2024-03-31 23:59:59.999999')).aggregate(Count('id'))
+        #Q1_C = Application.objects.filter(application_timestamp__range=('2023-04-01 00:00:00.000000','2023-06-30 23:59:59.999999')).aggregate(Count('id'))
+        #Q2_C = Application.objects.filter(application_timestamp__range=('2023-07-01 00:00:00.000000','2023-09-30 23:59:59.999999')).aggregate(Count('id'))
+        #Q3_C = Application.objects.filter(application_timestamp__range=('2023-10-01 00:00:00.000000','2023-12-31 23:59:59.999999')).aggregate(Count('id'))
+        #Q4_C = Application.objects.filter(application_timestamp__range=('2024-01-01 00:00:00.000000','2024-03-31 23:59:59.999999')).aggregate(Count('id'))
+        
+        
+        Q1_C = Application.objects.filter(application_timestamp__range=(tz.localize(datetime(2023, 4, 1, 00, 00, 00, 0000)),tz.localize(datetime(2023, 6, 30, 23, 59, 59, 999999)))).aggregate(Count('id'))
+        Q2_C = Application.objects.filter(application_timestamp__range=(tz.localize(datetime(2023, 7, 1, 00, 00, 00, 0000)),tz.localize(datetime(2023, 9, 30, 23, 59, 59, 999999)))).aggregate(Count('id'))
+        Q3_C = Application.objects.filter(application_timestamp__range=(tz.localize(datetime(2023, 10, 1, 00, 00, 00, 0000)),tz.localize(datetime(2023, 12, 30, 23, 59, 59, 999999)))).aggregate(Count('id'))
+        Q4_C = Application.objects.filter(application_timestamp__range=(tz.localize(datetime(2024, 1, 1, 00, 00, 00, 0000)),tz.localize(datetime(2024, 3, 30, 23, 59, 59, 999999)))).aggregate(Count('id'))
         
         Q_C_list = [Q1_C['id__count'],Q2_C['id__count'],Q3_C['id__count'],Q4_C['id__count']]
         Q_C_data = [i if i!=None else 0 for i in Q_C_list ]
         
         return Response(data={'Q_A_data':Q_A_data,'Q_C_data':Q_C_data,'Quaters':Quaters})
     
+    
+    
     #Monthly and Yeary sanctioning loan amount
     def post(self,request):
-        year = '2023'
+        
+        year1 = 2023
+        year2 = year1+1
         month_no = [4,5,6,7,8,9,10,11,12,1,2,3]
+        M_Y={4:year1,5:year1,6:year1,7:year1,8:year1,9:year1,10:year1,11:year1,12:year1,1:year2,2:year2,3:year2}
         Months = ['FY2023-24','April','May','June','July','August','Sept','Oct','Nov','Dec','Jan','Feb','March']
         YLAmount = Loan.objects.filter(response_timestamp__year="2023").aggregate(Sum('loan_principal_amount'))
+        
         #Month loan sanctioning amount
-        Month_loan_amount = list(map(lambda x : Loan.objects.filter(response_timestamp__year="2023",response_timestamp__month=str(x)).aggregate(Sum('loan_principal_amount')),month_no))
+        Month_loan_amount = list(map(lambda x : Loan.objects.filter(response_timestamp__year=str(M_Y[x]),response_timestamp__month=str(x)).aggregate(Sum('loan_principal_amount')),month_no))
         MLAmount = [v for i in Month_loan_amount for v in i.values()]
         YLAmount = [YLAmount['loan_principal_amount__sum']]
         MLAmount = YLAmount + [ i if i!=None else 0 for i in MLAmount ]
@@ -188,12 +214,12 @@ class MQYReportAPIView(APIView):
         
         #Monthly application count
         YACount = Application.objects.filter(application_timestamp__year="2023").aggregate(Count('id'))
-        Month_Application_count = list(map(lambda x : Application.objects.filter(application_timestamp__year="2023",application_timestamp__month=str(x)).aggregate(Count('id')),month_no))
+        Month_Application_count = list(map(lambda x : Application.objects.filter(application_timestamp__year=str(M_Y[x]),application_timestamp__month=str(x)).aggregate(Count('id')),month_no))
         MACount = [v for i in Month_Application_count for v in i.values()]
         YACount = [YACount['id__count']]
         MACount = YACount + [ i if i!=None else 0 for i in MACount ]
         
-        #Yearly application count
+        
         
         return Response(data={'MLAmount':MLAmount,'MACount':MACount,'Months':Months})
     
@@ -209,7 +235,10 @@ class DefaulterList(APIView):
     
 class CheckDefaulterAPIView(APIView):
     
-    def post(self,request,pk=None):
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated,]
+    
+    def get(self,request,pk=None):
         application = Application.objects.get(id=pk)
         loanId = Loan.objects.get(application=pk)
         disbursement_object = get_object_or_404(Disbursement,loan_id=loanId)
@@ -225,11 +254,11 @@ class CheckDefaulterAPIView(APIView):
         else:
             try:
                 last_date = Installment.objects.filter(loan_id=loanId).last().installment_expected_date
-                print(last_date)
+                
                 remaining_amount = Installment.objects.filter(loan_id=loanId).last().remaining_amount
-                print(remaining_amount)
+                
                 days_diff = (current_date - last_date).days
-                print('1nd',days_diff)
+                
                 
                     
                 if days_diff > 90:
@@ -239,14 +268,14 @@ class CheckDefaulterAPIView(APIView):
                     defaulter.save()
                     return Response(data={'message':'Added to defaulter list'})
                 else:
-                    return Response(data={'message':'no need to add into defaulter list'})
+                    return Response(data={'message':'All EMIs are cleared'})
                 
                 
             except:
                 last_date = disbursement_date
-                print(last_date)
+                
                 days_diff = (current_date - last_date).days
-                print('2nd',days_diff)
+                
                 if days_diff > 90:
                     defaulter, created = Defaulter.objects.get_or_create(user=application.user)
                     defaulter.default_amount = disbursement_amount
@@ -254,4 +283,4 @@ class CheckDefaulterAPIView(APIView):
                     defaulter.save()
                     return Response(data={'message':'Added to defaulter list'}) 
             
-        return Response(data={'message':'no need to add into defaulter list'})
+        return Response(data={'message':'All EMIs are cleared'})

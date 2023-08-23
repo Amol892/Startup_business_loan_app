@@ -18,6 +18,8 @@ from disburstment.serializers import InstallmentModelserializer
 from disburstment.models import Installment,Disbursement
 from datetime import datetime
 from .utiles import Calculate_EMI,calculate_emi_schedule
+from rest_framework_simplejwt.authentication import JWTAuthentication
+from rest_framework.permissions import IsAuthenticated,IsAdminUser,IsAuthenticatedOrReadOnly
 # Create your views here.
 
 class EnquiryAPIView(APIView):
@@ -83,7 +85,8 @@ class EnquiryStatusAPIView(APIView):
         return Response(data=serializer_data.data,status=status.HTTP_200_OK)
             
 class CustomerLoanAPIView(APIView):
-    
+    authentication_classes = [JWTAuthentication,]
+    permission_classes = [IsAuthenticated]
     def get(self,request,email=None):
         userId = get_object_or_404(User,email=email)
         applicationId = Application.objects.select_related('user').get(user=userId)
@@ -92,7 +95,8 @@ class CustomerLoanAPIView(APIView):
         return Response(data = serializer.data)
     
 class CustomerInstallmentAPIView(APIView):
-    
+    authentication_classes = [JWTAuthentication,]
+    permission_classes = [IsAuthenticated]
     def get(self,request,email=None):
         try:
             userId = get_object_or_404(User,email=email)
@@ -106,6 +110,8 @@ class CustomerInstallmentAPIView(APIView):
 
    
 class EMIPaymentAPIView(APIView):
+    authentication_classes = [JWTAuthentication,]
+    permission_classes = [IsAuthenticated]
     def get(self,request,email=None):
         userId = get_object_or_404(User,email=email)
         applicationId = Application.objects.select_related('user').get(user=userId)
@@ -154,7 +160,8 @@ environ.Env.read_env()
 
 
 class PayAPIView(APIView):
-    
+    authentication_classes = [JWTAuthentication,]
+    permission_classes = [IsAuthenticated]
     def post(self,request):
         print(request.data['installment_paid_date'])
         
@@ -200,7 +207,8 @@ class PayAPIView(APIView):
         return Response(data=data)
     
 class HandlePaymentSuccess(APIView):
-    
+    authentication_classes = [JWTAuthentication,]
+    permission_classes = [IsAuthenticated]
     def post(self,request):
         # request.data is coming from frontend
         res = json.loads(request.data["response"])

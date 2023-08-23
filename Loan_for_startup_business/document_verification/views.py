@@ -5,10 +5,13 @@ from application_generation.models import Document
 from rest_framework.response import Response
 from rest_framework import status
 from application_generation.models import Application
+from rest_framework_simplejwt.authentication import JWTAuthentication
+from rest_framework.permissions import IsAuthenticated,IsAdminUser,IsAuthenticatedOrReadOnly
 # Create your views here.
 
 class DocumentVerifyAPIVIew(APIView):
-    
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated,]
     def get(self,request,pk=None):
         Document_obj = get_object_or_404(Document,application = pk)
         serializer = DocumentModelSerializer(Document_obj)

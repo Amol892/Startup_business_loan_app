@@ -15,7 +15,7 @@ function PayEmi({userData}) {
     const RIN = userData.remaining_installment_numbers
     const  EMI_schedule_list = userData.EMI_schedule_list 
     var today = new Date()
-    
+    const access = sessionStorage.getItem('access')
     console.log(RIN)
     
 
@@ -29,7 +29,7 @@ function PayEmi({userData}) {
       await axios.post('http://localhost:8000/customer/paymentsuccess/',bodyData,
       {headers: {
         Accept: "application/json",
-        "Content-Type": "application/json",
+        "Content-Type": "application/json","Authorization":'Bearer' + " " + access
       }}).then(response=>{
         setMessage(response)
       }).catch(error=>{
@@ -49,12 +49,14 @@ function PayEmi({userData}) {
       console.log(data)
       const res =  loadScript();
 
-      const result = await axios.post('http://localhost:8000/customer/pay/',data).then(response=>{
-        console.log(response.data)
-        return response.data
-      }).catch(error=>{
-        setError(error.reponse.data)
-      });
+      const result = await axios.post('http://localhost:8000/customer/pay/',data,
+          {headers:{'Content-Type':'multipart/form-data',"Authorization":'Bearer' + " " + access}}
+          ).then(response=>{
+            console.log(response.data)
+            return response.data
+          }).catch(error=>{
+            setError(error.reponse.data)
+          });
 
       var options = {
         key_id: process.env.PUBLIC_KEY, // in react your environment variable must start with REACT_APP_

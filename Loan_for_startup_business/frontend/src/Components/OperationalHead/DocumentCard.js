@@ -12,21 +12,24 @@ function DocumentCard() {
     const {state} = useLocation();
     const { user } = state; // Read values passed on state  
     const baseurl="http://127.0.0.1:8000"
+    const access = sessionStorage.getItem('access')
     console.log(user.aadhar_card)
 
     function approvedocuments(data){
       console.log(data)
       data={'s1':data}
       console.log(user.application.id)
-      axios.patch(`http://localhost:8000/document_verify/documents/${user.application.id}/`,data).then(response=>{
-        navigate('/ohDashboard')
-      }).catch(error=>{
-        console.log(error)
-      })
-      
-      
-    
-    }
+      axios.patch(`http://localhost:8000/document_verify/documents/${user.application.id}/`,data,
+        {headers:{'Content-Type':'multipart/form-data',
+                  "Authorization":'Bearer' + " " + access
+                  }}
+                  ).then(response=>{
+                    navigate('/ohDashboard')
+                  }).catch(error=>{
+                    console.log(error)
+                  })
+
+          }
 
     
         

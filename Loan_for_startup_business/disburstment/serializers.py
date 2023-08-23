@@ -6,3 +6,15 @@ class InstallmentModelserializer(serializers.ModelSerializer):
         model = Installment
         fields = '__all__'
         depth = 4
+        
+class DisbursementModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Disbursement
+        fields = "__all__"
+        depth = 3
+        
+class DefaulterModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Defaulter
+        fields = "__all__"
+        depth = 3

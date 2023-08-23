@@ -45,8 +45,9 @@ function Bank() {
 
   return (
     <>
+        <hr style={{color:'white'}}/>
         <div style={{ display: 'flex'}}>
-        <div className ="col-2" style={{ marginTop:100}} >
+        <div className ="col-2" style={{backgroundColor:'white',borderRadius:20,marginTop:10,padding:10,height:1000}} >
             <ul className ="nav navbar-nav">
                 <li>
                 <NavLink style={{ alignItems: 'center',fontSize:30, backgroundColor:'aquamarine',fontWeight: 'bold' }} className ="btn btn col-10" to="/createuser"> Create User </NavLink>
@@ -65,7 +66,7 @@ function Bank() {
 
 
 
-        <div className='col-12' style={{backgroundColor:'palegoldenrod',borderRadius:20,padding:40,width:1400}}>
+        <div className='col-12' style={{backgroundColor:'palegoldenrod',borderRadius:20,padding:40,width:1400,marginLeft:100,marginTop:10}}>
                 <center style={{color:'midnightblue'}}>
                 <h1>Add Bank details</h1>
                 </center><hr/>               

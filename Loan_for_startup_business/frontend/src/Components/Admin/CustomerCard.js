@@ -6,9 +6,13 @@ function CustomerCard({users}) {
     
         const navigate = useNavigate()
         const [message, setMessage] = useState('');
-        const [error,setError]=useState([])
+        const [error,setError]=useState([]);
+        const access = sessionStorage.getItem('access');
+
         async function fetchData(data){
-            await axios.get(`http://localhost:8000/disburstment/installment/${data}/`).then(response=>{
+            await axios.get(`http://localhost:8000/disburstment/installment/${data}/`,
+                {headers:{'Content-Type':'multipart/form-data',"Authorization":'Bearer' + " " + access}}
+            ).then(response=>{
                 const Inst_data = response.data
                 console.log(Inst_data)
                 setMessage(response.data.message)
@@ -27,7 +31,9 @@ function CustomerCard({users}) {
         }
 
         async function fetchDocuments(data){
-            await axios.get(`http://localhost:8000/document_verify/documents/${data}/`).then(response=>{
+            await axios.get(`http://localhost:8000/document_verify/documents/${data}/`,
+                    {headers:{'Content-Type':'multipart/form-data',"Authorization":'Bearer' + " " + access}}
+            ).then(response=>{
                 const Doc_data = response.data
                 setMessage(response.data.message)
                 navigate('/documents',{state:{user : Doc_data}})
@@ -39,13 +45,7 @@ function CustomerCard({users}) {
             
         }
 
-        function CheckDefauterstatus(data){
-            axios.get().then(response=>{
-                return response.data
-            }).catch(error=>{
-
-            })
-        }
+        
 
   return (
     <>  

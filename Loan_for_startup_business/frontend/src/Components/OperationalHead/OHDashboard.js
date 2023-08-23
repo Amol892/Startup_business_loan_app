@@ -7,14 +7,15 @@ import DocumentCard from './DocumentCard'
 function OHDashboard() {
 
   const[users,setUsers]=useState([])
+  const access = sessionStorage.getItem('access')
   
   const data = {}
   async function fetchData(data){
       data = {'status' : data}
       
-      await axios.post('http://localhost:8000/admin_app/allapplications/',data,{
-          headers:{'Content-Type':'multipart/form-data'}
-      }).then(response=>{
+      await axios.post('http://localhost:8000/admin_app/allapplications/',data,
+        {headers:{'Content-Type':'multipart/form-data',"Authorization":'Bearer' + " " + access}}
+      ).then(response=>{
           setUsers(response.data)
           console.log(response.data)
       }).catch(error=>{
