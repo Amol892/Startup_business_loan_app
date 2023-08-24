@@ -23,10 +23,11 @@ function AllApporveApplication() {
     },[])
   return (
     <>
+    <div style={{backgroundColor:"#3d3840", height:"1800px"}}>
     <div className='container'>
     <br/><br/>
-    <center><h1 style={{color:"rebeccapurple"}}><b>Apporve Application </b></h1></center><br/><br/>
-        <table className='table table-success table-striped' style={{textAlign:"center"}}>
+    <center><h1 style={{color:"white"}}><b>Apporve Application </b></h1></center><br/><br/>
+        <table className='table table-dark table-striped' style={{textAlign:"center"}}>
             <thead>
                 <tr>
                     <th>Application Id</th>
@@ -42,8 +43,8 @@ function AllApporveApplication() {
                                 <td>{obj.id}</td>
                                 <td>{obj.status}</td>
                                 <td>
-                                    <NavLink to={`/view_application/${obj.id}`}><button className='btn btn-success col-4'>View Application</button></NavLink>&nbsp;&nbsp;
-                                    <NavLink to={`/document_table/${obj.id}`}><button className='btn btn-success col-4'>View Document</button></NavLink>
+                                    <NavLink to={`/view_application/${obj.id}`}><button className='btn2 col-4'>View Application</button></NavLink>&nbsp;&nbsp;
+                                    <NavLink to={`/document_table/${obj.id}`}><button className='btn2 col-4'>View Document</button></NavLink>
                                 </td>
                             </tr>
                         )
@@ -54,6 +55,7 @@ function AllApporveApplication() {
             </tbody>
         </table>
 
+    </div>
     </div>
     </>
   )

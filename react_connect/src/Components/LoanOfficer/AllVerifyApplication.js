@@ -22,13 +22,14 @@ function AllVerifyApplication() {
     },[])
   return (
     <>
+    <div style={{backgroundColor:"#3d3840", height:"1800px"}}>
     <div className='container'>
     <br/><br/>
-    <center><h1 style={{color:"rebeccapurple"}}><b>Pending Application </b></h1></center><br/><br/>
-        <table className='table table-success table-striped' style={{textAlign:"center"}}>
+    <center><h1 style={{color:"white"}}><b>Verify Application </b></h1><br/><br/>
+        <table className='table table-dark table-striped' style={{width:"800px",textAlign:"center"}}>
             <thead>
                 <tr>
-                    <th>Application Id</th>
+                    <th >Application Id</th>
                     <th>Application Status</th>
                     <th>Action</th>
                 </tr>
@@ -52,7 +53,8 @@ function AllVerifyApplication() {
 
             </tbody>
         </table>
-
+        </center>
+    </div>
     </div>
     </>
   )

@@ -3,6 +3,7 @@ import {useForm} from "react-hook-form";
 import { NavLink, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import UserSignup from "./UserSignup";
+import "./PagesCss/UserCss.css"
 
 function Application() {
 
@@ -19,7 +20,7 @@ function Application() {
                 nav("/login")
             }
     }*/
-    const {register, handleSubmit,formState:{errors}, setValue} = useForm();
+    const {register, handleSubmit,formState:{errors}, setValue, setError} = useForm();
     const nav = useNavigate();
     /*const access_token = JSON.parse(localStorage.getItem("item"));
     
@@ -46,6 +47,12 @@ function Application() {
     const [application, setApplication] = useState({})    
     async function saveData(data){
         const result = await axios.post("http://127.0.0.1:8000/application/",data)
+        if (result.status === 400){
+            const data = result.data
+            for (let key in Object(data)){
+                setError(key,data[key])
+            }
+        }
         setApplication(result.data)
         sessionStorage.setItem("application_id",result.data.id)
         nav("/guarantor")
@@ -60,17 +67,22 @@ function Application() {
   return (
     <>
     
-    <br/><br/>
-    <div className='container' style={{backgroundColor:"lightgray",  width:"1200px"}}>
+    
+    <div style={{backgroundColor:"#3d3840"}}><br/>
+    <div className='container' style={{width:"700px", color:"white"}}>
     <form onSubmit={handleSubmit(saveData)}>
-    <h1 style={{color:"red", textAlign:"center"}}>Application</h1>
+    <h1 style={{color:"white", textAlign:"center"}}>APPLICATION</h1>
 
     <div>
     <label htmlFor='user'>Application Id</label>
-    <input id="user" type='text' className='form-control' readOnly={true} {...register("user", 
+    <input id="user" type='text' className='form-control' placeholder='Enter Application Id' readOnly={true} style={{height:"40px"}} {...register("user", 
                 {required:{
                     value: true,
                     message: "This field is required"
+                },
+                min:{
+                    value:1,
+                    message:"Appliaction Id not negative"
                 }
                 })} />
                 <p style={{color:"red"}}>
@@ -78,11 +90,11 @@ function Application() {
                 </p>
     </div>
 
-    <br/><br/>
+    <br/>
 
     <div>
     <label htmlFor='aadhar_no'>Adhar Number</label>
-    <input id="aadhar_no" type='text' className='form-control' {...register("aaddar_no", 
+    <input id="aadhar_no" type='text' className='form-control' placeholder='Enter addhar number here' style={{height:"40px"}} {...register("aaddar_no", 
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -101,11 +113,11 @@ function Application() {
                 </p>
     </div>
 
-    <br/><br/>
+    <br/>
 
     <div>
     <label htmlFor='pan_no'>PAN Number</label>
-    <input id="pan_no" type='text' className='form-control' {...register("pan_no", 
+    <input id="pan_no" type='text' className='form-control' placeholder='Enter pan card number here' style={{height:"40px"}} {...register("pan_no", 
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -128,18 +140,18 @@ function Application() {
                 </p>
     </div>
 
-    <br/><br/>
+    <br/>
 
     <dv>
     <label htmlFor='type_of_employmenet'>Employement Type</label>&nbsp;&nbsp;
-    <select id="type_of_employmenet" style={{width:"300px", textAlign:"center"}} {...register("type_of_employment",
+    <select id="type_of_employmenet" style={{width:"300px",height:"30px", textAlign:"center"}} {...register("type_of_employment",
     {
         required:{
             value: true,
              message: "This field is required"
         }
     })}>
-        <option value=""></option>
+        <option value="">Select</option>
         <option value="Salaried">Salaried</option>
         <option value="Self-Employed">Selfemployed</option>
     </select>
@@ -148,11 +160,11 @@ function Application() {
     </p>
     </dv>
 
-    <br/><br/><br/>
+    <br/>
 
     <div>
     <label htmlFor='business_title'>Business Tile</label>
-    <input id='business_title' type='text' className='form-control' {...register("business_title", 
+    <input id='business_title' type='text' className='form-control' placeholder='Enter Business Name here' style={{height:"40px"}} {...register("business_title", 
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -171,18 +183,18 @@ function Application() {
     </p>
     </div>
 
-    <br/><br/>
+    <br/>
     
     <div>
     <label htmlFor='business_type'>Business Type</label>&nbsp;&nbsp;
-    <select id="business_type" style={{width:"300px", textAlign:"center"}} {...register("business_type",
+    <select id="business_type" style={{width:"300px", height:"30px", textAlign:"center"}} {...register("business_type",
     {
         required:{
             value: true,
              message: "This field is required"
         }
     })}>
-        <option value=""></option>
+        <option value="">Select</option>
         <option value="Service">Service</option>
         <option value="Manufacturing">Manufacturing</option>
         <option value="Treders">Treders</option>
@@ -192,11 +204,11 @@ function Application() {
     </p>
     </div>
     
-    <br/><br/><br/>
+    <br/>
     
     <div>
     <label htmlFor='business_address'>Business Address</label>
-    <input id='business_address' type='text' className='form-control' {...register("business_address", 
+    <input id='business_address' type='text' className='form-control' placeholder='Enter business location' style={{height:"40px"}} {...register("business_address", 
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -215,11 +227,11 @@ function Application() {
     </p>
     </div>
 
-    <br/><br/>
+    <br/>
     
     <div>
     <label htmlFor='gst_registration_no'>GST Registration Number</label>
-    <input id="gst_registration_no" type='text' className='form-control' {...register("gst_registration_no", 
+    <input id="gst_registration_no" type='text' className='form-control' placeholder='Enter GST reg. number here' style={{height:"40px"}} {...register("gst_registration_no", 
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -241,11 +253,11 @@ function Application() {
     <p style={{color:"red"}}>
         { errors.gst_registration_no && errors.gst_registration_no.message }
     </p>
-    <br/><br/>
+    <br/>
     
     <div>
     <label htmlFor='business_license_no'>Business Licence Number</label>
-    <input id='business_license_no' type='text' className='form-control' {...register("business_license_no", 
+    <input id='business_license_no' type='text' className='form-control' placeholder='Enter business licence number here' style={{height:"40px"}} {...register("business_license_no", 
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -264,17 +276,17 @@ function Application() {
     </p>
     </div>
     
-    <br/><br/>
+    <br/>
 
     <div>
     <label htmlFor='expected_average_annual_turnover'>Annual Turnover</label>
-    <input id='expected_average_annual_turnover' type='text' className='form-control' {...register("expected_average_annual_turnover", 
+    <input id='expected_average_annual_turnover' type='text' placeholder='Enter your annual turnover' className='form-control' style={{height:"40px"}} {...register("expected_average_annual_turnover", 
                 {required:{
                     value: true,
                     message: "This field is required"
                 },
                 min:{
-                    value:1,
+                    value:0,
                     message:"Annual Turnover cannot be less than zero"
                 }
                 })} />
@@ -283,17 +295,17 @@ function Application() {
     </p>
     </div>
     
-    <br/><br/>
+    <br/>
     
     <div>
     <label htmlFor='years_in_current_business'>How Many Years You are In Business ?</label>
-    <input id='years_in_current_business' type='number' className='form-control' {...register("years_in_current_business", 
+    <input id='years_in_current_business' type='number' placeholder='Enter how many years to complete your business' className='form-control' style={{height:"40px"}} {...register("years_in_current_business", 
                 {required:{
                     value: true,
                     message: "This field is required"
                 },
                 min:{
-                    value:1,
+                    value:0,
                     message:"Business cannot be less than zero"
                 }
                 })} />
@@ -302,11 +314,11 @@ function Application() {
         </p>
     </div>
     
-    <br/><br/>
+    <br/>
     
     <div>
     <label htmlFor='collateral'>Collateral</label>
-    <input id='collateral' type='text' className='form-control' {...register("collateral", 
+    <input id='collateral' type='text' className='form-control' placeholder='Enter which collateral type to provide loan services ' style={{height:"40px"}} {...register("collateral", 
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -325,18 +337,18 @@ function Application() {
         </p>
     </div>
     
-    <br/><br/>
+    <br/>
     
     <div>
     <label htmlFor='status'>Status</label>&nbsp;&nbsp;
-    <select id="status" style={{width:"300px", textAlign:"center"}} {...register("status",
+    <select id="status" style={{width:"300px",height:"30px", textAlign:"center"}}  {...register("status",
     {
         required:{
             value: true,
              message: "This field is required"
         }
     })}>
-        <option value=""></option>
+        <option value="">Select</option>
         <option value="Pending">Pending</option>
         <option value="Apporve">Apporve</option>
         <option value="Rejected">Rejected</option>
@@ -347,15 +359,15 @@ function Application() {
         </p>
     </div>
 
-    <br/><br/><br/>
+    <br/>
     
     <div>
     <label htmlFor='timestamp'>Application Timestamp</label>
-    <input id='timestamp' type='datetime-local' className='form-control' {...register("application_timestamp",
+    <input id='timestamp' type='datetime-local' className='form-control' style={{height:"40px"}} {...register("application_timestamp",
     {
         required:{
             value: true,
-             message: "This field is required"
+             message: "This field is required select date time"
         }
     })}/>
     <p style={{color:"red"}}>
@@ -363,11 +375,11 @@ function Application() {
     </p>
     </div>
 
-    <br/><br/>
+    <br/>
     
     <div>
     <label htmlFor='remark'>Remark</label>
-    <input id='remark' type='text' className='form-control' {...register("remark", 
+    <input id='remark' type='text' className='form-control' placeholder='Enter remark' style={{height:"40px"}} {...register("remark", 
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -386,16 +398,17 @@ function Application() {
     </p>
     </div>
 
-    <br/><br/>
+    <br/>
     
     <div>
     <center>
-    <input type='reset' value="Clear" className='btn btn-warning col-5'/>&nbsp;&nbsp;&nbsp;
-    <input type='submit' value="Save and Next" className='btn btn-success col-5'/>
+    <input type='reset' value="Clear" className='btn2 col-5'/>&nbsp;&nbsp;&nbsp;
+    <input type='submit' value="Save and Next" className='btn2 col-5'/>
     </center>
     </div>
 
     </form>
+    </div>
     </div>
     </>
   )

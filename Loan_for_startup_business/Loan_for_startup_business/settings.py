@@ -55,9 +55,11 @@ INSTALLED_APPS = [
     'document_verification',
     'loan_sanctioning',
     'disburstment',
-    'corsheaders'
+    'corsheaders',
+    'rest_framework_swagger',
     
 ]
+REST_FRAMEWORK = { 'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema' }
 
 AUTH_USER_MODEL = "admin_app.User"
 
@@ -141,7 +143,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -159,6 +161,12 @@ EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
+
+
+STATIC_URL = '/static/'
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+VENV_PATH = os.path.dirname(BASE_DIR)
+STATIC_ROOT = os.path.join(VENV_PATH, 'static_root')
 
 #react allow url
 CORS_ALLOWED_ORIGINS = [

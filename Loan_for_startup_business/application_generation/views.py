@@ -38,7 +38,16 @@ class ApplicationDetailsAPI(APIView):
         obj = get_object_or_404(Application,pk=pk)
         serializer = AppplicationModelSerializer(data=request.data, instance=obj, partial=True)
         if serializer.is_valid():
-            serializer.save()
+            
+            serializer.save()#remaining send mail if affication is rejected or apporve 
+            status = request.data["status"]
+            user_id = request.data["user"]
+            obj = User.objects.get(pk=user_id)
+            c_username = request.data["username"]
+            c_mail = obj.email
+            office_mail = "loanforstartupsinc@gmail.com"
+            print(status,"-------", c_mail)
+            send_mail(f"Hi {c_username} \n This For Your Application Status Regarding mail", "Your appplication has been {status}", office_mail, [f"{c_mail}"], fail_silently=False )
             return Response(data=serializer.data )
         return Response(data=serializer.errors)
 

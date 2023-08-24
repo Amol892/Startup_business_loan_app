@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom';
+import "./PagesCss/UserCss.css"
 
 function VenderApplication() {
 
@@ -22,31 +23,31 @@ function VenderApplication() {
  
   return (
     <>
-    <br/><br/>
-    <div className='container' style={{backgroundColor:"lightgray",  width:"800px", height:"2200px"}}>
+    <div style={{backgroundColor:"#3d3840"}}>
+    <br/>
+    <div className='container' style={{color:"white",width:"700px"}}>
     <form onSubmit={handleSubmit(saveData)}>
-    <h1 style={{color:"red", textAlign:"center"}}>Vendor Bank Deatils</h1>
+    <h1 style={{ textAlign:"center"}}>Vendor Bank Details</h1>
 
     <div>
     <label htmlFor='loan'>Application Id</label>
-    <input id="loan" type='text' className='form-control' {...register("application",{required:{
+    <input id="loan" type='number' className='form-control' placeholder='Enter application id here' style={{height:"40px"}} {...register("application",{required:{
                     value:true,
                     message:"This Field is required"
                 },
                 min:{
                   value:1,
-                  message:"Application Id Could not less than zero please Correct proper email id Gives In your email"
+                  message:"Application Id should not less than zero"
                 },
                 })}/>
                 <p style={{color:"red"}}>
                     { errors.application && errors.application.message }
                 </p>
-    <br/><br/>
     </div>
 
     <div>
     <label htmlFor='name'>Name</label>
-    <input id="name" type='text' className='form-control'  {...register("name",
+    <input id="name" type='text' className='form-control' placeholder='Enter name here' style={{height:"40px"}} {...register("name",
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -63,12 +64,11 @@ function VenderApplication() {
                 <p style={{color:"red"}}>
                     { errors.name && errors.name.message }
                 </p>
-    <br/><br/>
     </div>
 
     <div>
-    <label htmlFor='vendor_type'>Vender Type</label>
-    <input id="vendor_type" type='text' className='form-control' {...register("vendor_type",
+    <label htmlFor='vendor_type'>Vendor Type</label>
+    <input id="vendor_type" type='text' className='form-control' placeholder='Enter Vender type here' style={{height:"40px"}} {...register("vendor_type",
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -79,18 +79,18 @@ function VenderApplication() {
                 },
                 maxLength:{
                     value:12,
-                    message:"Name Shound be less than 50 character"
+                    message:"Vendor type Shound be greater than 50 character"
                 }
                 })} />
                 <p style={{color:"red"}}>
                     { errors.vendor_type && errors.vendor_type.message }
                 </p>
-    <br/><br/>
+    
     </div>
 
     <div>
     <label htmlFor='email'>Email</label>
-    <input id="email" type='email'  className='form-control' {...register("email", 
+    <input id="email" type='email'  className='form-control' placeholder='Enter email address here' style={{height:"40px"}} {...register("email", 
                 {required:{
                     value:true,
                     message:"This field is required"
@@ -103,12 +103,12 @@ function VenderApplication() {
                 <p style={{color:"red"}}>
                     { errors.email && errors.email.message }
                 </p>
-    <br/><br/>
+    
     </div>
 
     <div>
     <label htmlFor='address'>Address</label>
-    <input id="address" type='text'  className='form-control' {...register("address", 
+    <input id="address" type='text' style={{height:"40px"}} placeholder='Enter address here'  className='form-control' {...register("address", 
                 {required:{
                     value:true,
                     message:"This Fields is required"
@@ -129,12 +129,12 @@ function VenderApplication() {
                 <p style={{color:"red"}}>
                     { errors.address && errors.address.message }
                 </p>
-    <br/><br/>
+    
     </div>
     
     <div>
     <label htmlFor='city'>City</label>
-    <input id="city" type='text' className='form-control' {...register("city", 
+    <input id="city" type='text' className='form-control' placeholder='Enter city here' style={{height:"40px"}} {...register("city", 
                 {required:{
                     value:true,
                     message:"This Fields is required"
@@ -155,12 +155,11 @@ function VenderApplication() {
                 <p style={{color:"red"}}>
                     { errors.city && errors.city.message }
                 </p>
-    <br/><br/>
     </div>
 
     <div>
     <label htmlFor='state'>State</label>
-    <input id="state" type='text'  className='form-control' {...register("state", 
+    <input id="state" type='text'  className='form-control' placeholder='Enter state here' style={{height:"40px"}} {...register("state", 
                 {required:{
                     value:true,
                     message:"This Fields is required"
@@ -181,23 +180,22 @@ function VenderApplication() {
                 <p style={{color:"red"}}>
                     { errors.state && errors.state.message }
                 </p>
-    <br/><br/>
     </div>
 
     <div>
     <label htmlFor='country'>Country</label>
-    <input id="country" type='text'  className='form-control' {...register("country", 
+    <input id="country" type='text'  className='form-control' placeholder='Enter Country here' style={{height:"40px"}} {...register("country", 
                 {required:{
                     value:true,
                     message:"This Fields is required"
                 },
                 minLength:{
                     value:3,
-                    message:"Please Enter Country at least 3 chracter"
+                    message:"Please Enter Country name at least 3 chracter"
                 },
                 maxLength:{
                     value:50,
-                    message:"please do not enter country above 50 character "
+                    message:"please do not enter country name above 50 character "
                 },
                 pattern:{
                     value:/^[A-Z]{1}[a-zA-Z]+$/,
@@ -207,12 +205,11 @@ function VenderApplication() {
                 <p style={{color:"red"}}>
                     { errors.country && errors.country.message }
                 </p>
-    <br/><br/>
     </div>
 
     <div>
     <label htmlFor='pincode'>Pin Code</label>
-    <input id="pincode" type='number'  className='form-control' {...register("pin_code", 
+    <input id="pincode" type='number'  className='form-control' placeholder='Enter pin code here' style={{height:"40px"}} {...register("pin_code", 
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -229,12 +226,11 @@ function VenderApplication() {
                 <p style={{color:"red"}}>
                     { errors.pin_code && errors.pin_code.message }
                 </p>
-    <br/><br/>
     </div>
 
     <div>
     <label htmlFor='mobile'>Mobile</label>
-    <input id="mobile" type='number'  className='form-control' {...register("mobile",{required:{
+    <input id="mobile" type='text'  className='form-control' placeholder='Enter mobile number here' style={{height:"40px"}} {...register("mobile",{required:{
                     value:true,
                     message:"This Field is required"
                 },
@@ -254,34 +250,32 @@ function VenderApplication() {
                 <p style={{color:"red"}}>
                     { errors.mobile && errors.mobile.message }
                 </p>
-    <br/><br/>
     </div>
 
     <div>
     <label htmlFor='bank_name'>Bank Name</label>
-    <input id="bank_name" type='text'  className='form-control' {...register("bank_name", 
+    <input id="bank_name" type='text'  className='form-control' placeholder='Enter bank name here' style={{height:"40px"}} {...register("bank_name", 
                 {required:{
                     value: true,
                     message: "This field is required"
                 },
                 minLength:{
                     value:3,
-                    message:"Profession can not less than 3 character"
+                    message:"Bank name can not less than 3 character"
                 },
                 maxLength:{
                     value:20,
-                    message:"Professin can not greater than 20 character"
+                    message:"Bank name can not greater than 20 character"
                 }
                 })} />
                 <p style={{color:"red"}}>
                     { errors.bank_name && errors.bank_name.message }
                 </p>
-    <br/><br/>
     </div>
 
     <div>
     <label htmlFor='passbook'>Passbook Copy</label>
-    <input id="passbook" type='file'accept='file/pdf' className='form-control' {...register("passbook_copy",{required:{
+    <input id="passbook" type='file'accept='file/pdf' className='form-control' style={{height:"40px"}} {...register("passbook_copy",{required:{
                     value:true,
                     message:"This Field is required"
                 }
@@ -289,12 +283,11 @@ function VenderApplication() {
                 <p style={{color:"red"}}>
                     { errors.passbook_copy && errors.passbook_copy.message }
                 </p>
-    <br/><br/>
     </div>
 
     <div>
     <label htmlFor='c_account'>Current Account Number</label>
-    <input id="c_account" type='text'  className='form-control' {...register("current_account_no", 
+    <input id="c_account" type='text'  className='form-control' placeholder='Enter current bank account number' style={{height:"40px"}} {...register("current_account_no", 
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -311,12 +304,11 @@ function VenderApplication() {
                 <p style={{color:"red"}}>
                     { errors.current_account_no && errors.current_account_no.message }
                 </p>
-    <br/><br/>
     </div>
 
     <div>
     <label htmlFor='ifsc_code'>IFSC Code</label>
-    <input id="ifsc_code" type='text'  className='form-control' {...register("ifsc_code", 
+    <input id="ifsc_code" type='text'  className='form-control' placeholder='Enter IFSC Code' style={{height:"40px"}} {...register("ifsc_code", 
                 {required:{
                     value: true,
                     message: "This field is required"
@@ -328,20 +320,25 @@ function VenderApplication() {
                 maxLength:{
                     value:20,
                     message:"Account number can not greater than 20 character"
+                },
+                pattern:{
+                    value:/^[A-Z]{4}[0-9]{7}$/,
+                    message:"Invalid IFSc code enter valid format ex ABCD0004578"
                 }
                 })} />
                 <p style={{color:"red"}}>
                     { errors.ifsc_code && errors.ifsc_code.message }
                 </p>
-    <br/><br/>
     </div>
     
     <div>
-    <center><input type='submit' value="Save" className='btn btn-success col-8'/></center>
+    <center><input type='submit' value="Save" className='btn2 col-8'/></center>
     </div>
     </form>
     </div>
+    </div>
     </>
+    
   )
 }
 

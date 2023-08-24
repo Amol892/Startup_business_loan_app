@@ -61,12 +61,14 @@ function App() {
     }
     else if(role === 'loan_s_officer'){
       chetan = <LoanOffiecr/>
-}  }
+    }}
   return (
+    
     <>
     <BrowserRouter>   
-    {chetan}
-    
+     
+     {chetan} 
+
     <Routes>
       
       <Route path="/login" element={<Login setEmail={setEmail} setRole={setRole} setIslogged={setIsLogged}/>} />
@@ -78,7 +80,7 @@ function App() {
       <Route path='/guarantor' element={<Guarantor/>} />
       <Route path='/documents' element={<Documents/>} />
       <Route path='/home' element={<Home/>} />
-      <Route path='/logout' element={<Logout  />} />
+      <Route path='/logout' element={<Logout setEmail={setEmail} setRole={setRole} setIslogged={setIsLogged} />} />
       <Route path='/user_signup' element={<UserSignup/>} />
       <Route path='/application_status' element={<ApplicationStatusDetails/>} />
       <Route path='/application_email'element={<ApplicationRergardingMail/>} />

@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 
 function ApplicationStatusDetails() {
 
-    const {register, handleSubmit} = useForm();
+    const {register,formState:{errors}, handleSubmit} = useForm();
     const [sts, setStatus] = useState([])
     async function getStatus(data){
         //console.log(data.status)
@@ -24,24 +24,35 @@ function ApplicationStatusDetails() {
 
   return (
     <>
+    <div style={{backgroundColor:"#3d3840", height:"1800px"}}>
     <div className='container'>
         <br/>
-        <div className='container' style={{width:"500px", height:"250px", backgroundColor:"lightgray"}}>
+        <div className='container' style={{width:"500px", height:"250px", }}>
         <form onSubmit={handleSubmit(getStatus)}><br/>
-        <center><label htmlFor='ex'><h2 style={{color:"rebeccapurple"}} ><b>Check Application Status</b></h2></label></center><br/><br/>
-        <center><select id="ex"  {...register('status')}>
-            <option value=""></option>
+        <center><label htmlFor='ex'><h2 style={{color:"white"}} ><b>Check Application Status</b></h2></label></center><br/><br/>
+        <center><select id="ex" style={{width:"300px", textAlign:"center", backgroundColor:"#e6d3c5"}} {...register('status', {
+            required:{
+                value:true,
+                message:"please select any status"
+            }
+        })}>
+            <option value="">Select</option>
             <option value="Pending" >Pending</option>
+            <option value="verify" >Verify</option>
             <option value="Apporve" >Apporve</option>
             <option  value="Rejected" >Rejected</option>
             <option value="Disbursed" >Disbursed</option>
-        </select></center><br/><br/>
-        <center><input type='submit' className='btn btn-success col-5'/></center>
+        </select>
+        <p style={{color:"red"}}>
+                    { errors.status && errors.status.message }
+        </p>
+        </center>
+        <center><input type='submit' className='btn2 col-5'/></center>
         </form>
         </div>
-
-        <center><h1 style={{color:"rebeccapurple"}}>Application Status</h1></center>
-        <table className='table table-success table-striped' style={{textAlign:"center"}}>
+        <br/>
+        <center><h1 style={{color:"white"}}>Application Status</h1></center><br/>
+        <center><table className='table table-dark table-hover' style={{textAlign:"center", width:"800px"}}>
             <thead>
                 <tr>
                     <th>Application Id</th>
@@ -62,8 +73,9 @@ function ApplicationStatusDetails() {
                 }
 
             </tbody>
-        </table>
+        </table></center>
 
+    </div>
     </div>
     </>
   )

@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import {useNavigate } from 'react-router-dom';
 
 function ApplicaationDocumentDetails() {
-    const {register, handleSubmit} = useForm();
+    const {register,formState:{errors}, handleSubmit} = useForm();
     const [doc, setDocument] = useState({})
     const [extra,setextra] = useState('')
     const nav = useNavigate();
@@ -22,17 +22,32 @@ function ApplicaationDocumentDetails() {
 
   return (
     <>
-    <br/><br/>
-    <div className='container' style={{width:"500px", height:"350px", backgroundColor:"lightgray"}}>
+    <div style={{backgroundColor:"#3d3840", height:"700px"}}>
+    <div className='container' style={{width:"500px", height:"350px", paddingTop:"130px"}}>
         <br/>
-        <center><h1 style={{color:"rebeccapurple"}}><b>Customer Documents</b></h1></center><br/>
+        <center><h1 style={{color:"white"}}><b>Customer Documents</b></h1></center><br/>
         <form onSubmit={handleSubmit(getDocument)}>
-            <center><label htmlFor='application_id'><h2><b>Enter Application Id</b></h2></label><br/><br/>
-            <input type='text' id='application_id' className='form-control' {...register("application")}/><br/><br/>
-            <input type='submit' value="Search" className='btn btn-success col-9' />
+            <center><label htmlFor='application_id' style={{color:"#e8dcd3"}}><h2><b>Enter Application Id</b></h2></label><br/><br/>
+            <input type='number' id='application_id' className='form-control' placeholder='Enter Application ID here' style={{textAlign:"center"}} {...register("application",{
+              required:{
+                value:true,
+                message:"Required please enter application Id"
+              },
+              min:{
+                value:1,
+                message:"Application Id should not less than 1"
+              }
+              
+            })}/>
+            <p style={{color:"red"}}>
+                    { errors.application && errors.application.message }
+            </p>
+            <br/>
+            <input type='submit' value="Search" className='btn2 col-9' />
             </center>
         </form>
     </div><br/><br/>
+    </div>
     </>
   )
 }

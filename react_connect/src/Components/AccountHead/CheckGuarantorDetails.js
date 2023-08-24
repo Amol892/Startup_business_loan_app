@@ -18,7 +18,7 @@ function CheckGuarantorDetails() {
         console.log(resp.data)
         setValue("application",resp.data.application);setValue("relation_with_customer",resp.data.relation_with_customer);setValue("name",resp.data.name);
         setValue("dob",resp.data.dob);setValue("gender",resp.data.gender);
-        setValue("email",resp.data.email);setValue("address",resp.data.address);setValue("city",resp.data.city);
+        setValue("email",resp.data.email);setValue("address",resp.data.address);setValue("city",resp.data.city);setValue("state",resp.data.state);
         setValue("country",resp.data.country);setValue("pin_code",resp.data.pin_code);setValue("mobile",resp.data.mobile);
         setValue("profession",resp.data.profession);setValue("bank_name",resp.data.bank_name);setValue("current_account_no",resp.data.current_account_no);setValue("ifsc_code",resp.data.ifsc_code);
     }
@@ -29,41 +29,43 @@ function CheckGuarantorDetails() {
 
   return (
     <>
+    <div style={{backgroundColor:"#3d3840", height:"2000px"}}>
     <br/><br/>
-    <div className='container' style={{backgroundColor:"lightgray",  width:"1200px"}}>
+    <div className='container' style={{width:"700px"}}>
     <form>
-    <h1 style={{color:"red", textAlign:"center"}}>Guarantor Application</h1>
+    <h1 style={{color:"white", textAlign:"center"}}>Guarantor Application</h1>
+    <div style={{color:"white"}}>
     <label htmlFor='application'>Application ID</label>
-    <input id="application" type='text' readOnly={true} className='form-control'  {...register("application")} />
+    <input id="application" type='text' readOnly={true} className='form-control' style={{height:"40px"}} {...register("application")} />
     <br/><br/>
     <label htmlFor='relation_with_customer'>Relation with Member</label>
-    <input id="relation_with_customer" type='text' className='form-control' readOnly={true} {...register("relation_with_customer")} />
+    <input id="relation_with_customer" type='text' className='form-control' style={{height:"40px"}} readOnly={true} {...register("relation_with_customer")} />
     <br/><br/>
     <label htmlFor='name'>Name</label>
-    <input id="name" type='text' className='form-control' readOnly={true} {...register("name")}/>
+    <input id="name" type='text' className='form-control' readOnly={true} style={{height:"40px"}} {...register("name")}/>
     <br/><br/>
     <label htmlFor='date'>Date Of Birth</label>
-    <input id="date" type='date' className='form-control' readOnly={true} {...register("dob")}/>
+    <input id="date" type='date' className='form-control' readOnly={true} style={{height:"40px"}} {...register("dob")}/>
     <br/><br/>
     <label htmlFor='gender'>Gender</label>&nbsp;&nbsp;
-    <select id="gender" readOnly={true} {...register("gender")}>
+    <select id="gender" readOnly={true} style={{height:"30px", width:"300px", textAlign:"center"}} {...register("gender")}>
         <option value=""></option>
         <option value="Male">Male</option>
         <option value="Female">Female</option>
         <option value="Transgender">Transgender</option>
     </select>
-    <br/><br/><br/>
+    <br/><br/>
     <label htmlFor='email'>Email</label>+
-    <input id='email' type='email' className='form-control' readOnly={true} {...register("email")}/>
+    <input id='email' type='email' className='form-control' readOnly={true} style={{height:"40px"}} {...register("email")}/>
     <br/><br/>
     <label htmlFor='address'>Address</label>
-    <input id="address" type='text' className='form-control' readOnly={true} {...register("address")}/>
+    <input id="address" type='text' className='form-control' readOnly={true} style={{height:"40px"}} {...register("address")}/>
     <br/><br/>
     <label htmlFor='city'>City</label>
-    <input id="city" type='text' className='form-control' readOnly={true} {...register("city")}/>
+    <input id="city" type='text' className='form-control' readOnly={true} style={{height:"40px"}} {...register("city")}/>
     <br/><br/>
     <label htmlFor='state'>State</label>&nbsp;&nbsp;
-    <select id="state" readOnly={true} {...register("state")}>
+    <select id="state" readOnly={true} style={{height:"30px", width:"300px", textAlign:"center"}} {...register("state")}>
         <option value=""></option><option value="Andhra Pradesh">Andhra Pradesh</option><option value="Arunachal Pradesh">Arunachal Pradesh</option><option value="Assam">Assam</option><option value="Bihar">Bihar</option><option value="Chhattisgarh">Chhattisgarh</option>
         <option value="Andhra Pradesh">Andhra Pradesh</option><option value="Arunachal Pradesh">Arunachal Pradesh</option><option value="Assam">Assam</option><option value="Bihar">Bihar</option><option value="Chhattisgarh">Chhattisgarh</option>
         <option value="Goa">Goa</option><option value="Gujarat">Gujarat</option><option value="Haryana">Haryana</option><option value="Himachal Pradesh">Himachal Pradesh</option><option value="Jammu and Kashmir">Jammu and Kashmir</option>
@@ -74,38 +76,40 @@ function CheckGuarantorDetails() {
         <option value="Chandigarh">Chandigarh</option><option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option><option value="Daman and Diu">Daman and Diu</option><option value="Lakshadweep">Lakshadweep</option><option value="National Capital Territory of Delhi">National Capital Territory of Delhi</option>
         <option value="Puducherry">Puducherry</option>
     </select>
-    <br/><br/><br/>
+    <br/><br/>
     <label htmlFor='country'>Country</label>
-    <input id='country' type='text' className='form-control' readOnly={true} {...register("country")} />
+    <input id='country' type='text' className='form-control' readOnly={true} style={{height:"40px"}} {...register("country")} />
     <br/><br/>
     <label htmlFor='pin_code'>PIN code</label>
-    <input id="pin_code" type='number' className='form-control' readOnly={true} {...register("pin_code")}/>
+    <input id="pin_code" type='number' className='form-control' readOnly={true} style={{height:"40px"}} {...register("pin_code")}/>
     <br/><br/>
     <label htmlFor='mobile'>Mobile</label>
-    <input id='mobile' type='text' className='form-control' readOnly={true} {...register("mobile")}/>
+    <input id='mobile' type='text' className='form-control' readOnly={true} style={{height:"40px"}} {...register("mobile")}/>
     <br/><br/>
     <label htmlFor='photo'>Photo</label>
-    <input id='photo' type='file' accept="image/png, image/jpeg" readOnly={true} className='form-control' {...register("photo")} />
+    <input id='photo' type='file' accept="image/png, image/jpeg" readOnly={true} style={{height:"40px"}} className='form-control' {...register("photo")} />
     <br/><br/>
     <label htmlFor='profession'>Profession</label>
-    <input id='profession' type='text' className='form-control' readOnly={true} {...register("profession")} />
+    <input id='profession' type='text' className='form-control' readOnly={true} style={{height:"40px"}} {...register("profession")} />
     <br/><br/>
     <label htmlFor='income_certificate'>Income Certficate</label>
-    <input id='income_certificate' type='file' accept='file/pdf' readOnly={true} className='form-control' {...register("income_certificate")} />
+    <input id='income_certificate' type='file' accept='file/pdf' readOnly={true} style={{height:"40px"}} className='form-control' {...register("income_certificate")} />
     <br/><br/>
     <label htmlFor='bank_name'>Bank Name</label>
-    <input id='bank_name' type='text' className='form-control' readOnly={true} {...register("bank_name")} />
+    <input id='bank_name' type='text' className='form-control' readOnly={true} style={{height:"40px"}} {...register("bank_name")} />
     <br/><br/>
     <label htmlFor='current_account_no'>Current Account No</label>
-    <input id='current_account_no' type='text' className='form-control' readOnly={true} {...register("current_account_no")} />
+    <input id='current_account_no' type='text' className='form-control' readOnly={true} style={{height:"40px"}} {...register("current_account_no")} />
     <br/><br/>
     <label htmlFor='passbook_copy'>Passbook Copy</label>
-    <input id='passbook_copy' type='file' accept="file/pdf" className='form-control' readOnly={true} {...register("passbook_copy")} />
+    <input id='passbook_copy' type='file' accept="file/pdf" className='form-control' readOnly={true} style={{height:"40px"}} {...register("passbook_copy")} />
     <br/><br/>
     <label htmlFor='ifsc_code'>IFSC Code</label>
-    <input id='ifsc_code' type='text' className='form-control' readOnly={true} {...register("ifsc_code")} />
+    <input id='ifsc_code' type='text' className='form-control' readOnly={true} style={{height:"40px"}} {...register("ifsc_code")} />
     <br/><br/>
+    </div>
     </form>
+    </div>
     </div>
     </>
   )

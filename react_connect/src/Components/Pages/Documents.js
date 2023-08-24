@@ -28,14 +28,15 @@ function Documents() {
     },[])
   return (
     <>
-    <br/><br/>
-    <div className='container' style={{backgroundColor:"lightgray",  width:"1200px"}}>
+
+    <div style={{backgroundColor:"#3d3840"}}><br/>
+    <div className='container' style={{ width:"700px", color:"white",}}>
     <form onSubmit={handleSubmit(saveData)}>
-    <h1 style={{color:"red", textAlign:"center"}}>Upload Documents</h1>
+    <h1 style={{textAlign:"center"}}>Upload Documents</h1>
 
     <div>
     <label htmlFor='application'>Application Id</label>
-    <input id="application" type='text' className='form-control'  {...register("application",{required:{
+    <input id="application" style={{height:"40px"}} type='text' className='form-control'  {...register("application",{required:{
                     value:true,
                     message:"This Field is required"
                 },
@@ -47,7 +48,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.application && errors.application.message }
                 </p>
-    <br/><br/>
+    
     </div>
 
     <div>
@@ -60,7 +61,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.aadhar_card && errors.aadhar_card.message }
                 </p>
-    <br/><br/>
+    <br/>
     </div>
 
     <div>
@@ -73,7 +74,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.pan_card && errors.pan_card.message }
                 </p>
-    <br/><br/>
+    <br/>
     </div>
 
     <div>
@@ -86,7 +87,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.business_address_proff_or_copy_of_rent_agreement && errors.business_address_proff_or_copy_of_rent_agreement.message }
                 </p>
-    <br/><br/>
+    <br/>
     </div>
 
     <div>
@@ -99,7 +100,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.electricity_bill && errors.electricity_bill.message }
                 </p>
-    <br/><br/>
+    <br/>
     </div>
 
     <div>
@@ -112,7 +113,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.msme_certificate && errors.msme_certificate.message }
                 </p>
-    <br/><br/>
+    <br/>
     </div>
 
     <div>
@@ -125,7 +126,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.gst_cerificate && errors.gst_cerificate.message }
                 </p>
-    <br/><br/>
+    <br/>
     </div>
 
     <div>
@@ -138,7 +139,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.udhyog_adhar_registration && errors.udhyog_adhar_registration.message }
                 </p>
-    <br/><br/>
+    <br/>
     </div>
 
     <div>
@@ -151,7 +152,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.business_lincense && errors.business_lincense.message }
                 </p>
-    <br/><br/>
+    <br/>
     </div>
 
     <div>
@@ -164,7 +165,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.business_plan_or_proposal && errors.business_plan_or_proposal.message }
                 </p>
-    <br/><br/>
+    <br/>
     </div>
 
     <div>
@@ -177,7 +178,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.three_year_itr_with_balance_sheet && errors.three_year_itr_with_balance_sheet.message }
                 </p>
-    <br/><br/>
+    <br/>
     </div>
 
     <div>
@@ -190,7 +191,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.collateral_document && errors.collateral_document.message }
                 </p>
-    <br/><br/>
+    <br/>
     </div>
 
     <div>
@@ -203,7 +204,7 @@ function Documents() {
                 <p style={{color:"red"}}>
                     { errors.stamp_duty && errors.stamp_duty.message }
                 </p>
-    <br/><br/>
+    <br/>
     </div>
 
     <div>
@@ -221,12 +222,12 @@ function Documents() {
                     { errors.status && errors.status.message }
                 </p>
     </select>
-    <br/><br/><br/>
+    <br/><br/>
     </div>
 
     <div>
     <label htmlFor='remark'>Remark</label>
-    <input id='remark' type='text' className='form-control' {...register("remark",{required:{
+    <input id='remark' type='text' style={{height:"40px"}} className='form-control' {...register("remark",{required:{
                     value:true,
                     message:"This Field is required"
                 },
@@ -243,17 +244,18 @@ function Documents() {
                     { errors.remark && errors.remark.message }
                 </p>
 
-    <br/><br/>
+    <br/>
     </div>
 
     <center>
     <div>
-    <input type='reset' value="Clear" className='btn btn-warning col-5'/>&nbsp;&nbsp;&nbsp;
-    <input type='submit' value="Submit Application" className='btn btn-success col-5'/>
+    <input type='reset' value="Clear" className='btn2 col-5'/>&nbsp;&nbsp;&nbsp;
+    <input type='submit' value="Submit" className='btn2 col-5'/>
     </div>
     </center>
 
     </form>
+    </div>
     </div>
     </>
   )
