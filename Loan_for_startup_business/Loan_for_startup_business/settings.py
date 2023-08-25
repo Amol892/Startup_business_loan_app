@@ -93,6 +93,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Loan_for_startup_business.wsgi.application'
 
+AUTH_USER_MODEL = 'admin_app.User'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -159,6 +160,7 @@ EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 #Media config
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+<<<<<<< HEAD
 
 # corsheaders config
 
@@ -233,3 +235,5 @@ LOGGING = {
     }
     
 }
+=======
+>>>>>>> b90c0f1b8de2cd67819ad801bde5c2d175bcfc83
