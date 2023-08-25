@@ -21,7 +21,7 @@ function PayEmi({userData}) {
 
     async function handlePaymentSuccess(response){
 
-      let bodyData = new FormData();
+      let bodyData = new FormData(); 
 
       // we will send the response we've got from razorpay to the backend to validate the payment
       bodyData.append("response", JSON.stringify(response));

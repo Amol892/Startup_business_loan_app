@@ -36,7 +36,7 @@ function Bank() {
           {headers:{'Content-Type':'multipart/form-data'}}).then(response=>{
               console.log(response.data)
               setMessage(response.data.message)
-              navigate('/bank')
+              navigate('/lrDashboard')
           }).catch(error=>{
               console.log(error.response.data)
               setError(error.response.data.email)

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { NavLink } from 'react-router-dom'
-import CustomerCard from '../Admin/CustomerCard'
-import DocumentCard from './DocumentCard'
+import CustomerCard from './CustomerCard'
+import OHDocumentCard from './OHDocumentCard'
 
 function OHDashboard() {
 

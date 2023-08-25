@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import *
 from disburstment.models import *
+from application_generation.models import Application
 #User registeration
 class RegisterModelSerializer(serializers.ModelSerializer):
     
@@ -45,3 +46,10 @@ class DefaulterModelSerializer(serializers.ModelSerializer):
         model = Defaulter
         fields = '__all__'
         depth = 1
+        
+        
+class ApplicationModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Application
+        fields = '__all__'
+        depth = 2

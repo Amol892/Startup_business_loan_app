@@ -12,7 +12,7 @@ from rest_framework.permissions import IsAuthenticated,IsAdminUser,IsAuthenticat
 class DocumentVerifyAPIVIew(APIView):
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticated,]
-    def get(self,request,pk=None):
+    def get(self,request,pk=None): 
         Document_obj = get_object_or_404(Document,application = pk)
         serializer = DocumentModelSerializer(Document_obj)
         return Response(data = serializer.data,status=status.HTTP_200_OK)

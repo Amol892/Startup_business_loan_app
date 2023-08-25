@@ -8,7 +8,7 @@ from rest_framework_simplejwt.views import token_obtain_pair,TokenObtainPairView
 from .models import *
 from .utiles import detectUser
 from application_generation.models import Application
-from application_generation.serializers import ApplicationModelSerializer
+
 from datetime import timezone,timedelta
 from django.db.models import Sum,Count
 from disburstment.models import Defaulter
@@ -52,7 +52,16 @@ class LoginAPIView(TokenObtainPairView):
                     return Response(data=response.data)
             return Response(data=serializer.errors,status=status.HTTP_400_BAD_REQUEST)
         
-#API for family model to show not updated user ids      
+#API for family model to show not updated user ids
+class AppllicationUserIDsAPIView(APIView):
+    def get(self, request):
+        user_ids = User.objects.values_list('id', flat=True)
+        application_user_ids = Application.objects.values_list('user_id', flat=True)
+        remaining_user_ids = user_ids.exclude(id__in=application_user_ids.values_list('user_id', flat=True))
+        
+        return Response(remaining_user_ids)
+    
+          
 class FamilyUserIDsAPIView(APIView):
     def get(self, request):
         user_ids = Application.objects.values_list('user_id', flat=True)

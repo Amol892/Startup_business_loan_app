@@ -7,6 +7,7 @@ urlpatterns = [
     path('emicalci/',EMICalculatorAPIView.as_view()),
     
     #user ids list fetching endpoints for API
+    path('a_user_ids/', AppllicationUserIDsAPIView.as_view()),
     path('f_user_ids/', FamilyUserIDsAPIView.as_view()),
     path('b_user_ids/',BankUserIDsAPIView.as_view()),
     

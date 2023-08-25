@@ -1,6 +1,6 @@
 from django.db import models
 from admin_app.models import User
-# Create your models here.
+# Create your models here. 
 
 class Application(models.Model):
 

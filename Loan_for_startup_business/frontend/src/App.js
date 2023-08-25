@@ -37,9 +37,11 @@ import PayEmi from './Components/Customer/PayEmi';
 import QuaterlyReport from './Components/Admin/QuaterlyReport';
 import MACReport from './Components/Admin/MACReport';
 import Info from './Components/Admin/Info';
-import DocumentCard from './Components/OperationalHead/DocumentCard';
-
+import OHDocumentCard from './Components/OperationalHead/OHDocumentCard';
+import LRDocumentCard from './Components/LoanRepresentative/LRDocumentCard';
 import { Document, Page } from '../node_modules/react-pdf/dist/esm/pdf.worker.entry';
+import LSODocumentCard from './Components/LoanSancOfficer/LSODocumentCard';
+import CustDetails from './Components/AccountHead/CustDetails';
 
 
 function App() {
@@ -120,7 +122,13 @@ function App() {
           <Route path='/quaterlyreport' element={<QuaterlyReport/>}/>
           
           /* Operational head */
-          <Route path='/documents' element={<DocumentCard/>}/>
+          
+          <Route path='/ohdocuments' element={<OHDocumentCard/>}/>
+          <Route path='/lrdocuments' element={<LRDocumentCard/>}/>
+          <Route path='/lsodocuments' element={<LSODocumentCard/>}/>
+
+          /* Account Head*/
+          <Route path='/information' element={<CustDetails/>}/>
 
           
           

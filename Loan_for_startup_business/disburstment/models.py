@@ -41,11 +41,12 @@ class Disbursement(models.Model):
         ("imps", "IMPS"),
     ]
     DISBURSEMENT_CHOICES= [
-        ("",""),
+        ("",""), 
         ("pending", "pending"),
         ("disbursed", "disbursed"),
     ]
     loan= models.ForeignKey(Loan, on_delete=models.CASCADE, related_name="disbursements")
+    order_payment_id = models.CharField(max_length=100)
     insurance_doc = models.FileField(upload_to='customer/disbusement', default=0, blank=True)
     payment_mode = models.CharField(max_length=50 , default=0 ,choices=PAYMENT_CHOICES)
     net_disbursed_amount = models.FloatField(default=0, blank=True)

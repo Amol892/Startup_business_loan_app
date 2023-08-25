@@ -63,9 +63,10 @@ function CustomerCard({users}) {
                 console.log(obj)
                 if (obj.status==='Pending') {
                         status_color = 'btn btn-warning'
-                        check_installment = <button style={{padding:10,fontSize:15,borderRadius:10,marginLeft:15,backgroundColor:'aqua'}} onClick={(e)=>fetchDocuments(e.target.value)} value={obj.id} >Check Documents</button>
+                        
                 }else if ((obj.status==='Apporve')){
                         status_color = 'btn btn-info'
+                        
                 }else if ((obj.status==='Rejected')){
                         status_color = 'btn btn-danger'
                 }else if ((obj.status==='Disbursed')){

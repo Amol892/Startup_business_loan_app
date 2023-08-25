@@ -8,7 +8,9 @@ urlpatterns = [
     path('customer/',include('customer.urls')),
     path('admin_app/',include('admin_app.urls')),
     path('disburstment/',include('disburstment.urls')),
-    path('document_verify/',include('document_verification.urls'))
+    path('document_verify/',include('document_verification.urls')),
+    path('application_generation/',include('application_generation.urls')),
+    path('loan_sanctioning/',include('loan_sanctioning.urls'))
     
 ]
 
