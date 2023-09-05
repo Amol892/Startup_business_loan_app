@@ -1,13 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import grow from './TechGrow.jpg'
+import grow from './L1.png'
 function AHNavbar() {
   return (
     <>
         <nav className="navbar navbar-expand-lg navbar bg Navbar_element" style={{borderRadius:20,marginTop:30}}>
          
          <div className="container-fluid">
-            <img src={grow} alt='not found' width={120} height={100}></img>
+            <img src={grow} alt='not found' width={220} height={100}></img>
              
              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
              <span className="navbar-toggler-icon"></span>

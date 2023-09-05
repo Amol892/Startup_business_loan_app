@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import grow from './TechGrow.jpg'
+import grow from './L1.png'
 
 function OHNavbar() {
   return (
@@ -8,7 +8,7 @@ function OHNavbar() {
         <nav className="navbar navbar-expand-lg navbar bg Navbar_element" style={{borderRadius:20,marginTop:30}}>
          
          <div className="container-fluid">
-            <img src={grow} alt='not found' width={120} height={100}></img>
+            <img src={grow} alt='not found' width={220} height={100}></img>
              
              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
              <span className="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@ function OHNavbar() {
                  <NavLink style={{marginLeft:80,borderRadius:10,padding:10,color:'white'}} className="nav-link active" to="/about"><b>About</b></NavLink>
                  <NavLink style={{marginLeft:80,borderRadius:10,padding:10,color:'white'}} className="nav-link active" to="/ohDashboard"><b>Dashboard</b></NavLink>
                 
-                 <NavLink style={{marginLeft:700,borderRadius:10,padding:10,color:'white'}} className="nav-link active" to="#"><b>OHProfile</b></NavLink>
+                 <NavLink style={{marginLeft:600,borderRadius:10,padding:10,color:'white'}} className="nav-link active" to="#"><b>OHProfile</b></NavLink>
                  <NavLink style={{marginLeft:80,borderRadius:10,padding:10,color:'white'}} className="nav-link active" to="/logout"><b>Logout</b></NavLink>
  
              </div>
