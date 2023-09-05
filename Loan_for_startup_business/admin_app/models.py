@@ -67,5 +67,5 @@ class Bank(models.Model):
     bank_name = models.CharField(max_length=30, default='', blank=True, null=True)
     account_number = models.CharField(max_length=20, default='', blank=True, null=True)
     ifsc_code = models.CharField(max_length=20, blank=True, default='')
-    passbook_copy = models.ImageField(upload_to='customer/bank/', blank=True, null=True)
+    passbook_copy = models.FileField(upload_to='customer/bank/', blank=True, null=True)
     bank_address = models.TextField(blank=True, null=True)

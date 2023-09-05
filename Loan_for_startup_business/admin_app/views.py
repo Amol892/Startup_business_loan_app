@@ -1,4 +1,6 @@
 
+import os
+from django.conf import settings
 from django.shortcuts import get_object_or_404, render
 from rest_framework.views import APIView
 from .serializers import *
@@ -6,9 +8,9 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework_simplejwt.views import token_obtain_pair,TokenObtainPairView
 from .models import *
-from .utiles import detectUser
+from .utiles import detectUser, fetchPDFData
 from application_generation.models import Application
-
+from functools import reduce
 from datetime import timezone,timedelta
 from django.db.models import Sum,Count
 from disburstment.models import Defaulter
@@ -16,6 +18,8 @@ from datetime import datetime,timedelta, timezone
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.permissions import IsAuthenticated,IsAdminUser,IsAuthenticatedOrReadOnly
 import pytz
+import PyPDF2
+from openpyxl import Workbook
 
 tz = pytz.timezone('Asia/Kolkata')
 #User registeration view
@@ -93,7 +97,10 @@ class FamilyAPIView(APIView):
         return Response(data=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 
-#Bank model API   
+#Bank model API 
+from django.core.files.storage import default_storage
+from django.core.files.base import ContentFile
+  
 class BankAPIView(APIView):
     def get(self,request):
         bank=Bank.objects.all()
@@ -103,7 +110,46 @@ class BankAPIView(APIView):
     def post(self,request):
         serializer=BankModelSerializer(data=request.data)
         if serializer.is_valid():
+            passbook_copy = serializer.validated_data['passbook_copy']
+            # Save the uploaded file to a temporary location
+            
+            default_storage.save('temp.pdf', ContentFile(passbook_copy.read()))
+            # Construct the file path
+            file_path = os.path.join(settings.MEDIA_ROOT, 'temp.pdf')
+            
+            # Open the PDF file you want to convert
+            with open(file_path, 'rb') as pdf_file:
+                pdf_reader = PyPDF2.PdfReader(pdf_file)
+                
+                # Create a new Excel workbook and select the active sheet
+                workbook = Workbook()
+                excel_sheet = workbook.active
+                
+                # Loop through each page in the PDF
+                for page_num in range(len(pdf_reader.pages)):
+                    page = pdf_reader.pages[page_num]
+                    
+                    # Extract text from the page
+                    page_text = page.extract_text()
+                    
+                    # Add the extracted text to the Excel sheet
+                    excel_sheet.cell(row=page_num + 1, column=1, value=page_text)
+                    
+                    
+            d1=excel_sheet['A1'].value
+            d2=d1[:806].split()
+            
+            bank_data = {'name':d2[4]+' '+d2[5]+' '+d2[6],'account_no':d2[26],'ifsc_code':d2[58]}
+            
+            
+            # Save the bank_data to the serializer and the database
+            
+            serializer.validated_data['account_number'] = bank_data['account_no']
+            serializer.validated_data['ifsc_code'] = bank_data['ifsc_code']
             serializer.save()
+            
+            # Delete the 'temp.pdf' file
+            os.remove(file_path)
             return Response(data=serializer.data,status=status.HTTP_201_CREATED)
         return Response(data=serializer.errors,status=status.HTTP_400_BAD_REQUEST)
     
@@ -211,23 +257,29 @@ class MQYReportAPIView(APIView):
         month_no = [4,5,6,7,8,9,10,11,12,1,2,3]
         M_Y={4:year1,5:year1,6:year1,7:year1,8:year1,9:year1,10:year1,11:year1,12:year1,1:year2,2:year2,3:year2}
         Months = ['FY2023-24','April','May','June','July','August','Sept','Oct','Nov','Dec','Jan','Feb','March']
-        YLAmount = Loan.objects.filter(response_timestamp__year="2023").aggregate(Sum('loan_principal_amount'))
+        #YLAmount = Loan.objects.filter(response_timestamp__year="2023").aggregate(Sum('loan_principal_amount'))
         
         #Month loan sanctioning amount
         Month_loan_amount = list(map(lambda x : Loan.objects.filter(response_timestamp__year=str(M_Y[x]),response_timestamp__month=str(x)).aggregate(Sum('loan_principal_amount')),month_no))
         MLAmount = [v for i in Month_loan_amount for v in i.values()]
-        YLAmount = [YLAmount['loan_principal_amount__sum']]
-        MLAmount = YLAmount + [ i if i!=None else 0 for i in MLAmount ]
+        ML1= [ i if i!=None else 0 for i in MLAmount ]
+        YL1 = reduce((lambda x,y: x+y) ,ML1)
+        
+        #YLAmount = [YLAmount['loan_principal_amount__sum']]
+        MLAmount = [YL1]+ML1
         #Yeary loan sancationing amount
         
         
         #Monthly application count
-        YACount = Application.objects.filter(application_timestamp__year="2023").aggregate(Count('id'))
+        #YACount = Application.objects.filter(application_timestamp__year="2023").aggregate(Count('id'))
         Month_Application_count = list(map(lambda x : Application.objects.filter(application_timestamp__year=str(M_Y[x]),application_timestamp__month=str(x)).aggregate(Count('id')),month_no))
         MACount = [v for i in Month_Application_count for v in i.values()]
-        YACount = [YACount['id__count']]
-        MACount = YACount + [ i if i!=None else 0 for i in MACount ]
+        MAC = [ i if i!=None else 0 for i in MACount ]
+        YACount = reduce((lambda x,y : x+y),MAC)
         
+        MACount = [YACount] + MAC
+        
+        53
         
         
         return Response(data={'MLAmount':MLAmount,'MACount':MACount,'Months':Months})

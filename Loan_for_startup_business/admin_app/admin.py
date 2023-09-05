@@ -15,6 +15,6 @@ admin.site.register(Family,FamilyAdmin)
 
 
 class BankAdmin(admin.ModelAdmin):
-    list_display=['user','bank_name','account_number']
+    list_display=['user','bank_name','account_number','ifsc_code']
     
 admin.site.register(Bank,BankAdmin)

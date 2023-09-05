@@ -9379,3 +9379,606 @@ Traceback (most recent call last):
     raise BadRequestError(msg)
 razorpay.errors.BadRequestError: Amount exceeds maximum amount allowed.
 ERROR 2023-08-25 13:51:49,504 basehttp "POST /disburstment/payloanamount/ HTTP/1.1" 500 124835
+WARNING 2023-08-25 19:18:56,352 log Not Found: /favicon.ico
+WARNING 2023-08-25 19:18:56,388 basehttp "GET /favicon.ico HTTP/1.1" 404 2943
+WARNING 2023-08-25 19:23:22,994 log Bad Request: /customer/enquiry_status/
+WARNING 2023-08-25 19:23:22,995 basehttp "POST /customer/enquiry_status/ HTTP/1.1" 400 30
+WARNING 2023-08-25 19:32:10,785 log Not Found: /document_verify/documents/13/
+WARNING 2023-08-25 19:32:10,786 basehttp "GET /document_verify/documents/13/ HTTP/1.1" 404 23
+ERROR 2023-08-25 19:39:07,624 log Internal Server Error: /admin_app/loginpage/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 43, in post
+    user = User.objects.get(email=email)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+admin_app.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2023-08-25 19:39:07,674 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 112993
+ERROR 2023-08-25 19:39:10,960 log Internal Server Error: /admin_app/loginpage/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 43, in post
+    user = User.objects.get(email=email)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+admin_app.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2023-08-25 19:39:10,963 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 500 112993
+ERROR 2023-08-25 20:07:21,878 log Internal Server Error: /loan_sanctioning/documentstatus/6/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\loan_sanctioning\views.py", line 61, in patch
+    send_mail(Subject,message,from_email,to_email)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\mail\__init__.py", line 87, in send_mail
+    return mail.send()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\mail\backends\smtp.py", line 127, in send_messages
+    new_conn_created = self.open()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\mail\backends\smtp.py", line 85, in open
+    self.connection = self.connection_class(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+ERROR 2023-08-25 20:07:21,886 basehttp "PATCH /loan_sanctioning/documentstatus/6/ HTTP/1.1" 500 148474
+ERROR 2023-08-25 20:11:04,921 log Internal Server Error: /disburstment/information/19/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\disburstment\views.py", line 32, in get
+    loan_obj = Loan.objects.select_related('application').get(application=applicationId)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+loan_sanctioning.models.Loan.DoesNotExist: Loan matching query does not exist.
+ERROR 2023-08-25 20:11:04,924 basehttp "GET /disburstment/information/19/ HTTP/1.1" 500 109182
+WARNING 2023-09-01 17:46:02,176 log Bad request (Unable to parse request body): /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 220, in post
+    YL1 = tuple(reduce((lambda x,y: x+y) ,ML1))
+TypeError: 'float' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\corsheaders\middleware.py", line 56, in __call__
+    result = self.get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\debug.py", line 67, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\debug.py", line 410, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\debug.py", line 377, in get_traceback_data
+    self.filter.get_post_parameters(self.request).items()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\debug.py", line 221, in get_post_parameters
+    return request.POST
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\wsgi.py", line 93, in _get_post
+    self._load_post_and_files()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\http\request.py", line 373, in _load_post_and_files
+    self._post, self._files = self.parse_file_upload(self.META, data)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\http\request.py", line 320, in parse_file_upload
+    parser = MultiPartParser(META, post_data, self.upload_handlers, self.encoding)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\http\multipartparser.py", line 87, in __init__
+    raise MultiPartParserError(
+django.http.multipartparser.MultiPartParserError: Invalid boundary in multipart: None
+WARNING 2023-09-01 17:46:02,289 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 400 143
+WARNING 2023-09-01 17:46:05,391 log Bad request (Unable to parse request body): /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 220, in post
+    YL1 = tuple(reduce((lambda x,y: x+y) ,ML1))
+TypeError: 'float' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\corsheaders\middleware.py", line 56, in __call__
+    result = self.get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\debug.py", line 67, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\debug.py", line 410, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\debug.py", line 377, in get_traceback_data
+    self.filter.get_post_parameters(self.request).items()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\debug.py", line 221, in get_post_parameters
+    return request.POST
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\wsgi.py", line 93, in _get_post
+    self._load_post_and_files()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\http\request.py", line 373, in _load_post_and_files
+    self._post, self._files = self.parse_file_upload(self.META, data)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\http\request.py", line 320, in parse_file_upload
+    parser = MultiPartParser(META, post_data, self.upload_handlers, self.encoding)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\http\multipartparser.py", line 87, in __init__
+    raise MultiPartParserError(
+django.http.multipartparser.MultiPartParserError: Invalid boundary in multipart: None
+WARNING 2023-09-01 17:46:05,447 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 400 143
+WARNING 2023-09-01 17:52:00,453 log Bad request (Unable to parse request body): /admin_app/mqareport/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 221, in post
+    l1= YL1+ML1
+TypeError: unsupported operand type(s) for +: 'float' and 'list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\corsheaders\middleware.py", line 56, in __call__
+    result = self.get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\debug.py", line 67, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\debug.py", line 410, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\debug.py", line 377, in get_traceback_data
+    self.filter.get_post_parameters(self.request).items()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\debug.py", line 221, in get_post_parameters
+    return request.POST
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\wsgi.py", line 93, in _get_post
+    self._load_post_and_files()
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\http\request.py", line 373, in _load_post_and_files
+    self._post, self._files = self.parse_file_upload(self.META, data)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\http\request.py", line 320, in parse_file_upload
+    parser = MultiPartParser(META, post_data, self.upload_handlers, self.encoding)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\http\multipartparser.py", line 87, in __init__
+    raise MultiPartParserError(
+django.http.multipartparser.MultiPartParserError: Invalid boundary in multipart: None
+WARNING 2023-09-01 17:52:00,460 basehttp "POST /admin_app/mqareport/ HTTP/1.1" 400 143
+WARNING 2023-09-05 19:05:15,140 log Bad Request: /admin_app/bank/
+WARNING 2023-09-05 19:05:15,149 basehttp "POST /admin_app/bank/ HTTP/1.1" 400 111
+ERROR 2023-09-05 19:07:10,416 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 110, in post
+    bdata = fetchPDFData(file)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\utiles.py", line 29, in fetchPDFData
+    with open(file, 'rb') as pdf_file:
+TypeError: expected str, bytes or os.PathLike object, not InMemoryUploadedFile
+ERROR 2023-09-05 19:07:10,468 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 109622
+ERROR 2023-09-05 19:07:19,015 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 110, in post
+    bdata = fetchPDFData(file)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\utiles.py", line 29, in fetchPDFData
+    with open(file, 'rb') as pdf_file:
+TypeError: expected str, bytes or os.PathLike object, not InMemoryUploadedFile
+ERROR 2023-09-05 19:07:19,019 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 109622
+ERROR 2023-09-05 19:08:03,783 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 110, in post
+    bdata = fetchPDFData(file)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\utiles.py", line 29, in fetchPDFData
+    with open(str(file), 'rb') as pdf_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Bank statement.pdf'
+ERROR 2023-09-05 19:08:03,787 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 109579
+ERROR 2023-09-05 19:16:48,584 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 111, in post
+    with open(str(file), 'rb') as pdf_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Bank statement.pdf'
+ERROR 2023-09-05 19:16:48,588 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 106043
+ERROR 2023-09-05 19:18:06,040 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 111, in post
+    with open(file1, 'rb') as pdf_file:
+TypeError: expected str, bytes or os.PathLike object, not InMemoryUploadedFile
+ERROR 2023-09-05 19:18:06,044 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 106091
+ERROR 2023-09-05 19:19:02,219 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 111, in post
+    with open(str(file1), 'rb') as pdf_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'Bank statement.pdf'
+ERROR 2023-09-05 19:19:02,222 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 106048
+ERROR 2023-09-05 20:57:37,881 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 116, in post
+    with open(file_path, 'rb') as pdf_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'temp.pdf'
+ERROR 2023-09-05 20:57:37,886 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 106327
+ERROR 2023-09-05 21:03:27,670 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 116, in post
+    with open(file_path, 'rb') as pdf_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'temp_f2H9eHf.pdf'
+ERROR 2023-09-05 21:03:27,674 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 106375
+ERROR 2023-09-05 21:06:04,077 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 116, in post
+    with open(file_path, 'rb') as pdf_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'temp_bIoNlR2.pdf'
+ERROR 2023-09-05 21:06:04,080 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 106375
+WARNING 2023-09-05 21:08:00,077 log Not Found: /favicon.ico
+WARNING 2023-09-05 21:08:00,077 basehttp "GET /favicon.ico HTTP/1.1" 404 2943
+ERROR 2023-09-05 21:08:29,632 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 117, in post
+    with open(file_path, 'rb') as pdf_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'temp_XbZSXi1.pdf'
+ERROR 2023-09-05 21:08:29,634 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 106330
+ERROR 2023-09-05 21:14:00,209 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 119, in post
+    with open(file_path, 'rb') as pdf_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\python files\\CJC_Final_Project\\Loan_for_startup_business\\media\\Bank statement.pdf'
+ERROR 2023-09-05 21:14:00,213 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 106704
+ERROR 2023-09-05 21:15:06,332 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 117, in post
+    print(file_path)
+NameError: name 'file_path' is not defined
+ERROR 2023-09-05 21:15:06,335 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 106104
+ERROR 2023-09-05 21:15:58,329 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 119, in post
+    with open(file_path, 'rb') as pdf_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'temp_3U1d10y.pdf'
+ERROR 2023-09-05 21:15:58,334 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 106396
+ERROR 2023-09-05 21:18:48,920 log Internal Server Error: /admin_app/bank/
+Traceback (most recent call last):
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\python files\CJC_Final_Project\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\python files\CJC_Final_Project\Loan_for_startup_business\admin_app\views.py", line 119, in post
+    with open(file_path, 'rb') as pdf_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'temp.pdf'
+ERROR 2023-09-05 21:18:48,924 basehttp "POST /admin_app/bank/ HTTP/1.1" 500 106364
+WARNING 2023-09-05 22:44:07,900 log Bad Request: /admin_app/bank/
+WARNING 2023-09-05 22:44:07,901 basehttp "POST /admin_app/bank/ HTTP/1.1" 400 40
+WARNING 2023-09-05 23:47:36,070 log Unauthorized: /admin_app/loginpage/
+WARNING 2023-09-05 23:47:36,098 basehttp "POST /admin_app/loginpage/ HTTP/1.1" 401 63
