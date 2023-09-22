@@ -21,6 +21,10 @@
 ## Account Head Dashboard ##
 ![AHD](https://github.com/Amol892/Startup_business_loan_app/assets/114909137/1c004ca3-142b-42c7-b1d9-4ade1bf9580d)
 
+## Customer Dashboard ##
+![CustomerD](https://github.com/Amol892/Startup_business_loan_app/assets/114909137/02ee9b58-b78f-47a6-ab26-b55ec10cf036)
+
+
 
 
 
