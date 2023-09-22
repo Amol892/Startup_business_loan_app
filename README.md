@@ -6,4 +6,4 @@
 3) react-plotly-js for Chart ploting
 4) Cross Origin Sharing (CORS) libraries for Integration between DRF API and Reactjs
 5) Common login for all user and redirected to respective dashboard based on role of user
-![Application stucture](https://github.com/Amol892/Startup_business_loan_app/assets/114909137/530c4732-3491-41d7-a8e0-66bcef4e0bb1 | width=200)
+![Application stucture | 320x271](https://github.com/Amol892/Startup_business_loan_app/assets/114909137/530c4732-3491-41d7-a8e0-66bcef4e0bb1)
