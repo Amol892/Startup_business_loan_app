@@ -11,3 +11,7 @@
 ## Guest User ##
 ![gusteruser](https://github.com/Amol892/Startup_business_loan_app/assets/114909137/c8071273-220a-4933-aaea-625f064d9b5b)
 
+## Admin User Dashboard##
+![Adminuser](https://github.com/Amol892/Startup_business_loan_app/assets/114909137/5b867c00-9d33-4868-8e23-a866776582d2)
+
+
